@@ -1,4 +1,3 @@
-import * as React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router";
 import { mainRoutes } from "./main";
 

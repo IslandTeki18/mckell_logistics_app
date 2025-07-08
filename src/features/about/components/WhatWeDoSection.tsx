@@ -1,5 +1,4 @@
-import * as React from "react";
-
+import React from "react";
 type WhatWeDoSectionProps = {};
 
 export const WhatWeDoSection = (props: WhatWeDoSectionProps) => {

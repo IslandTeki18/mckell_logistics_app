@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { HeroSection } from "../components/HeroSection";
 import { ServiceSummarySection } from "../components/ServiceSummarySection";
 import { ServiceAreaSection } from "../components/ServiceAreaSection";

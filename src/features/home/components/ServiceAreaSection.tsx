@@ -1,5 +1,6 @@
-import * as React from "react";
+import React from "react";
 import { MapIcon, MapPinIcon, BoltIcon } from "@heroicons/react/24/outline";
+import utahCountyMap from "url:~src/assets/images/utah_county.jpg";
 
 type ServiceAreaSectionProps = {};
 
@@ -20,13 +21,12 @@ export const ServiceAreaSection = (props: ServiceAreaSectionProps) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
           {/* Map Placeholder */}
           <div className="order-2 lg:order-1">
-            <div className="bg-base-100 rounded-lg shadow-xl p-8 h-80 flex items-center justify-center">
-              <div className="text-center">
-                <MapIcon className="w-24 h-24 text-secondary mx-auto mb-4" />
-                <p className="text-base-content/60 text-lg">
-                  Utah County Service Area Map
-                </p>
-              </div>
+            <div className="bg-base-100 rounded-lg shadow-xl h-80 flex items-center justify-center">
+              <img
+                src={utahCountyMap}
+                alt="Utah County Service Area Map"
+                className="rounded-lg w-full h-full object-cover"
+              />
             </div>
           </div>
 

@@ -1,5 +1,4 @@
-import * as React from "react";
-
+import React from "react";
 type CallOrTextSectionProps = {};
 
 export const CallOrTextSection = (props: CallOrTextSectionProps) => {

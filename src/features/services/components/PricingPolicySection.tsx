@@ -1,17 +1,25 @@
-import * as React from "react";
+import React from "react";
+import {
+  CurrencyDollarIcon,
+  TruckIcon,
+  BuildingOfficeIcon,
+  ClockIcon,
+  CalendarDaysIcon,
+  PhoneIcon,
+} from "@heroicons/react/24/outline";
 
 type PricingPolicySectionProps = {};
 
 export const PricingPolicySection = (props: PricingPolicySectionProps) => {
   const pricingDetails = [
     {
-      icon: "💰",
+      icon: CurrencyDollarIcon,
       title: "Hourly Rate",
       description: "$125/hour, 3-hour minimum",
       highlight: true,
     },
     {
-      icon: "🚛",
+      icon: TruckIcon,
       title: "Per Load",
       description: "Available for larger projects",
       highlight: false,
@@ -20,23 +28,23 @@ export const PricingPolicySection = (props: PricingPolicySectionProps) => {
 
   const policies = [
     {
-      icon: "🏗️",
+      icon: BuildingOfficeIcon,
       title: "Disposal Fees",
       description:
         "Dump fees passed through at cost - not included in hourly rate",
     },
     {
-      icon: "⏰",
+      icon: ClockIcon,
       title: "Wait Time",
       description: "Standard hourly rate applies for on-site waiting",
     },
     {
-      icon: "📅",
+      icon: CalendarDaysIcon,
       title: "Cancellation",
       description: "1 free cancellation per week; $50 fee thereafter",
     },
     {
-      icon: "🕐",
+      icon: ClockIcon,
       title: "Scheduling",
       description: "24-hour notice preferred for optimal scheduling",
     },
@@ -56,52 +64,64 @@ export const PricingPolicySection = (props: PricingPolicySectionProps) => {
 
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          {pricingDetails.map((pricing, index) => (
-            <div
-              key={index}
-              className={`card shadow-lg ${
-                pricing.highlight
-                  ? "bg-primary text-primary-content"
-                  : "bg-base-200"
-              }`}
-            >
-              <div className="card-body text-center">
-                <div className="text-4xl mb-4">{pricing.icon}</div>
-                <h3 className="card-title justify-center text-xl font-bold mb-2">
-                  {pricing.title}
-                </h3>
-                <p
-                  className={`text-lg ${
-                    pricing.highlight
-                      ? "text-primary-content"
-                      : "text-base-content"
-                  }`}
-                >
-                  {pricing.description}
-                </p>
+          {pricingDetails.map((pricing, index) => {
+            const IconComponent = pricing.icon;
+            return (
+              <div
+                key={index}
+                className={`card shadow-lg ${
+                  pricing.highlight
+                    ? "bg-primary text-primary-content"
+                    : "bg-base-200"
+                }`}
+              >
+                <div className="card-body text-center">
+                  <IconComponent
+                    className={`w-12 h-12 mx-auto mb-4 ${
+                      pricing.highlight
+                        ? "text-primary-content"
+                        : "text-secondary"
+                    }`}
+                  />
+                  <h3 className="card-title justify-center text-xl font-bold mb-2">
+                    {pricing.title}
+                  </h3>
+                  <p
+                    className={`text-lg ${
+                      pricing.highlight
+                        ? "text-primary-content"
+                        : "text-base-content"
+                    }`}
+                  >
+                    {pricing.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Policy Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          {policies.map((policy, index) => (
-            <div
-              key={index}
-              className="card bg-base-200 shadow-md hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="card-body text-center p-6">
-                <div className="text-3xl mb-3">{policy.icon}</div>
-                <h4 className="font-bold text-base-content mb-2">
-                  {policy.title}
-                </h4>
-                <p className="text-base-content/70 text-sm">
-                  {policy.description}
-                </p>
+          {policies.map((policy, index) => {
+            const IconComponent = policy.icon;
+            return (
+              <div
+                key={index}
+                className="card bg-base-200 shadow-md hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="card-body text-center p-6">
+                  <IconComponent className="w-8 h-8 mx-auto mb-3 text-secondary" />
+                  <h4 className="font-bold text-base-content mb-2">
+                    {policy.title}
+                  </h4>
+                  <p className="text-base-content/70 text-sm">
+                    {policy.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Contact CTA */}
@@ -117,19 +137,7 @@ export const PricingPolicySection = (props: PricingPolicySectionProps) => {
               </p>
               <div className="card-actions justify-center">
                 <button className="btn btn-primary btn-lg">
-                  <svg
-                    className="mr-2 h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
+                  <PhoneIcon className="mr-2 h-5 w-5" />
                   Get Quote
                 </button>
               </div>

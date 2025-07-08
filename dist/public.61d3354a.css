@@ -2956,6 +2956,10 @@
     height: calc(var(--spacing) * 80);
   }
 
+  .h-full {
+    height: 100%;
+  }
+
   .min-h-screen {
     min-height: 100vh;
   }
@@ -3240,10 +3244,6 @@
     }
   }
 
-  .border-primary {
-    border-color: var(--color-primary);
-  }
-
   .border-primary-content {
     border-color: var(--color-primary-content);
   }
@@ -3289,22 +3289,6 @@
 
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-primary-content) 20%, transparent);
-    }
-  }
-
-  .bg-primary\/10 {
-    background-color: var(--color-primary);
-
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-primary) 10%, transparent);
-    }
-  }
-
-  .bg-primary\/20 {
-    background-color: var(--color-primary);
-
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-primary) 20%, transparent);
     }
   }
 

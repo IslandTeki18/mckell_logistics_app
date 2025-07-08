@@ -1,4 +1,13 @@
-import * as React from "react";
+import React from "react"
+import {
+  TruckIcon,
+  WrenchScrewdriverIcon,
+  BuildingOffice2Icon,
+  BoltIcon,
+  InformationCircleIcon,
+} from "@heroicons/react/24/outline";
+// @ts-ignore
+import truck from "url:~/src/assets/images/truck_trailer.jpg";
 
 type EquipmentCapabilitiesSectionProps = {};
 
@@ -7,22 +16,22 @@ export const EquipmentCapabilitiesSection = (
 ) => {
   const capabilities = [
     {
-      icon: "🚛",
+      icon: TruckIcon,
       title: "Site-to-Site",
       description: "Moving materials between job sites efficiently",
     },
     {
-      icon: "⛏️",
+      icon: WrenchScrewdriverIcon,
       title: "Pit-to-Site",
       description: "Direct delivery from quarries and pits",
     },
     {
-      icon: "🏗️",
+      icon: BuildingOffice2Icon,
       title: "Demo Hauling",
       description: "Removal of demolition debris and waste",
     },
     {
-      icon: "⚡",
+      icon: BoltIcon,
       title: "Short Notice",
       description: "Daily and hourly dispatch available",
     },
@@ -45,7 +54,7 @@ export const EquipmentCapabilitiesSection = (
           <div className="card bg-base-100 shadow-lg">
             <figure className="px-6 pt-6">
               <img
-                src="https://placehold.co/500x300/4A5568/FFFFFF?text=Truck+%26+Side+Dump+Trailer"
+                src={truck}
                 alt="Truck with side dump trailer"
                 className="rounded-lg w-full h-64 object-cover"
               />
@@ -56,13 +65,13 @@ export const EquipmentCapabilitiesSection = (
               </h3>
               <div className="space-y-2">
                 <div className="flex items-center">
-                  <span className="font-semibold text-primary mr-2">
+                  <span className="font-semibold text-secondary mr-2">
                     Max Payload:
                   </span>
                   <span className="text-base-content">25-27 tons</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="font-semibold text-primary mr-2">
+                  <span className="font-semibold text-secondary mr-2">
                     Trailer Type:
                   </span>
                   <span className="text-base-content">
@@ -70,7 +79,7 @@ export const EquipmentCapabilitiesSection = (
                   </span>
                 </div>
                 <div className="flex items-center">
-                  <span className="font-semibold text-primary mr-2">
+                  <span className="font-semibold text-secondary mr-2">
                     Capacity:
                   </span>
                   <span className="text-base-content">
@@ -83,41 +92,32 @@ export const EquipmentCapabilitiesSection = (
 
           {/* Capabilities Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {capabilities.map((capability, index) => (
-              <div
-                key={index}
-                className="card bg-base-100 shadow-md hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="card-body text-center p-6">
-                  <div className="text-3xl mb-3">{capability.icon}</div>
-                  <h4 className="font-bold text-base-content mb-2">
-                    {capability.title}
-                  </h4>
-                  <p className="text-base-content/70 text-sm">
-                    {capability.description}
-                  </p>
+            {capabilities.map((capability, index) => {
+              const IconComponent = capability.icon;
+              return (
+                <div
+                  key={index}
+                  className="card bg-base-100 shadow-md hover:shadow-lg transition-shadow duration-300"
+                >
+                  <div className="card-body text-center p-6">
+                    <IconComponent className="w-8 h-8 mx-auto mb-3 text-secondary" />
+                    <h4 className="font-bold text-base-content mb-2">
+                      {capability.title}
+                    </h4>
+                    <p className="text-base-content/70 text-sm">
+                      {capability.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
         {/* Call to Action */}
         <div className="text-center">
           <div className="alert alert-info shadow-lg max-w-2xl mx-auto">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="stroke-current flex-shrink-0 w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
+            <InformationCircleIcon className="stroke-current flex-shrink-0 w-6 h-6" />
             <div>
               <h3 className="font-bold">Ready for Your Project</h3>
               <div className="text-xs">

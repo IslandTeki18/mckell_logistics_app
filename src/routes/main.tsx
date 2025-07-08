@@ -1,4 +1,3 @@
-import * as React from "react";
 import { HomePage, ContactPage, AboutPage, ServicesPage } from "~src/features";
 import { NotFoundPage } from "~src/components/pages/NotFoundPage";
 import { Layout } from "./Layout";

@@ -130,7 +130,7 @@
 
   // Only insert newRequire.load when it is actually used.
   // The code in this file is linted against ES5, so dynamic import is not allowed.
-  // INSERT_LOAD_HERE
+  function $parcel$resolve(url) {  url = importMap[url] || url;  return import.meta.resolve(distDir + url);}newRequire.resolve = $parcel$resolve;
 
   Object.defineProperty(newRequire, 'root', {
     get: function () {
@@ -675,7 +675,6 @@ $parcel$ReactRefreshHelpers$bd48.prelude(module);
 
 try {
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
 var _app = require("./src/App");
 var _client = require("react-dom/client");
 var _indexCss = require("./src/index.css");
@@ -683,7 +682,7 @@ const container = document.getElementById("root");
 const root = (0, _client.createRoot)(container);
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _app.App), {}, void 0, false, {
     fileName: "index.tsx",
-    lineNumber: 8,
+    lineNumber: 7,
     columnNumber: 13
 }, undefined));
 
@@ -692,7 +691,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _app.App), {}, void 0, 
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./src/App":"3VLq5","react-dom/client":"hrvwu","./src/index.css":"irmnC","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","./src/App":"3VLq5","react-dom/client":"hrvwu","./src/index.css":"irmnC","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -1675,6 +1674,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "App", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _routes = require("./routes");
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _routes.AppRoutes), {}, void 0, false, {
@@ -1704,7 +1704,6 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AppRoutes", ()=>AppRoutes);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
 var _reactRouter = require("react-router");
 var _main = require("./main");
 function AppRoutes() {
@@ -1713,7 +1712,7 @@ function AppRoutes() {
         router: router
     }, void 0, false, {
         fileName: "src/routes/index.tsx",
-        lineNumber: 7,
+        lineNumber: 6,
         columnNumber: 10
     }, this);
 }
@@ -1726,7 +1725,7 @@ $RefreshReg$(_c, "AppRoutes");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router":"2jawN","./main":"ibw13","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"2jawN":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react-router":"2jawN","./main":"ibw13","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"2jawN":[function(require,module,exports,__globalThis) {
 /**
  * react-router v7.6.3
  *
@@ -11599,7 +11598,6 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "mainRoutes", ()=>mainRoutes);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
 var _features = require("~src/features");
 var _notFoundPage = require("~src/components/pages/NotFoundPage");
 var _layout = require("./Layout");
@@ -11608,7 +11606,7 @@ const mainRoutes = [
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _layout.Layout), {}, void 0, false, {
             fileName: "src/routes/main.tsx",
-            lineNumber: 9,
+            lineNumber: 8,
             columnNumber: 14
         }, undefined),
         children: [
@@ -11616,7 +11614,7 @@ const mainRoutes = [
                 index: true,
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _features.HomePage), {}, void 0, false, {
                     fileName: "src/routes/main.tsx",
-                    lineNumber: 13,
+                    lineNumber: 12,
                     columnNumber: 18
                 }, undefined)
             },
@@ -11624,7 +11622,7 @@ const mainRoutes = [
                 path: "about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _features.AboutPage), {}, void 0, false, {
                     fileName: "src/routes/main.tsx",
-                    lineNumber: 17,
+                    lineNumber: 16,
                     columnNumber: 18
                 }, undefined)
             },
@@ -11632,7 +11630,7 @@ const mainRoutes = [
                 path: "contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _features.ContactPage), {}, void 0, false, {
                     fileName: "src/routes/main.tsx",
-                    lineNumber: 21,
+                    lineNumber: 20,
                     columnNumber: 18
                 }, undefined)
             },
@@ -11640,7 +11638,7 @@ const mainRoutes = [
                 path: "services",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _features.ServicesPage), {}, void 0, false, {
                     fileName: "src/routes/main.tsx",
-                    lineNumber: 25,
+                    lineNumber: 24,
                     columnNumber: 18
                 }, undefined)
             },
@@ -11648,7 +11646,7 @@ const mainRoutes = [
                 path: "*",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _notFoundPage.NotFoundPage), {}, void 0, false, {
                     fileName: "src/routes/main.tsx",
-                    lineNumber: 29,
+                    lineNumber: 28,
                     columnNumber: 18
                 }, undefined)
             }
@@ -11661,7 +11659,7 @@ const mainRoutes = [
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","~src/features":"3DQQ0","~src/components/pages/NotFoundPage":"dZZdP","./Layout":"poSeH","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"3DQQ0":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","~src/features":"3DQQ0","~src/components/pages/NotFoundPage":"dZZdP","./Layout":"poSeH","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"3DQQ0":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _about = require("./about");
@@ -11692,6 +11690,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AboutPage", ()=>AboutPage);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _whoWeAreSection = require("../components/WhoWeAreSection");
 var _whatWeDoSection = require("../components/WhatWeDoSection");
 var _serviceAreaSection = require("~src/features/home/components/ServiceAreaSection");
@@ -11755,6 +11754,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "WhoWeAreSection", ()=>WhoWeAreSection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 const WhoWeAreSection = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "py-16 bg-base-100",
@@ -11769,7 +11769,7 @@ const WhoWeAreSection = (props)=>{
                             children: "Who We Are"
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                            lineNumber: 10,
+                            lineNumber: 9,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11777,13 +11777,13 @@ const WhoWeAreSection = (props)=>{
                             children: "Local expertise you can trust for all your hauling needs"
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                            lineNumber: 13,
+                            lineNumber: 12,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                    lineNumber: 9,
+                    lineNumber: 8,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11801,22 +11801,22 @@ const WhoWeAreSection = (props)=>{
                                         className: "rounded-lg w-full h-80 object-cover"
                                     }, void 0, false, {
                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                        lineNumber: 23,
+                                        lineNumber: 22,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                    lineNumber: 22,
+                                    lineNumber: 21,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                lineNumber: 21,
+                                lineNumber: 20,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                            lineNumber: 20,
+                            lineNumber: 19,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11831,7 +11831,7 @@ const WhoWeAreSection = (props)=>{
                                                 children: "McKell Logistics"
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 36,
+                                                lineNumber: 35,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11839,7 +11839,7 @@ const WhoWeAreSection = (props)=>{
                                                 children: "McKell Logistics is a solo-owned hauling company serving the Utah County area with reliable, professional service."
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 39,
+                                                lineNumber: 38,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11847,13 +11847,13 @@ const WhoWeAreSection = (props)=>{
                                                 children: "Founded with a passion for construction and a commitment to excellence, we've built our reputation on punctuality, fair pricing, and going the extra mile for every client."
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 43,
+                                                lineNumber: 42,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                        lineNumber: 35,
+                                        lineNumber: 34,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11869,7 +11869,7 @@ const WhoWeAreSection = (props)=>{
                                                             children: "\uD83C\uDFE0"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 54,
+                                                            lineNumber: 53,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -11877,7 +11877,7 @@ const WhoWeAreSection = (props)=>{
                                                             children: "Local Roots"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 55,
+                                                            lineNumber: 54,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11885,18 +11885,18 @@ const WhoWeAreSection = (props)=>{
                                                             children: "Utah County native"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 56,
+                                                            lineNumber: 55,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 53,
+                                                    lineNumber: 52,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 52,
+                                                lineNumber: 51,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11909,7 +11909,7 @@ const WhoWeAreSection = (props)=>{
                                                             children: "\u26A1"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 64,
+                                                            lineNumber: 63,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -11917,7 +11917,7 @@ const WhoWeAreSection = (props)=>{
                                                             children: "Reliability"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 65,
+                                                            lineNumber: 64,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11925,18 +11925,18 @@ const WhoWeAreSection = (props)=>{
                                                             children: "On-time service"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 66,
+                                                            lineNumber: 65,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 63,
+                                                    lineNumber: 62,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 62,
+                                                lineNumber: 61,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11949,7 +11949,7 @@ const WhoWeAreSection = (props)=>{
                                                             children: "\uD83E\uDD1D"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 74,
+                                                            lineNumber: 73,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -11957,7 +11957,7 @@ const WhoWeAreSection = (props)=>{
                                                             children: "Hands-On"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 75,
+                                                            lineNumber: 74,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11965,24 +11965,24 @@ const WhoWeAreSection = (props)=>{
                                                             children: "Personal service"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 76,
+                                                            lineNumber: 75,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 73,
+                                                    lineNumber: 72,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 72,
+                                                lineNumber: 71,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                        lineNumber: 51,
+                                        lineNumber: 50,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11995,7 +11995,7 @@ const WhoWeAreSection = (props)=>{
                                                     children: "Our Mission"
                                                 }, void 0, false, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 86,
+                                                    lineNumber: 85,
                                                     columnNumber: 19
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -12003,18 +12003,18 @@ const WhoWeAreSection = (props)=>{
                                                     children: "To provide Utah County contractors and homeowners with dependable, professional hauling services that keep projects moving forward on time and on budget."
                                                 }, void 0, false, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 89,
+                                                    lineNumber: 88,
                                                     columnNumber: 19
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                            lineNumber: 85,
+                                            lineNumber: 84,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                        lineNumber: 84,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -12034,52 +12034,52 @@ const WhoWeAreSection = (props)=>{
                                                         d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                                                     }, void 0, false, {
                                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                        lineNumber: 106,
+                                                        lineNumber: 105,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 100,
+                                                    lineNumber: 99,
                                                     columnNumber: 19
                                                 }, undefined),
                                                 "Get In Touch"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                            lineNumber: 99,
+                                            lineNumber: 98,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                        lineNumber: 98,
+                                        lineNumber: 97,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                lineNumber: 34,
+                                lineNumber: 33,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                            lineNumber: 33,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                    lineNumber: 18,
+                    lineNumber: 17,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-            lineNumber: 8,
+            lineNumber: 7,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-        lineNumber: 7,
+        lineNumber: 6,
         columnNumber: 5
     }, undefined);
 };
@@ -14383,6 +14383,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "WhatWeDoSection", ()=>WhatWeDoSection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 const WhatWeDoSection = (props)=>{
     const services = [
         {
@@ -14414,7 +14415,7 @@ const WhatWeDoSection = (props)=>{
                             children: "What We Do"
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                            lineNumber: 28,
+                            lineNumber: 27,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -14422,13 +14423,13 @@ const WhatWeDoSection = (props)=>{
                             children: "We haul dirt, gravel, sand, debris, and other materials using a side dump trailer"
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                            lineNumber: 31,
+                            lineNumber: 30,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                    lineNumber: 27,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -14446,7 +14447,7 @@ const WhatWeDoSection = (props)=>{
                                                 children: "Construction-Focused Hauling"
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                lineNumber: 42,
+                                                lineNumber: 41,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -14454,7 +14455,7 @@ const WhatWeDoSection = (props)=>{
                                                 children: "Our specialized side dump trailer and professional approach ensure safe, on-time delivery for all your construction hauling needs."
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                lineNumber: 45,
+                                                lineNumber: 44,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -14462,13 +14463,13 @@ const WhatWeDoSection = (props)=>{
                                                 children: "Whether you're moving materials between job sites, delivering from quarries, or removing debris, we handle every load with the care and professionalism your project deserves."
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                lineNumber: 50,
+                                                lineNumber: 49,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                        lineNumber: 41,
+                                        lineNumber: 40,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -14489,12 +14490,12 @@ const WhatWeDoSection = (props)=>{
                                                             d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                            lineNumber: 66,
+                                                            lineNumber: 65,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                        lineNumber: 60,
+                                                        lineNumber: 59,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -14502,13 +14503,13 @@ const WhatWeDoSection = (props)=>{
                                                         children: "Safe handling and transport"
                                                     }, void 0, false, {
                                                         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                        lineNumber: 73,
+                                                        lineNumber: 72,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                lineNumber: 59,
+                                                lineNumber: 58,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -14526,12 +14527,12 @@ const WhatWeDoSection = (props)=>{
                                                             d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                            lineNumber: 84,
+                                                            lineNumber: 83,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                        lineNumber: 78,
+                                                        lineNumber: 77,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -14539,13 +14540,13 @@ const WhatWeDoSection = (props)=>{
                                                         children: "On-time delivery guarantee"
                                                     }, void 0, false, {
                                                         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                        lineNumber: 91,
+                                                        lineNumber: 90,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                lineNumber: 77,
+                                                lineNumber: 76,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -14563,12 +14564,12 @@ const WhatWeDoSection = (props)=>{
                                                             d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                            lineNumber: 102,
+                                                            lineNumber: 101,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                        lineNumber: 96,
+                                                        lineNumber: 95,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -14576,30 +14577,30 @@ const WhatWeDoSection = (props)=>{
                                                         children: "Construction industry expertise"
                                                     }, void 0, false, {
                                                         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                        lineNumber: 109,
+                                                        lineNumber: 108,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                lineNumber: 95,
+                                                lineNumber: 94,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                        lineNumber: 58,
+                                        lineNumber: 57,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                lineNumber: 40,
+                                lineNumber: 39,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                            lineNumber: 39,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -14614,28 +14615,28 @@ const WhatWeDoSection = (props)=>{
                                         className: "rounded-lg w-full h-64 object-cover"
                                     }, void 0, false, {
                                         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                        lineNumber: 121,
+                                        lineNumber: 120,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                    lineNumber: 120,
+                                    lineNumber: 119,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                lineNumber: 119,
+                                lineNumber: 118,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                            lineNumber: 118,
+                            lineNumber: 117,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                    lineNumber: 37,
+                    lineNumber: 36,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -14650,7 +14651,7 @@ const WhatWeDoSection = (props)=>{
                                         children: service.icon
                                     }, void 0, false, {
                                         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 135,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -14658,7 +14659,7 @@ const WhatWeDoSection = (props)=>{
                                         children: service.title
                                     }, void 0, false, {
                                         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                        lineNumber: 137,
+                                        lineNumber: 136,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -14666,23 +14667,23 @@ const WhatWeDoSection = (props)=>{
                                         children: service.description
                                     }, void 0, false, {
                                         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                        lineNumber: 140,
+                                        lineNumber: 139,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                lineNumber: 135,
+                                lineNumber: 134,
                                 columnNumber: 15
                             }, undefined)
                         }, index, false, {
                             fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                            lineNumber: 134,
+                            lineNumber: 133,
                             columnNumber: 13
                         }, undefined))
                 }, void 0, false, {
                     fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                    lineNumber: 132,
+                    lineNumber: 131,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -14697,7 +14698,7 @@ const WhatWeDoSection = (props)=>{
                                     children: "Our Mission"
                                 }, void 0, false, {
                                     fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                    lineNumber: 152,
+                                    lineNumber: 151,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -14705,34 +14706,34 @@ const WhatWeDoSection = (props)=>{
                                     children: '"To deliver reliable hauling that keeps your projects moving."'
                                 }, void 0, false, {
                                     fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                    lineNumber: 153,
+                                    lineNumber: 152,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                            lineNumber: 151,
+                            lineNumber: 150,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                        lineNumber: 150,
+                        lineNumber: 149,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                    lineNumber: 149,
+                    lineNumber: 148,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/features/about/components/WhatWeDoSection.tsx",
-            lineNumber: 26,
+            lineNumber: 25,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/features/about/components/WhatWeDoSection.tsx",
-        lineNumber: 25,
+        lineNumber: 24,
         columnNumber: 5
     }, undefined);
 };
@@ -14758,7 +14759,10 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ServiceAreaSection", ()=>ServiceAreaSection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _outline = require("@heroicons/react/24/outline");
+var _utahCountyJpg = require("url:~src/assets/images/utah_county.jpg");
+var _utahCountyJpgDefault = parcelHelpers.interopDefault(_utahCountyJpg);
 const ServiceAreaSection = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "py-24 bg-base-200",
@@ -14773,7 +14777,7 @@ const ServiceAreaSection = (props)=>{
                             children: "Service Area"
                         }, void 0, false, {
                             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                            lineNumber: 11,
+                            lineNumber: 12,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -14781,13 +14785,13 @@ const ServiceAreaSection = (props)=>{
                             children: "Proudly serving Provo, Orem, Spanish Fork, American Fork, and surrounding areas within 25 miles."
                         }, void 0, false, {
                             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                            lineNumber: 14,
+                            lineNumber: 15,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                    lineNumber: 10,
+                    lineNumber: 11,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -14796,39 +14800,24 @@ const ServiceAreaSection = (props)=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "order-2 lg:order-1",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "bg-base-100 rounded-lg shadow-xl p-8 h-80 flex items-center justify-center",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-center",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.MapIcon), {
-                                            className: "w-24 h-24 text-secondary mx-auto mb-4"
-                                        }, void 0, false, {
-                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                            lineNumber: 25,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: "text-base-content/60 text-lg",
-                                            children: "Utah County Service Area Map"
-                                        }, void 0, false, {
-                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                            lineNumber: 26,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
+                                className: "bg-base-100 rounded-lg shadow-xl h-80 flex items-center justify-center",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _utahCountyJpgDefault.default),
+                                    alt: "Utah County Service Area Map",
+                                    className: "rounded-lg w-full h-full object-cover"
+                                }, void 0, false, {
                                     fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                    lineNumber: 24,
+                                    lineNumber: 25,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                lineNumber: 23,
+                                lineNumber: 24,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                            lineNumber: 22,
+                            lineNumber: 23,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -15012,18 +15001,18 @@ const ServiceAreaSection = (props)=>{
                     ]
                 }, void 0, true, {
                     fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                    lineNumber: 20,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-            lineNumber: 9,
+            lineNumber: 10,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/features/home/components/ServiceAreaSection.tsx",
-        lineNumber: 8,
+        lineNumber: 9,
         columnNumber: 5
     }, undefined);
 };
@@ -15036,7 +15025,7 @@ $RefreshReg$(_c, "ServiceAreaSection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","@heroicons/react/24/outline":"d2LWn"}],"d2LWn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@heroicons/react/24/outline":"d2LWn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:~src/assets/images/utah_county.jpg":"iGWNR"}],"d2LWn":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AcademicCapIcon", ()=>(0, _academicCapIconJsDefault.default));
@@ -16012,7 +16001,7 @@ var _xcircleIconJsDefault = parcelHelpers.interopDefault(_xcircleIconJs);
 var _xmarkIconJs = require("./XMarkIcon.js");
 var _xmarkIconJsDefault = parcelHelpers.interopDefault(_xmarkIconJs);
 
-},{"./AcademicCapIcon.js":false,"./AdjustmentsHorizontalIcon.js":false,"./AdjustmentsVerticalIcon.js":false,"./ArchiveBoxArrowDownIcon.js":false,"./ArchiveBoxXMarkIcon.js":false,"./ArchiveBoxIcon.js":false,"./ArrowDownCircleIcon.js":false,"./ArrowDownLeftIcon.js":false,"./ArrowDownOnSquareStackIcon.js":false,"./ArrowDownOnSquareIcon.js":false,"./ArrowDownRightIcon.js":false,"./ArrowDownTrayIcon.js":false,"./ArrowDownIcon.js":false,"./ArrowLeftCircleIcon.js":false,"./ArrowLeftEndOnRectangleIcon.js":false,"./ArrowLeftOnRectangleIcon.js":false,"./ArrowLeftStartOnRectangleIcon.js":false,"./ArrowLeftIcon.js":false,"./ArrowLongDownIcon.js":false,"./ArrowLongLeftIcon.js":false,"./ArrowLongRightIcon.js":false,"./ArrowLongUpIcon.js":false,"./ArrowPathRoundedSquareIcon.js":false,"./ArrowPathIcon.js":false,"./ArrowRightCircleIcon.js":false,"./ArrowRightEndOnRectangleIcon.js":false,"./ArrowRightOnRectangleIcon.js":false,"./ArrowRightStartOnRectangleIcon.js":false,"./ArrowRightIcon.js":false,"./ArrowSmallDownIcon.js":false,"./ArrowSmallLeftIcon.js":false,"./ArrowSmallRightIcon.js":false,"./ArrowSmallUpIcon.js":false,"./ArrowTopRightOnSquareIcon.js":false,"./ArrowTrendingDownIcon.js":false,"./ArrowTrendingUpIcon.js":false,"./ArrowTurnDownLeftIcon.js":false,"./ArrowTurnDownRightIcon.js":false,"./ArrowTurnLeftDownIcon.js":false,"./ArrowTurnLeftUpIcon.js":false,"./ArrowTurnRightDownIcon.js":false,"./ArrowTurnRightUpIcon.js":false,"./ArrowTurnUpLeftIcon.js":false,"./ArrowTurnUpRightIcon.js":false,"./ArrowUpCircleIcon.js":false,"./ArrowUpLeftIcon.js":false,"./ArrowUpOnSquareStackIcon.js":false,"./ArrowUpOnSquareIcon.js":false,"./ArrowUpRightIcon.js":false,"./ArrowUpTrayIcon.js":false,"./ArrowUpIcon.js":false,"./ArrowUturnDownIcon.js":false,"./ArrowUturnLeftIcon.js":false,"./ArrowUturnRightIcon.js":false,"./ArrowUturnUpIcon.js":false,"./ArrowsPointingInIcon.js":false,"./ArrowsPointingOutIcon.js":false,"./ArrowsRightLeftIcon.js":"dYvGu","./ArrowsUpDownIcon.js":false,"./AtSymbolIcon.js":false,"./BackspaceIcon.js":false,"./BackwardIcon.js":false,"./BanknotesIcon.js":false,"./Bars2Icon.js":false,"./Bars3BottomLeftIcon.js":false,"./Bars3BottomRightIcon.js":false,"./Bars3CenterLeftIcon.js":false,"./Bars3Icon.js":false,"./Bars4Icon.js":false,"./BarsArrowDownIcon.js":false,"./BarsArrowUpIcon.js":false,"./Battery0Icon.js":false,"./Battery100Icon.js":false,"./Battery50Icon.js":false,"./BeakerIcon.js":false,"./BellAlertIcon.js":false,"./BellSlashIcon.js":false,"./BellSnoozeIcon.js":false,"./BellIcon.js":false,"./BoldIcon.js":false,"./BoltSlashIcon.js":false,"./BoltIcon.js":"7V2rv","./BookOpenIcon.js":false,"./BookmarkSlashIcon.js":false,"./BookmarkSquareIcon.js":false,"./BookmarkIcon.js":false,"./BriefcaseIcon.js":false,"./BugAntIcon.js":false,"./BuildingLibraryIcon.js":false,"./BuildingOffice2Icon.js":false,"./BuildingOfficeIcon.js":false,"./BuildingStorefrontIcon.js":false,"./CakeIcon.js":false,"./CalculatorIcon.js":false,"./CalendarDateRangeIcon.js":false,"./CalendarDaysIcon.js":false,"./CalendarIcon.js":false,"./CameraIcon.js":false,"./ChartBarSquareIcon.js":false,"./ChartBarIcon.js":false,"./ChartPieIcon.js":false,"./ChatBubbleBottomCenterTextIcon.js":false,"./ChatBubbleBottomCenterIcon.js":false,"./ChatBubbleLeftEllipsisIcon.js":false,"./ChatBubbleLeftRightIcon.js":false,"./ChatBubbleLeftIcon.js":false,"./ChatBubbleOvalLeftEllipsisIcon.js":false,"./ChatBubbleOvalLeftIcon.js":false,"./CheckBadgeIcon.js":false,"./CheckCircleIcon.js":false,"./CheckIcon.js":"1HyMb","./ChevronDoubleDownIcon.js":false,"./ChevronDoubleLeftIcon.js":false,"./ChevronDoubleRightIcon.js":false,"./ChevronDoubleUpIcon.js":false,"./ChevronDownIcon.js":false,"./ChevronLeftIcon.js":false,"./ChevronRightIcon.js":false,"./ChevronUpDownIcon.js":false,"./ChevronUpIcon.js":false,"./CircleStackIcon.js":false,"./ClipboardDocumentCheckIcon.js":false,"./ClipboardDocumentListIcon.js":false,"./ClipboardDocumentIcon.js":false,"./ClipboardIcon.js":false,"./ClockIcon.js":"e4kfP","./CloudArrowDownIcon.js":false,"./CloudArrowUpIcon.js":false,"./CloudIcon.js":false,"./CodeBracketSquareIcon.js":false,"./CodeBracketIcon.js":false,"./Cog6ToothIcon.js":false,"./Cog8ToothIcon.js":false,"./CogIcon.js":false,"./CommandLineIcon.js":false,"./ComputerDesktopIcon.js":false,"./CpuChipIcon.js":false,"./CreditCardIcon.js":false,"./CubeTransparentIcon.js":false,"./CubeIcon.js":"f57cV","./CurrencyBangladeshiIcon.js":false,"./CurrencyDollarIcon.js":"4RNRU","./CurrencyEuroIcon.js":false,"./CurrencyPoundIcon.js":false,"./CurrencyRupeeIcon.js":false,"./CurrencyYenIcon.js":false,"./CursorArrowRaysIcon.js":false,"./CursorArrowRippleIcon.js":false,"./DevicePhoneMobileIcon.js":false,"./DeviceTabletIcon.js":false,"./DivideIcon.js":false,"./DocumentArrowDownIcon.js":false,"./DocumentArrowUpIcon.js":false,"./DocumentChartBarIcon.js":false,"./DocumentCheckIcon.js":false,"./DocumentCurrencyBangladeshiIcon.js":false,"./DocumentCurrencyDollarIcon.js":false,"./DocumentCurrencyEuroIcon.js":false,"./DocumentCurrencyPoundIcon.js":false,"./DocumentCurrencyRupeeIcon.js":false,"./DocumentCurrencyYenIcon.js":false,"./DocumentDuplicateIcon.js":false,"./DocumentMagnifyingGlassIcon.js":false,"./DocumentMinusIcon.js":false,"./DocumentPlusIcon.js":false,"./DocumentTextIcon.js":"arDnW","./DocumentIcon.js":false,"./EllipsisHorizontalCircleIcon.js":false,"./EllipsisHorizontalIcon.js":false,"./EllipsisVerticalIcon.js":false,"./EnvelopeOpenIcon.js":false,"./EnvelopeIcon.js":"cAzIn","./EqualsIcon.js":false,"./ExclamationCircleIcon.js":false,"./ExclamationTriangleIcon.js":false,"./EyeDropperIcon.js":false,"./EyeSlashIcon.js":false,"./EyeIcon.js":false,"./FaceFrownIcon.js":false,"./FaceSmileIcon.js":false,"./FilmIcon.js":false,"./FingerPrintIcon.js":false,"./FireIcon.js":false,"./FlagIcon.js":false,"./FolderArrowDownIcon.js":false,"./FolderMinusIcon.js":false,"./FolderOpenIcon.js":false,"./FolderPlusIcon.js":false,"./FolderIcon.js":false,"./ForwardIcon.js":false,"./FunnelIcon.js":false,"./GifIcon.js":false,"./GiftTopIcon.js":false,"./GiftIcon.js":false,"./GlobeAltIcon.js":false,"./GlobeAmericasIcon.js":false,"./GlobeAsiaAustraliaIcon.js":false,"./GlobeEuropeAfricaIcon.js":false,"./H1Icon.js":false,"./H2Icon.js":false,"./H3Icon.js":false,"./HandRaisedIcon.js":false,"./HandThumbDownIcon.js":false,"./HandThumbUpIcon.js":false,"./HashtagIcon.js":false,"./HeartIcon.js":false,"./HomeModernIcon.js":false,"./HomeIcon.js":false,"./IdentificationIcon.js":false,"./InboxArrowDownIcon.js":false,"./InboxStackIcon.js":false,"./InboxIcon.js":false,"./InformationCircleIcon.js":false,"./ItalicIcon.js":false,"./KeyIcon.js":false,"./LanguageIcon.js":false,"./LifebuoyIcon.js":false,"./LightBulbIcon.js":false,"./LinkSlashIcon.js":false,"./LinkIcon.js":false,"./ListBulletIcon.js":false,"./LockClosedIcon.js":false,"./LockOpenIcon.js":false,"./MagnifyingGlassCircleIcon.js":false,"./MagnifyingGlassMinusIcon.js":false,"./MagnifyingGlassPlusIcon.js":false,"./MagnifyingGlassIcon.js":false,"./MapPinIcon.js":"gjH9X","./MapIcon.js":"ldPUd","./MegaphoneIcon.js":false,"./MicrophoneIcon.js":false,"./MinusCircleIcon.js":false,"./MinusSmallIcon.js":false,"./MinusIcon.js":false,"./MoonIcon.js":false,"./MusicalNoteIcon.js":false,"./NewspaperIcon.js":false,"./NoSymbolIcon.js":false,"./NumberedListIcon.js":false,"./PaintBrushIcon.js":false,"./PaperAirplaneIcon.js":false,"./PaperClipIcon.js":false,"./PauseCircleIcon.js":false,"./PauseIcon.js":false,"./PencilSquareIcon.js":false,"./PencilIcon.js":false,"./PercentBadgeIcon.js":false,"./PhoneArrowDownLeftIcon.js":false,"./PhoneArrowUpRightIcon.js":false,"./PhoneXMarkIcon.js":false,"./PhoneIcon.js":"6RaIi","./PhotoIcon.js":false,"./PlayCircleIcon.js":false,"./PlayPauseIcon.js":false,"./PlayIcon.js":false,"./PlusCircleIcon.js":false,"./PlusSmallIcon.js":false,"./PlusIcon.js":false,"./PowerIcon.js":false,"./PresentationChartBarIcon.js":false,"./PresentationChartLineIcon.js":false,"./PrinterIcon.js":false,"./PuzzlePieceIcon.js":false,"./QrCodeIcon.js":false,"./QuestionMarkCircleIcon.js":false,"./QueueListIcon.js":false,"./RadioIcon.js":false,"./ReceiptPercentIcon.js":false,"./ReceiptRefundIcon.js":false,"./RectangleGroupIcon.js":false,"./RectangleStackIcon.js":false,"./RocketLaunchIcon.js":false,"./RssIcon.js":false,"./ScaleIcon.js":false,"./ScissorsIcon.js":false,"./ServerStackIcon.js":false,"./ServerIcon.js":false,"./ShareIcon.js":false,"./ShieldCheckIcon.js":"hRbKc","./ShieldExclamationIcon.js":false,"./ShoppingBagIcon.js":false,"./ShoppingCartIcon.js":false,"./SignalSlashIcon.js":false,"./SignalIcon.js":false,"./SlashIcon.js":false,"./SparklesIcon.js":false,"./SpeakerWaveIcon.js":false,"./SpeakerXMarkIcon.js":false,"./Square2StackIcon.js":false,"./Square3Stack3DIcon.js":false,"./Squares2X2Icon.js":false,"./SquaresPlusIcon.js":false,"./StarIcon.js":false,"./StopCircleIcon.js":false,"./StopIcon.js":false,"./StrikethroughIcon.js":false,"./SunIcon.js":false,"./SwatchIcon.js":false,"./TableCellsIcon.js":false,"./TagIcon.js":false,"./TicketIcon.js":false,"./TrashIcon.js":false,"./TrophyIcon.js":false,"./TruckIcon.js":false,"./TvIcon.js":false,"./UnderlineIcon.js":false,"./UserCircleIcon.js":false,"./UserGroupIcon.js":false,"./UserMinusIcon.js":false,"./UserPlusIcon.js":false,"./UserIcon.js":"gzGpt","./UsersIcon.js":false,"./VariableIcon.js":false,"./VideoCameraSlashIcon.js":false,"./VideoCameraIcon.js":false,"./ViewColumnsIcon.js":false,"./ViewfinderCircleIcon.js":false,"./WalletIcon.js":false,"./WifiIcon.js":false,"./WindowIcon.js":false,"./WrenchScrewdriverIcon.js":false,"./WrenchIcon.js":false,"./XCircleIcon.js":false,"./XMarkIcon.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"dYvGu":[function(require,module,exports,__globalThis) {
+},{"./AcademicCapIcon.js":false,"./AdjustmentsHorizontalIcon.js":false,"./AdjustmentsVerticalIcon.js":false,"./ArchiveBoxArrowDownIcon.js":false,"./ArchiveBoxXMarkIcon.js":false,"./ArchiveBoxIcon.js":false,"./ArrowDownCircleIcon.js":false,"./ArrowDownLeftIcon.js":false,"./ArrowDownOnSquareStackIcon.js":false,"./ArrowDownOnSquareIcon.js":false,"./ArrowDownRightIcon.js":false,"./ArrowDownTrayIcon.js":false,"./ArrowDownIcon.js":false,"./ArrowLeftCircleIcon.js":false,"./ArrowLeftEndOnRectangleIcon.js":false,"./ArrowLeftOnRectangleIcon.js":false,"./ArrowLeftStartOnRectangleIcon.js":false,"./ArrowLeftIcon.js":false,"./ArrowLongDownIcon.js":false,"./ArrowLongLeftIcon.js":false,"./ArrowLongRightIcon.js":false,"./ArrowLongUpIcon.js":false,"./ArrowPathRoundedSquareIcon.js":false,"./ArrowPathIcon.js":false,"./ArrowRightCircleIcon.js":false,"./ArrowRightEndOnRectangleIcon.js":false,"./ArrowRightOnRectangleIcon.js":false,"./ArrowRightStartOnRectangleIcon.js":false,"./ArrowRightIcon.js":false,"./ArrowSmallDownIcon.js":false,"./ArrowSmallLeftIcon.js":false,"./ArrowSmallRightIcon.js":false,"./ArrowSmallUpIcon.js":false,"./ArrowTopRightOnSquareIcon.js":false,"./ArrowTrendingDownIcon.js":false,"./ArrowTrendingUpIcon.js":false,"./ArrowTurnDownLeftIcon.js":false,"./ArrowTurnDownRightIcon.js":false,"./ArrowTurnLeftDownIcon.js":false,"./ArrowTurnLeftUpIcon.js":false,"./ArrowTurnRightDownIcon.js":false,"./ArrowTurnRightUpIcon.js":false,"./ArrowTurnUpLeftIcon.js":false,"./ArrowTurnUpRightIcon.js":false,"./ArrowUpCircleIcon.js":false,"./ArrowUpLeftIcon.js":false,"./ArrowUpOnSquareStackIcon.js":false,"./ArrowUpOnSquareIcon.js":false,"./ArrowUpRightIcon.js":false,"./ArrowUpTrayIcon.js":false,"./ArrowUpIcon.js":false,"./ArrowUturnDownIcon.js":false,"./ArrowUturnLeftIcon.js":false,"./ArrowUturnRightIcon.js":false,"./ArrowUturnUpIcon.js":false,"./ArrowsPointingInIcon.js":false,"./ArrowsPointingOutIcon.js":false,"./ArrowsRightLeftIcon.js":"dYvGu","./ArrowsUpDownIcon.js":false,"./AtSymbolIcon.js":false,"./BackspaceIcon.js":false,"./BackwardIcon.js":false,"./BanknotesIcon.js":false,"./Bars2Icon.js":false,"./Bars3BottomLeftIcon.js":false,"./Bars3BottomRightIcon.js":false,"./Bars3CenterLeftIcon.js":false,"./Bars3Icon.js":false,"./Bars4Icon.js":false,"./BarsArrowDownIcon.js":false,"./BarsArrowUpIcon.js":false,"./Battery0Icon.js":false,"./Battery100Icon.js":false,"./Battery50Icon.js":false,"./BeakerIcon.js":false,"./BellAlertIcon.js":false,"./BellSlashIcon.js":false,"./BellSnoozeIcon.js":false,"./BellIcon.js":false,"./BoldIcon.js":false,"./BoltSlashIcon.js":false,"./BoltIcon.js":"7V2rv","./BookOpenIcon.js":false,"./BookmarkSlashIcon.js":false,"./BookmarkSquareIcon.js":false,"./BookmarkIcon.js":false,"./BriefcaseIcon.js":false,"./BugAntIcon.js":false,"./BuildingLibraryIcon.js":false,"./BuildingOffice2Icon.js":"iu4kT","./BuildingOfficeIcon.js":"4mcIW","./BuildingStorefrontIcon.js":false,"./CakeIcon.js":false,"./CalculatorIcon.js":false,"./CalendarDateRangeIcon.js":false,"./CalendarDaysIcon.js":"eIW9B","./CalendarIcon.js":false,"./CameraIcon.js":false,"./ChartBarSquareIcon.js":false,"./ChartBarIcon.js":false,"./ChartPieIcon.js":false,"./ChatBubbleBottomCenterTextIcon.js":false,"./ChatBubbleBottomCenterIcon.js":false,"./ChatBubbleLeftEllipsisIcon.js":false,"./ChatBubbleLeftRightIcon.js":false,"./ChatBubbleLeftIcon.js":false,"./ChatBubbleOvalLeftEllipsisIcon.js":false,"./ChatBubbleOvalLeftIcon.js":false,"./CheckBadgeIcon.js":false,"./CheckCircleIcon.js":false,"./CheckIcon.js":"1HyMb","./ChevronDoubleDownIcon.js":false,"./ChevronDoubleLeftIcon.js":false,"./ChevronDoubleRightIcon.js":false,"./ChevronDoubleUpIcon.js":false,"./ChevronDownIcon.js":false,"./ChevronLeftIcon.js":false,"./ChevronRightIcon.js":false,"./ChevronUpDownIcon.js":false,"./ChevronUpIcon.js":false,"./CircleStackIcon.js":false,"./ClipboardDocumentCheckIcon.js":false,"./ClipboardDocumentListIcon.js":false,"./ClipboardDocumentIcon.js":false,"./ClipboardIcon.js":false,"./ClockIcon.js":"e4kfP","./CloudArrowDownIcon.js":false,"./CloudArrowUpIcon.js":false,"./CloudIcon.js":false,"./CodeBracketSquareIcon.js":false,"./CodeBracketIcon.js":false,"./Cog6ToothIcon.js":false,"./Cog8ToothIcon.js":false,"./CogIcon.js":false,"./CommandLineIcon.js":false,"./ComputerDesktopIcon.js":false,"./CpuChipIcon.js":false,"./CreditCardIcon.js":false,"./CubeTransparentIcon.js":false,"./CubeIcon.js":"f57cV","./CurrencyBangladeshiIcon.js":false,"./CurrencyDollarIcon.js":"4RNRU","./CurrencyEuroIcon.js":false,"./CurrencyPoundIcon.js":false,"./CurrencyRupeeIcon.js":false,"./CurrencyYenIcon.js":false,"./CursorArrowRaysIcon.js":false,"./CursorArrowRippleIcon.js":false,"./DevicePhoneMobileIcon.js":false,"./DeviceTabletIcon.js":false,"./DivideIcon.js":false,"./DocumentArrowDownIcon.js":false,"./DocumentArrowUpIcon.js":false,"./DocumentChartBarIcon.js":false,"./DocumentCheckIcon.js":false,"./DocumentCurrencyBangladeshiIcon.js":false,"./DocumentCurrencyDollarIcon.js":false,"./DocumentCurrencyEuroIcon.js":false,"./DocumentCurrencyPoundIcon.js":false,"./DocumentCurrencyRupeeIcon.js":false,"./DocumentCurrencyYenIcon.js":false,"./DocumentDuplicateIcon.js":false,"./DocumentMagnifyingGlassIcon.js":false,"./DocumentMinusIcon.js":false,"./DocumentPlusIcon.js":false,"./DocumentTextIcon.js":"arDnW","./DocumentIcon.js":false,"./EllipsisHorizontalCircleIcon.js":false,"./EllipsisHorizontalIcon.js":false,"./EllipsisVerticalIcon.js":false,"./EnvelopeOpenIcon.js":false,"./EnvelopeIcon.js":"cAzIn","./EqualsIcon.js":false,"./ExclamationCircleIcon.js":false,"./ExclamationTriangleIcon.js":false,"./EyeDropperIcon.js":false,"./EyeSlashIcon.js":false,"./EyeIcon.js":false,"./FaceFrownIcon.js":false,"./FaceSmileIcon.js":false,"./FilmIcon.js":false,"./FingerPrintIcon.js":false,"./FireIcon.js":false,"./FlagIcon.js":false,"./FolderArrowDownIcon.js":false,"./FolderMinusIcon.js":false,"./FolderOpenIcon.js":false,"./FolderPlusIcon.js":false,"./FolderIcon.js":false,"./ForwardIcon.js":false,"./FunnelIcon.js":false,"./GifIcon.js":false,"./GiftTopIcon.js":false,"./GiftIcon.js":false,"./GlobeAltIcon.js":false,"./GlobeAmericasIcon.js":false,"./GlobeAsiaAustraliaIcon.js":false,"./GlobeEuropeAfricaIcon.js":false,"./H1Icon.js":false,"./H2Icon.js":false,"./H3Icon.js":false,"./HandRaisedIcon.js":false,"./HandThumbDownIcon.js":false,"./HandThumbUpIcon.js":false,"./HashtagIcon.js":false,"./HeartIcon.js":false,"./HomeModernIcon.js":"8SuEh","./HomeIcon.js":"3b5Ew","./IdentificationIcon.js":false,"./InboxArrowDownIcon.js":false,"./InboxStackIcon.js":false,"./InboxIcon.js":false,"./InformationCircleIcon.js":"i8nGV","./ItalicIcon.js":false,"./KeyIcon.js":false,"./LanguageIcon.js":false,"./LifebuoyIcon.js":false,"./LightBulbIcon.js":false,"./LinkSlashIcon.js":false,"./LinkIcon.js":false,"./ListBulletIcon.js":false,"./LockClosedIcon.js":false,"./LockOpenIcon.js":false,"./MagnifyingGlassCircleIcon.js":false,"./MagnifyingGlassMinusIcon.js":false,"./MagnifyingGlassPlusIcon.js":false,"./MagnifyingGlassIcon.js":false,"./MapPinIcon.js":"gjH9X","./MapIcon.js":false,"./MegaphoneIcon.js":false,"./MicrophoneIcon.js":false,"./MinusCircleIcon.js":false,"./MinusSmallIcon.js":false,"./MinusIcon.js":false,"./MoonIcon.js":false,"./MusicalNoteIcon.js":false,"./NewspaperIcon.js":false,"./NoSymbolIcon.js":false,"./NumberedListIcon.js":false,"./PaintBrushIcon.js":false,"./PaperAirplaneIcon.js":false,"./PaperClipIcon.js":false,"./PauseCircleIcon.js":false,"./PauseIcon.js":false,"./PencilSquareIcon.js":false,"./PencilIcon.js":false,"./PercentBadgeIcon.js":false,"./PhoneArrowDownLeftIcon.js":false,"./PhoneArrowUpRightIcon.js":false,"./PhoneXMarkIcon.js":false,"./PhoneIcon.js":"6RaIi","./PhotoIcon.js":false,"./PlayCircleIcon.js":false,"./PlayPauseIcon.js":false,"./PlayIcon.js":false,"./PlusCircleIcon.js":false,"./PlusSmallIcon.js":false,"./PlusIcon.js":false,"./PowerIcon.js":false,"./PresentationChartBarIcon.js":false,"./PresentationChartLineIcon.js":false,"./PrinterIcon.js":false,"./PuzzlePieceIcon.js":false,"./QrCodeIcon.js":false,"./QuestionMarkCircleIcon.js":false,"./QueueListIcon.js":false,"./RadioIcon.js":false,"./ReceiptPercentIcon.js":false,"./ReceiptRefundIcon.js":false,"./RectangleGroupIcon.js":false,"./RectangleStackIcon.js":false,"./RocketLaunchIcon.js":false,"./RssIcon.js":false,"./ScaleIcon.js":false,"./ScissorsIcon.js":false,"./ServerStackIcon.js":false,"./ServerIcon.js":false,"./ShareIcon.js":false,"./ShieldCheckIcon.js":"hRbKc","./ShieldExclamationIcon.js":false,"./ShoppingBagIcon.js":false,"./ShoppingCartIcon.js":false,"./SignalSlashIcon.js":false,"./SignalIcon.js":false,"./SlashIcon.js":false,"./SparklesIcon.js":false,"./SpeakerWaveIcon.js":false,"./SpeakerXMarkIcon.js":false,"./Square2StackIcon.js":false,"./Square3Stack3DIcon.js":false,"./Squares2X2Icon.js":false,"./SquaresPlusIcon.js":false,"./StarIcon.js":false,"./StopCircleIcon.js":false,"./StopIcon.js":false,"./StrikethroughIcon.js":false,"./SunIcon.js":false,"./SwatchIcon.js":false,"./TableCellsIcon.js":false,"./TagIcon.js":false,"./TicketIcon.js":false,"./TrashIcon.js":"92Ra3","./TrophyIcon.js":false,"./TruckIcon.js":"5low1","./TvIcon.js":false,"./UnderlineIcon.js":false,"./UserCircleIcon.js":false,"./UserGroupIcon.js":"brb1O","./UserMinusIcon.js":false,"./UserPlusIcon.js":false,"./UserIcon.js":"gzGpt","./UsersIcon.js":false,"./VariableIcon.js":false,"./VideoCameraSlashIcon.js":false,"./VideoCameraIcon.js":false,"./ViewColumnsIcon.js":false,"./ViewfinderCircleIcon.js":false,"./WalletIcon.js":false,"./WifiIcon.js":false,"./WindowIcon.js":false,"./WrenchScrewdriverIcon.js":"eLuUT","./WrenchIcon.js":false,"./XCircleIcon.js":false,"./XMarkIcon.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"dYvGu":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -16062,6 +16051,84 @@ function BoltIcon({ title, titleId, ...props }, svgRef) {
     }));
 }
 const ForwardRef = /*#__PURE__*/ _react.forwardRef(BoltIcon);
+exports.default = ForwardRef;
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"iu4kT":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function BuildingOffice2Icon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(BuildingOffice2Icon);
+exports.default = ForwardRef;
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4mcIW":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function BuildingOfficeIcon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(BuildingOfficeIcon);
+exports.default = ForwardRef;
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"eIW9B":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function CalendarDaysIcon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(CalendarDaysIcon);
 exports.default = ForwardRef;
 
 },{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1HyMb":[function(require,module,exports,__globalThis) {
@@ -16220,6 +16287,84 @@ function EnvelopeIcon({ title, titleId, ...props }, svgRef) {
 const ForwardRef = /*#__PURE__*/ _react.forwardRef(EnvelopeIcon);
 exports.default = ForwardRef;
 
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8SuEh":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function HomeModernIcon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(HomeModernIcon);
+exports.default = ForwardRef;
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"3b5Ew":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function HomeIcon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(HomeIcon);
+exports.default = ForwardRef;
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"i8nGV":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function InformationCircleIcon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(InformationCircleIcon);
+exports.default = ForwardRef;
+
 },{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"gjH9X":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -16248,32 +16393,6 @@ function MapPinIcon({ title, titleId, ...props }, svgRef) {
     }));
 }
 const ForwardRef = /*#__PURE__*/ _react.forwardRef(MapPinIcon);
-exports.default = ForwardRef;
-
-},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"ldPUd":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-function MapIcon({ title, titleId, ...props }, svgRef) {
-    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
-        xmlns: "http://www.w3.org/2000/svg",
-        fill: "none",
-        viewBox: "0 0 24 24",
-        strokeWidth: 1.5,
-        stroke: "currentColor",
-        "aria-hidden": "true",
-        "data-slot": "icon",
-        ref: svgRef,
-        "aria-labelledby": titleId
-    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
-        id: titleId
-    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
-        strokeLinecap: "round",
-        strokeLinejoin: "round",
-        d: "M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
-    }));
-}
-const ForwardRef = /*#__PURE__*/ _react.forwardRef(MapIcon);
 exports.default = ForwardRef;
 
 },{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6RaIi":[function(require,module,exports,__globalThis) {
@@ -16328,6 +16447,84 @@ function ShieldCheckIcon({ title, titleId, ...props }, svgRef) {
 const ForwardRef = /*#__PURE__*/ _react.forwardRef(ShieldCheckIcon);
 exports.default = ForwardRef;
 
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"92Ra3":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function TrashIcon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(TrashIcon);
+exports.default = ForwardRef;
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"5low1":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function TruckIcon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(TruckIcon);
+exports.default = ForwardRef;
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"brb1O":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function UserGroupIcon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(UserGroupIcon);
+exports.default = ForwardRef;
+
 },{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"gzGpt":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -16354,7 +16551,36 @@ function UserIcon({ title, titleId, ...props }, svgRef) {
 const ForwardRef = /*#__PURE__*/ _react.forwardRef(UserIcon);
 exports.default = ForwardRef;
 
-},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"01Ecn":[function(require,module,exports,__globalThis) {
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"eLuUT":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function WrenchScrewdriverIcon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(WrenchScrewdriverIcon);
+exports.default = ForwardRef;
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"iGWNR":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("utah_county.8a715d07.jpg") + "?" + Date.now();
+
+},{}],"01Ecn":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$51f3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$51f3.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -16367,6 +16593,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "WhyChooseUsSection", ()=>WhyChooseUsSection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _outline = require("@heroicons/react/24/outline");
 const WhyChooseUsSection = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -16616,7 +16843,7 @@ $RefreshReg$(_c, "WhyChooseUsSection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","@heroicons/react/24/outline":"d2LWn"}],"6ufXP":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@heroicons/react/24/outline":"d2LWn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"6ufXP":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$3c4c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$3c4c.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -16629,6 +16856,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ContactCalloutSection", ()=>ContactCalloutSection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _outline = require("@heroicons/react/24/outline");
 const ContactCalloutSection = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -16972,7 +17200,7 @@ $RefreshReg$(_c, "ContactCalloutSection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","@heroicons/react/24/outline":"d2LWn"}],"1ExdY":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@heroicons/react/24/outline":"d2LWn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"1ExdY":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _contactPage = require("./pages/ContactPage");
@@ -16991,6 +17219,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ContactPage", ()=>ContactPage);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _calledToActionHeaderSection = require("../components/CalledToActionHeaderSection");
 var _howToBookSection = require("~src/features/services/components/HowToBookSection");
 var _serviceAreaSection = require("~src/features/home/components/ServiceAreaSection");
@@ -17042,6 +17271,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CallToActionHeaderSection", ()=>CallToActionHeaderSection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 const CallToActionHeaderSection = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "py-16 bg-primary text-primary-content",
@@ -17055,7 +17285,7 @@ const CallToActionHeaderSection = (props)=>{
                         children: "Need Hauling? Let's Get You Scheduled."
                     }, void 0, false, {
                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                        lineNumber: 12,
+                        lineNumber: 11,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17063,7 +17293,7 @@ const CallToActionHeaderSection = (props)=>{
                         children: "Call, text, or send a request\u2014whatever works best for you."
                     }, void 0, false, {
                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                        lineNumber: 15,
+                        lineNumber: 14,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17079,7 +17309,7 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "\uD83D\uDCDE"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 23,
+                                            lineNumber: 22,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -17087,7 +17317,7 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "Call Us"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 24,
+                                            lineNumber: 23,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17095,7 +17325,7 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "Speak directly with us for immediate assistance"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 27,
+                                            lineNumber: 26,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -17103,18 +17333,18 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "(801) 555-0123"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 30,
+                                            lineNumber: 29,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                    lineNumber: 22,
+                                    lineNumber: 21,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                lineNumber: 21,
+                                lineNumber: 20,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17127,7 +17357,7 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "\uD83D\uDCAC"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 38,
+                                            lineNumber: 37,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -17135,7 +17365,7 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "Text Us"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 39,
+                                            lineNumber: 38,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17143,7 +17373,7 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "Quick questions or schedule via text"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 42,
+                                            lineNumber: 41,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -17151,18 +17381,18 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "Send Text"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 45,
+                                            lineNumber: 44,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                    lineNumber: 37,
+                                    lineNumber: 36,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                lineNumber: 36,
+                                lineNumber: 35,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17175,7 +17405,7 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "\uD83D\uDCCB"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 51,
+                                            lineNumber: 50,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -17183,7 +17413,7 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "Send Request"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 52,
+                                            lineNumber: 51,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17191,7 +17421,7 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "Fill out our form for detailed quotes"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 55,
+                                            lineNumber: 54,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -17199,24 +17429,24 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "Get Started"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 57,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                    lineNumber: 50,
+                                    lineNumber: 49,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                lineNumber: 49,
+                                lineNumber: 48,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                        lineNumber: 20,
+                        lineNumber: 19,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17237,25 +17467,25 @@ const CallToActionHeaderSection = (props)=>{
                                             d: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 71,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                        lineNumber: 66,
+                                        lineNumber: 65,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: "Response within 2 hours"
                                     }, void 0, false, {
                                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                        lineNumber: 79,
+                                        lineNumber: 78,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                lineNumber: 65,
+                                lineNumber: 64,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17273,25 +17503,25 @@ const CallToActionHeaderSection = (props)=>{
                                             d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 87,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                        lineNumber: 82,
+                                        lineNumber: 81,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: "Free estimates"
                                     }, void 0, false, {
                                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                        lineNumber: 95,
+                                        lineNumber: 94,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                lineNumber: 81,
+                                lineNumber: 80,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17309,47 +17539,47 @@ const CallToActionHeaderSection = (props)=>{
                                             d: "M13 10V3L4 14h7v7l9-11h-7z"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 104,
+                                            lineNumber: 103,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                        lineNumber: 98,
+                                        lineNumber: 97,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: "Same-day service available"
                                     }, void 0, false, {
                                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                        lineNumber: 111,
+                                        lineNumber: 110,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                lineNumber: 97,
+                                lineNumber: 96,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                        lineNumber: 64,
+                        lineNumber: 63,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                lineNumber: 11,
+                lineNumber: 10,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-            lineNumber: 10,
+            lineNumber: 9,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-        lineNumber: 9,
+        lineNumber: 8,
         columnNumber: 5
     }, undefined);
 };
@@ -17375,10 +17605,12 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "HowToBookSection", ()=>HowToBookSection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _outline = require("@heroicons/react/24/outline");
 var _s = $RefreshSig$();
 const HowToBookSection = (props)=>{
     _s();
-    const [formData, setFormData] = _react.useState({
+    const [formData, setFormData] = (0, _reactDefault.default).useState({
         name: "",
         phone: "",
         jobType: "",
@@ -17425,7 +17657,7 @@ const HowToBookSection = (props)=>{
                             children: "How to Book"
                         }, void 0, false, {
                             fileName: "src/features/services/components/HowToBookSection.tsx",
-                            lineNumber: 53,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17433,13 +17665,13 @@ const HowToBookSection = (props)=>{
                             children: "Get started with your hauling project today - quick form or give us a call"
                         }, void 0, false, {
                             fileName: "src/features/services/components/HowToBookSection.tsx",
-                            lineNumber: 56,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/services/components/HowToBookSection.tsx",
-                    lineNumber: 52,
+                    lineNumber: 53,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17455,7 +17687,7 @@ const HowToBookSection = (props)=>{
                                         children: "Request a Quote"
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                        lineNumber: 66,
+                                        lineNumber: 67,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -17479,7 +17711,7 @@ const HowToBookSection = (props)=>{
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 71,
+                                                lineNumber: 72,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17494,7 +17726,7 @@ const HowToBookSection = (props)=>{
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                    lineNumber: 86,
+                                                    lineNumber: 85,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
@@ -17516,7 +17748,7 @@ const HowToBookSection = (props)=>{
                                                             children: "Select job type"
                                                         }, void 0, false, {
                                                             fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                            lineNumber: 106,
+                                                            lineNumber: 104,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         jobTypes.map((type, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -17524,18 +17756,18 @@ const HowToBookSection = (props)=>{
                                                                 children: type
                                                             }, index, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 108,
+                                                                lineNumber: 106,
                                                                 columnNumber: 23
                                                             }, undefined))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                    lineNumber: 99,
+                                                    lineNumber: 97,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 97,
+                                                lineNumber: 96,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17549,12 +17781,12 @@ const HowToBookSection = (props)=>{
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                    lineNumber: 116,
+                                                    lineNumber: 114,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 115,
+                                                lineNumber: 113,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17571,7 +17803,7 @@ const HowToBookSection = (props)=>{
                                                             children: "When do you need this done?"
                                                         }, void 0, false, {
                                                             fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                            lineNumber: 134,
+                                                            lineNumber: 132,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         timeframes.map((timeframe, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -17579,18 +17811,18 @@ const HowToBookSection = (props)=>{
                                                                 children: timeframe
                                                             }, index, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 136,
+                                                                lineNumber: 134,
                                                                 columnNumber: 23
                                                             }, undefined))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                    lineNumber: 127,
+                                                    lineNumber: 125,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 126,
+                                                lineNumber: 124,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17601,29 +17833,29 @@ const HowToBookSection = (props)=>{
                                                     children: "Submit Request"
                                                 }, void 0, false, {
                                                     fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                    lineNumber: 144,
+                                                    lineNumber: 142,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 143,
+                                                lineNumber: 141,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 71,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                lineNumber: 65,
+                                lineNumber: 66,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/features/services/components/HowToBookSection.tsx",
-                            lineNumber: 64,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17634,12 +17866,11 @@ const HowToBookSection = (props)=>{
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "card-body text-center",
                                         children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-4xl mb-4",
-                                                children: "\uD83D\uDCDE"
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.PhoneIcon), {
+                                                className: "w-16 h-16 mx-auto mb-4 text-primary-content"
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 157,
+                                                lineNumber: 155,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -17647,7 +17878,7 @@ const HowToBookSection = (props)=>{
                                                 children: "Call Us Directly"
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 158,
+                                                lineNumber: 156,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17655,7 +17886,7 @@ const HowToBookSection = (props)=>{
                                                 children: "For immediate assistance or urgent requests"
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 161,
+                                                lineNumber: 159,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17663,7 +17894,7 @@ const HowToBookSection = (props)=>{
                                                 children: "(801) 555-0123"
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 164,
+                                                lineNumber: 162,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17672,31 +17903,31 @@ const HowToBookSection = (props)=>{
                                                     "Monday - Friday: 7 AM - 6 PM",
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                        lineNumber: 167,
+                                                        lineNumber: 165,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     "Saturday: 8 AM - 4 PM",
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                        lineNumber: 169,
+                                                        lineNumber: 167,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     "Sunday: Emergency only"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 165,
+                                                lineNumber: 163,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                        lineNumber: 156,
+                                        lineNumber: 154,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/services/components/HowToBookSection.tsx",
-                                    lineNumber: 155,
+                                    lineNumber: 153,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17709,7 +17940,7 @@ const HowToBookSection = (props)=>{
                                                 children: "Quick Response Guarantee"
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 178,
+                                                lineNumber: 176,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17718,24 +17949,11 @@ const HowToBookSection = (props)=>{
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "flex items-center",
                                                         children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                                className: "w-5 h-5 text-primary mr-3",
-                                                                fill: "none",
-                                                                viewBox: "0 0 24 24",
-                                                                stroke: "currentColor",
-                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                                    strokeLinecap: "round",
-                                                                    strokeLinejoin: "round",
-                                                                    strokeWidth: 2,
-                                                                    d: "M5 13l4 4L19 7"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                    lineNumber: 189,
-                                                                    columnNumber: 23
-                                                                }, undefined)
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckIcon), {
+                                                                className: "w-5 h-5 text-primary mr-3"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 183,
+                                                                lineNumber: 181,
                                                                 columnNumber: 21
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -17743,36 +17961,23 @@ const HowToBookSection = (props)=>{
                                                                 children: "Form responses within 2 hours"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 196,
+                                                                lineNumber: 182,
                                                                 columnNumber: 21
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                        lineNumber: 182,
+                                                        lineNumber: 180,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "flex items-center",
                                                         children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                                className: "w-5 h-5 text-primary mr-3",
-                                                                fill: "none",
-                                                                viewBox: "0 0 24 24",
-                                                                stroke: "currentColor",
-                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                                    strokeLinecap: "round",
-                                                                    strokeLinejoin: "round",
-                                                                    strokeWidth: 2,
-                                                                    d: "M5 13l4 4L19 7"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                    lineNumber: 207,
-                                                                    columnNumber: 23
-                                                                }, undefined)
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckIcon), {
+                                                                className: "w-5 h-5 text-primary mr-3"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 201,
+                                                                lineNumber: 187,
                                                                 columnNumber: 21
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -17780,36 +17985,23 @@ const HowToBookSection = (props)=>{
                                                                 children: "Free quotes and estimates"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 214,
+                                                                lineNumber: 188,
                                                                 columnNumber: 21
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                        lineNumber: 200,
+                                                        lineNumber: 186,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "flex items-center",
                                                         children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                                className: "w-5 h-5 text-primary mr-3",
-                                                                fill: "none",
-                                                                viewBox: "0 0 24 24",
-                                                                stroke: "currentColor",
-                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                                    strokeLinecap: "round",
-                                                                    strokeLinejoin: "round",
-                                                                    strokeWidth: 2,
-                                                                    d: "M5 13l4 4L19 7"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                    lineNumber: 223,
-                                                                    columnNumber: 23
-                                                                }, undefined)
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckIcon), {
+                                                                className: "w-5 h-5 text-primary mr-3"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 217,
+                                                                lineNumber: 191,
                                                                 columnNumber: 21
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -17817,53 +18009,53 @@ const HowToBookSection = (props)=>{
                                                                 children: "Same-day service available"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 230,
+                                                                lineNumber: 192,
                                                                 columnNumber: 21
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                        lineNumber: 216,
+                                                        lineNumber: 190,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 181,
+                                                lineNumber: 179,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                        lineNumber: 177,
+                                        lineNumber: 175,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/services/components/HowToBookSection.tsx",
-                                    lineNumber: 176,
+                                    lineNumber: 174,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/features/services/components/HowToBookSection.tsx",
-                            lineNumber: 153,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/services/components/HowToBookSection.tsx",
-                    lineNumber: 62,
+                    lineNumber: 63,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/features/services/components/HowToBookSection.tsx",
-            lineNumber: 51,
+            lineNumber: 52,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/features/services/components/HowToBookSection.tsx",
-        lineNumber: 50,
+        lineNumber: 51,
         columnNumber: 5
     }, undefined);
 };
@@ -17877,7 +18069,7 @@ $RefreshReg$(_c, "HowToBookSection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"1U4S4":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@heroicons/react/24/outline":"d2LWn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"1U4S4":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _homePage = require("./pages/HomePage");
@@ -17896,6 +18088,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "HomePage", ()=>HomePage);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _heroSection = require("../components/HeroSection");
 var _serviceSummarySection = require("../components/ServiceSummarySection");
 var _serviceAreaSection = require("../components/ServiceAreaSection");
@@ -17959,7 +18152,11 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "HeroSection", ()=>HeroSection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _outline = require("@heroicons/react/24/outline");
+// @ts-ignore
+var _truckTrailerJpg = require("url:~src/assets/images/truck_trailer.jpg");
+var _truckTrailerJpgDefault = parcelHelpers.interopDefault(_truckTrailerJpg);
 const HeroSection = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17970,17 +18167,17 @@ const HeroSection = (props)=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "max-w-md lg:max-w-lg",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: "https://placehold.co/600x400",
+                            src: (0, _truckTrailerJpgDefault.default),
                             alt: "Construction hauling truck with side dump trailer",
                             className: "rounded-lg shadow-2xl w-full"
                         }, void 0, false, {
                             fileName: "src/features/home/components/HeroSection.tsx",
-                            lineNumber: 12,
+                            lineNumber: 14,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/features/home/components/HeroSection.tsx",
-                        lineNumber: 11,
+                        lineNumber: 13,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17991,7 +18188,7 @@ const HeroSection = (props)=>{
                                 children: "Reliable Construction Hauling in the Utah County area"
                             }, void 0, false, {
                                 fileName: "src/features/home/components/HeroSection.tsx",
-                                lineNumber: 19,
+                                lineNumber: 21,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17999,7 +18196,7 @@ const HeroSection = (props)=>{
                                 children: "We haul dirt, gravel, sand, and debris with a side dump trailer! Fast, safe, dependable!"
                             }, void 0, false, {
                                 fileName: "src/features/home/components/HeroSection.tsx",
-                                lineNumber: 22,
+                                lineNumber: 24,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -18009,36 +18206,36 @@ const HeroSection = (props)=>{
                                         className: "mr-2 h-5 w-5"
                                     }, void 0, false, {
                                         fileName: "src/features/home/components/HeroSection.tsx",
-                                        lineNumber: 27,
+                                        lineNumber: 29,
                                         columnNumber: 15
                                     }, undefined),
                                     "Call Now"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/home/components/HeroSection.tsx",
-                                lineNumber: 26,
+                                lineNumber: 28,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/features/home/components/HeroSection.tsx",
-                        lineNumber: 18,
+                        lineNumber: 20,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/features/home/components/HeroSection.tsx",
-                lineNumber: 10,
+                lineNumber: 12,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "src/features/home/components/HeroSection.tsx",
-            lineNumber: 9,
+            lineNumber: 11,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/features/home/components/HeroSection.tsx",
-        lineNumber: 8,
+        lineNumber: 10,
         columnNumber: 5
     }, undefined);
 };
@@ -18051,7 +18248,10 @@ $RefreshReg$(_c, "HeroSection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","@heroicons/react/24/outline":"d2LWn"}],"allTR":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@heroicons/react/24/outline":"d2LWn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:~src/assets/images/truck_trailer.jpg":"fDlML"}],"fDlML":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("truck_trailer.6c2af8dd.jpg") + "?" + Date.now();
+
+},{}],"allTR":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$47fc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$47fc.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -18064,6 +18264,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ServiceSummarySection", ()=>ServiceSummarySection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _outline = require("@heroicons/react/24/outline");
 const ServiceSummarySection = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -18396,7 +18597,7 @@ $RefreshReg$(_c, "ServiceSummarySection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","@heroicons/react/24/outline":"d2LWn"}],"eJTSJ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@heroicons/react/24/outline":"d2LWn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"eJTSJ":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _servicesPage = require("./pages/ServicesPage");
@@ -18415,6 +18616,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ServicesPage", ()=>ServicesPage);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _whatWeHaulSection = require("../components/WhatWeHaulSection");
 var _equipmentCapabilitiesSection = require("../components/EquipmentCapabilitiesSection");
 var _serviceAreaSection = require("~src/features/home/components/ServiceAreaSection");
@@ -18490,25 +18692,36 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "WhatWeHaulSection", ()=>WhatWeHaulSection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _outline = require("@heroicons/react/24/outline");
+// @ts-ignore
+var _dirtGravelSandJpg = require("url:../assets/images/dirt_gravel_sand.jpg");
+var _dirtGravelSandJpgDefault = parcelHelpers.interopDefault(_dirtGravelSandJpg);
+// @ts-ignore
+var _constructionWasteJpg = require("url:../assets/images/construction_waste.jpg");
+var _constructionWasteJpgDefault = parcelHelpers.interopDefault(_constructionWasteJpg);
+// @ts-ignore
+var _asphaltConcreteJpg = require("url:../assets/images/asphalt_concrete.jpg");
+var _asphaltConcreteJpgDefault = parcelHelpers.interopDefault(_asphaltConcreteJpg);
 const WhatWeHaulSection = (props)=>{
     const materials = [
         {
-            icon: "\uD83C\uDFD7\uFE0F",
+            icon: (0, _outline.BuildingOffice2Icon),
             title: "Dirt, Gravel, Sand",
             description: "Various construction materials",
-            image: "https://placehold.co/300x200/8B4513/FFFFFF?text=Dirt+%26+Gravel"
+            image: (0, _dirtGravelSandJpgDefault.default)
         },
         {
-            icon: "\uD83D\uDEE3\uFE0F",
+            icon: (0, _outline.HomeModernIcon),
             title: "Asphalt, Concrete Debris",
             description: "Road and construction debris",
-            image: "https://placehold.co/300x200/696969/FFFFFF?text=Asphalt+%26+Concrete"
+            image: (0, _asphaltConcreteJpgDefault.default)
         },
         {
-            icon: "\uD83C\uDFD7\uFE0F",
+            icon: (0, _outline.TrashIcon),
             title: "Construction Waste",
             description: "General construction site waste",
-            image: "https://placehold.co/300x200/8B4513/FFFFFF?text=Construction+Waste"
+            image: (0, _constructionWasteJpgDefault.default)
         }
     ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -18524,7 +18737,7 @@ const WhatWeHaulSection = (props)=>{
                             children: "What We Haul"
                         }, void 0, false, {
                             fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                            lineNumber: 33,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -18532,18 +18745,20 @@ const WhatWeHaulSection = (props)=>{
                             children: "We provide reliable hauling services for a wide range of materials and debris"
                         }, void 0, false, {
                             fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                            lineNumber: 36,
+                            lineNumber: 46,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                    lineNumber: 32,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
-                    children: materials.map((material, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: materials.map((material, index)=>{
+                        const IconComponent = material.icon;
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "card bg-base-200 shadow-lg hover:shadow-xl transition-shadow duration-300",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
@@ -18554,67 +18769,67 @@ const WhatWeHaulSection = (props)=>{
                                         className: "rounded-lg w-full h-48 object-cover"
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                                        lineNumber: 49,
-                                        columnNumber: 17
+                                        lineNumber: 61,
+                                        columnNumber: 19
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                                    lineNumber: 48,
-                                    columnNumber: 15
+                                    lineNumber: 60,
+                                    columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "card-body text-center",
                                     children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-4xl mb-2",
-                                            children: material.icon
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(IconComponent, {
+                                            className: "w-12 h-12 mx-auto mb-2 text-secondary"
                                         }, void 0, false, {
                                             fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                                            lineNumber: 56,
-                                            columnNumber: 17
+                                            lineNumber: 68,
+                                            columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                             className: "card-title justify-center text-lg font-semibold text-base-content",
                                             children: material.title
                                         }, void 0, false, {
                                             fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                                            lineNumber: 57,
-                                            columnNumber: 17
+                                            lineNumber: 69,
+                                            columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                             className: "text-base-content/70 text-sm",
                                             children: material.description
                                         }, void 0, false, {
                                             fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                                            lineNumber: 60,
-                                            columnNumber: 17
+                                            lineNumber: 72,
+                                            columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                                    lineNumber: 55,
-                                    columnNumber: 15
+                                    lineNumber: 67,
+                                    columnNumber: 17
                                 }, undefined)
                             ]
                         }, index, true, {
                             fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                            lineNumber: 44,
-                            columnNumber: 13
-                        }, undefined))
+                            lineNumber: 56,
+                            columnNumber: 15
+                        }, undefined);
+                    })
                 }, void 0, false, {
                     fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                    lineNumber: 42,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-            lineNumber: 31,
+            lineNumber: 41,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-        lineNumber: 30,
+        lineNumber: 40,
         columnNumber: 5
     }, undefined);
 };
@@ -18627,7 +18842,16 @@ $RefreshReg$(_c, "WhatWeHaulSection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"6LKaa":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@heroicons/react/24/outline":"d2LWn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../assets/images/dirt_gravel_sand.jpg":"7e6AG","url:../assets/images/construction_waste.jpg":"ktw9p","url:../assets/images/asphalt_concrete.jpg":"9NEoG"}],"7e6AG":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("dirt_gravel_sand.ef56f23f.jpg") + "?" + Date.now();
+
+},{}],"ktw9p":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("construction_waste.aa6c30dd.jpg") + "?" + Date.now();
+
+},{}],"9NEoG":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("asphalt_concrete.d901581b.jpg") + "?" + Date.now();
+
+},{}],"6LKaa":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$ded7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$ded7.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -18640,25 +18864,30 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "EquipmentCapabilitiesSection", ()=>EquipmentCapabilitiesSection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _outline = require("@heroicons/react/24/outline");
+// @ts-ignore
+var _truckTrailerJpg = require("url:~/src/assets/images/truck_trailer.jpg");
+var _truckTrailerJpgDefault = parcelHelpers.interopDefault(_truckTrailerJpg);
 const EquipmentCapabilitiesSection = (props)=>{
     const capabilities = [
         {
-            icon: "\uD83D\uDE9B",
+            icon: (0, _outline.TruckIcon),
             title: "Site-to-Site",
             description: "Moving materials between job sites efficiently"
         },
         {
-            icon: "\u26CF\uFE0F",
+            icon: (0, _outline.WrenchScrewdriverIcon),
             title: "Pit-to-Site",
             description: "Direct delivery from quarries and pits"
         },
         {
-            icon: "\uD83C\uDFD7\uFE0F",
+            icon: (0, _outline.BuildingOffice2Icon),
             title: "Demo Hauling",
             description: "Removal of demolition debris and waste"
         },
         {
-            icon: "\u26A1",
+            icon: (0, _outline.BoltIcon),
             title: "Short Notice",
             description: "Daily and hourly dispatch available"
         }
@@ -18676,7 +18905,7 @@ const EquipmentCapabilitiesSection = (props)=>{
                             children: "Equipment & Capabilities"
                         }, void 0, false, {
                             fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                            lineNumber: 35,
+                            lineNumber: 44,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -18684,13 +18913,13 @@ const EquipmentCapabilitiesSection = (props)=>{
                             children: "Professional hauling equipment built for serious construction work"
                         }, void 0, false, {
                             fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                            lineNumber: 38,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                    lineNumber: 34,
+                    lineNumber: 43,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18702,17 +18931,17 @@ const EquipmentCapabilitiesSection = (props)=>{
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
                                     className: "px-6 pt-6",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: "https://placehold.co/500x300/4A5568/FFFFFF?text=Truck+%26+Side+Dump+Trailer",
+                                        src: (0, _truckTrailerJpgDefault.default),
                                         alt: "Truck with side dump trailer",
                                         className: "rounded-lg w-full h-64 object-cover"
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                        lineNumber: 47,
+                                        lineNumber: 56,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                    lineNumber: 46,
+                                    lineNumber: 55,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18723,7 +18952,7 @@ const EquipmentCapabilitiesSection = (props)=>{
                                             children: "Truck + Side Dump Trailer"
                                         }, void 0, false, {
                                             fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                            lineNumber: 54,
+                                            lineNumber: 63,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18733,11 +18962,11 @@ const EquipmentCapabilitiesSection = (props)=>{
                                                     className: "flex items-center",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            className: "font-semibold text-primary mr-2",
+                                                            className: "font-semibold text-secondary mr-2",
                                                             children: "Max Payload:"
                                                         }, void 0, false, {
                                                             fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                                            lineNumber: 59,
+                                                            lineNumber: 68,
                                                             columnNumber: 19
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -18745,24 +18974,24 @@ const EquipmentCapabilitiesSection = (props)=>{
                                                             children: "25-27 tons"
                                                         }, void 0, false, {
                                                             fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                                            lineNumber: 62,
+                                                            lineNumber: 71,
                                                             columnNumber: 19
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                                    lineNumber: 58,
+                                                    lineNumber: 67,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     className: "flex items-center",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            className: "font-semibold text-primary mr-2",
+                                                            className: "font-semibold text-secondary mr-2",
                                                             children: "Trailer Type:"
                                                         }, void 0, false, {
                                                             fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                                            lineNumber: 65,
+                                                            lineNumber: 74,
                                                             columnNumber: 19
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -18770,24 +18999,24 @@ const EquipmentCapabilitiesSection = (props)=>{
                                                             children: "Side dump for easy unloading"
                                                         }, void 0, false, {
                                                             fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                                            lineNumber: 68,
+                                                            lineNumber: 77,
                                                             columnNumber: 19
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                                    lineNumber: 64,
+                                                    lineNumber: 73,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     className: "flex items-center",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            className: "font-semibold text-primary mr-2",
+                                                            className: "font-semibold text-secondary mr-2",
                                                             children: "Capacity:"
                                                         }, void 0, false, {
                                                             fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                                            lineNumber: 73,
+                                                            lineNumber: 82,
                                                             columnNumber: 19
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -18795,84 +19024,86 @@ const EquipmentCapabilitiesSection = (props)=>{
                                                             children: "Professional grade equipment"
                                                         }, void 0, false, {
                                                             fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                                            lineNumber: 76,
+                                                            lineNumber: 85,
                                                             columnNumber: 19
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                                    lineNumber: 72,
+                                                    lineNumber: 81,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 66,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 62,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                            lineNumber: 45,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "grid grid-cols-1 sm:grid-cols-2 gap-4",
-                            children: capabilities.map((capability, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: capabilities.map((capability, index)=>{
+                                const IconComponent = capability.icon;
+                                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "card bg-base-100 shadow-md hover:shadow-lg transition-shadow duration-300",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "card-body text-center p-6",
                                         children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "text-3xl mb-3",
-                                                children: capability.icon
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(IconComponent, {
+                                                className: "w-8 h-8 mx-auto mb-3 text-secondary"
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                                lineNumber: 92,
-                                                columnNumber: 19
+                                                lineNumber: 103,
+                                                columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                                 className: "font-bold text-base-content mb-2",
                                                 children: capability.title
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                                lineNumber: 93,
-                                                columnNumber: 19
+                                                lineNumber: 104,
+                                                columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 className: "text-base-content/70 text-sm",
                                                 children: capability.description
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                                lineNumber: 96,
-                                                columnNumber: 19
+                                                lineNumber: 107,
+                                                columnNumber: 21
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                        lineNumber: 91,
-                                        columnNumber: 17
+                                        lineNumber: 102,
+                                        columnNumber: 19
                                     }, undefined)
                                 }, index, false, {
                                     fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                    lineNumber: 87,
-                                    columnNumber: 15
-                                }, undefined))
+                                    lineNumber: 98,
+                                    columnNumber: 17
+                                }, undefined);
+                            })
                         }, void 0, false, {
                             fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                            lineNumber: 85,
+                            lineNumber: 94,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                    lineNumber: 43,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18880,24 +19111,11 @@ const EquipmentCapabilitiesSection = (props)=>{
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "alert alert-info shadow-lg max-w-2xl mx-auto",
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                xmlns: "http://www.w3.org/2000/svg",
-                                fill: "none",
-                                viewBox: "0 0 24 24",
-                                className: "stroke-current flex-shrink-0 w-6 h-6",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                    strokeLinecap: "round",
-                                    strokeLinejoin: "round",
-                                    strokeWidth: "2",
-                                    d: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                                }, void 0, false, {
-                                    fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                    lineNumber: 114,
-                                    columnNumber: 15
-                                }, undefined)
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.InformationCircleIcon), {
+                                className: "stroke-current flex-shrink-0 w-6 h-6"
                             }, void 0, false, {
                                 fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                                lineNumber: 108,
+                                lineNumber: 120,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18927,23 +19145,23 @@ const EquipmentCapabilitiesSection = (props)=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                        lineNumber: 107,
+                        lineNumber: 119,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-                    lineNumber: 106,
+                    lineNumber: 118,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-            lineNumber: 33,
+            lineNumber: 42,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/features/services/components/EquipmentCapabilitiesSection.tsx",
-        lineNumber: 32,
+        lineNumber: 41,
         columnNumber: 5
     }, undefined);
 };
@@ -18956,7 +19174,7 @@ $RefreshReg$(_c, "EquipmentCapabilitiesSection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"2x7iX":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@heroicons/react/24/outline":"d2LWn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:~/src/assets/images/truck_trailer.jpg":"fDlML"}],"2x7iX":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$9660 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$9660.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -18969,16 +19187,18 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "PricingPolicySection", ()=>PricingPolicySection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _outline = require("@heroicons/react/24/outline");
 const PricingPolicySection = (props)=>{
     const pricingDetails = [
         {
-            icon: "\uD83D\uDCB0",
+            icon: (0, _outline.CurrencyDollarIcon),
             title: "Hourly Rate",
             description: "$125/hour, 3-hour minimum",
             highlight: true
         },
         {
-            icon: "\uD83D\uDE9B",
+            icon: (0, _outline.TruckIcon),
             title: "Per Load",
             description: "Available for larger projects",
             highlight: false
@@ -18986,22 +19206,22 @@ const PricingPolicySection = (props)=>{
     ];
     const policies = [
         {
-            icon: "\uD83C\uDFD7\uFE0F",
+            icon: (0, _outline.BuildingOfficeIcon),
             title: "Disposal Fees",
             description: "Dump fees passed through at cost - not included in hourly rate"
         },
         {
-            icon: "\u23F0",
+            icon: (0, _outline.ClockIcon),
             title: "Wait Time",
             description: "Standard hourly rate applies for on-site waiting"
         },
         {
-            icon: "\uD83D\uDCC5",
+            icon: (0, _outline.CalendarDaysIcon),
             title: "Cancellation",
             description: "1 free cancellation per week; $50 fee thereafter"
         },
         {
-            icon: "\uD83D\uDD50",
+            icon: (0, _outline.ClockIcon),
             title: "Scheduling",
             description: "24-hour notice preferred for optimal scheduling"
         }
@@ -19019,7 +19239,7 @@ const PricingPolicySection = (props)=>{
                             children: "Pricing & Dumping Policy"
                         }, void 0, false, {
                             fileName: "src/features/services/components/PricingPolicySection.tsx",
-                            lineNumber: 49,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -19027,107 +19247,111 @@ const PricingPolicySection = (props)=>{
                             children: "Clear, transparent pricing with no hidden fees"
                         }, void 0, false, {
                             fileName: "src/features/services/components/PricingPolicySection.tsx",
-                            lineNumber: 52,
+                            lineNumber: 60,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/services/components/PricingPolicySection.tsx",
-                    lineNumber: 48,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "grid grid-cols-1 md:grid-cols-2 gap-6 mb-12",
-                    children: pricingDetails.map((pricing, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: pricingDetails.map((pricing, index)=>{
+                        const IconComponent = pricing.icon;
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: `card shadow-lg ${pricing.highlight ? "bg-primary text-primary-content" : "bg-base-200"}`,
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "card-body text-center",
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-4xl mb-4",
-                                        children: pricing.icon
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(IconComponent, {
+                                        className: `w-12 h-12 mx-auto mb-4 ${pricing.highlight ? "text-primary-content" : "text-secondary"}`
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                        lineNumber: 69,
-                                        columnNumber: 17
+                                        lineNumber: 79,
+                                        columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         className: "card-title justify-center text-xl font-bold mb-2",
                                         children: pricing.title
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                        lineNumber: 70,
-                                        columnNumber: 17
+                                        lineNumber: 86,
+                                        columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: `text-lg ${pricing.highlight ? "text-primary-content" : "text-base-content"}`,
                                         children: pricing.description
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                        lineNumber: 73,
-                                        columnNumber: 17
+                                        lineNumber: 89,
+                                        columnNumber: 19
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                lineNumber: 68,
-                                columnNumber: 15
+                                lineNumber: 78,
+                                columnNumber: 17
                             }, undefined)
                         }, index, false, {
                             fileName: "src/features/services/components/PricingPolicySection.tsx",
-                            lineNumber: 60,
-                            columnNumber: 13
-                        }, undefined))
+                            lineNumber: 70,
+                            columnNumber: 15
+                        }, undefined);
+                    })
                 }, void 0, false, {
                     fileName: "src/features/services/components/PricingPolicySection.tsx",
-                    lineNumber: 58,
+                    lineNumber: 66,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8",
-                    children: policies.map((policy, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: policies.map((policy, index)=>{
+                        const IconComponent = policy.icon;
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "card bg-base-200 shadow-md hover:shadow-lg transition-shadow duration-300",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "card-body text-center p-6",
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-3xl mb-3",
-                                        children: policy.icon
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(IconComponent, {
+                                        className: "w-8 h-8 mx-auto mb-3 text-secondary"
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                        lineNumber: 95,
-                                        columnNumber: 17
+                                        lineNumber: 114,
+                                        columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                         className: "font-bold text-base-content mb-2",
                                         children: policy.title
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                        lineNumber: 96,
-                                        columnNumber: 17
+                                        lineNumber: 115,
+                                        columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: "text-base-content/70 text-sm",
                                         children: policy.description
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                        lineNumber: 99,
-                                        columnNumber: 17
+                                        lineNumber: 118,
+                                        columnNumber: 19
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                lineNumber: 94,
-                                columnNumber: 15
+                                lineNumber: 113,
+                                columnNumber: 17
                             }, undefined)
                         }, index, false, {
                             fileName: "src/features/services/components/PricingPolicySection.tsx",
-                            lineNumber: 90,
-                            columnNumber: 13
-                        }, undefined))
+                            lineNumber: 109,
+                            columnNumber: 15
+                        }, undefined);
+                    })
                 }, void 0, false, {
                     fileName: "src/features/services/components/PricingPolicySection.tsx",
-                    lineNumber: 88,
+                    lineNumber: 105,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -19142,7 +19366,7 @@ const PricingPolicySection = (props)=>{
                                     children: "Need a Custom Quote?"
                                 }, void 0, false, {
                                     fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                    lineNumber: 111,
+                                    lineNumber: 131,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -19150,7 +19374,7 @@ const PricingPolicySection = (props)=>{
                                     children: "Large projects or unique requirements? Contact us for personalized pricing."
                                 }, void 0, false, {
                                     fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                    lineNumber: 114,
+                                    lineNumber: 134,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -19158,63 +19382,50 @@ const PricingPolicySection = (props)=>{
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                         className: "btn btn-primary btn-lg",
                                         children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                className: "mr-2 h-5 w-5",
-                                                fill: "none",
-                                                viewBox: "0 0 24 24",
-                                                stroke: "currentColor",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                    strokeLinecap: "round",
-                                                    strokeLinejoin: "round",
-                                                    strokeWidth: 2,
-                                                    d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                                                }, void 0, false, {
-                                                    fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                                    lineNumber: 126,
-                                                    columnNumber: 21
-                                                }, undefined)
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.PhoneIcon), {
+                                                className: "mr-2 h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                                lineNumber: 120,
+                                                lineNumber: 140,
                                                 columnNumber: 19
                                             }, undefined),
                                             "Get Quote"
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                        lineNumber: 119,
+                                        lineNumber: 139,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/services/components/PricingPolicySection.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 138,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/features/services/components/PricingPolicySection.tsx",
-                            lineNumber: 110,
+                            lineNumber: 130,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/features/services/components/PricingPolicySection.tsx",
-                        lineNumber: 109,
+                        lineNumber: 129,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/features/services/components/PricingPolicySection.tsx",
-                    lineNumber: 108,
+                    lineNumber: 128,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/features/services/components/PricingPolicySection.tsx",
-            lineNumber: 47,
+            lineNumber: 55,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/features/services/components/PricingPolicySection.tsx",
-        lineNumber: 46,
+        lineNumber: 54,
         columnNumber: 5
     }, undefined);
 };
@@ -19227,7 +19438,7 @@ $RefreshReg$(_c, "PricingPolicySection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"cHxbn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@heroicons/react/24/outline":"d2LWn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"cHxbn":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$97d5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$97d5.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -19240,10 +19451,12 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "WhoWeServeSection", ()=>WhoWeServeSection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _outline = require("@heroicons/react/24/outline");
 const WhoWeServeSection = (props)=>{
     const customers = [
         {
-            icon: "\uD83C\uDFD7\uFE0F",
+            icon: (0, _outline.BuildingOffice2Icon),
             title: "Builders",
             description: "Residential and commercial construction projects",
             services: [
@@ -19253,7 +19466,7 @@ const WhoWeServeSection = (props)=>{
             ]
         },
         {
-            icon: "\uD83D\uDC77",
+            icon: (0, _outline.UserGroupIcon),
             title: "General Contractors",
             description: "Multi-phase construction and renovation projects",
             services: [
@@ -19263,7 +19476,7 @@ const WhoWeServeSection = (props)=>{
             ]
         },
         {
-            icon: "\uD83D\uDE9C",
+            icon: (0, _outline.TruckIcon),
             title: "Excavation & Grading Crews",
             description: "Earthwork and site preparation specialists",
             services: [
@@ -19273,7 +19486,7 @@ const WhoWeServeSection = (props)=>{
             ]
         },
         {
-            icon: "\uD83C\uDFE0",
+            icon: (0, _outline.HomeIcon),
             title: "Roofers & Demo Teams",
             description: "Roofing and demolition professionals",
             services: [
@@ -19283,7 +19496,7 @@ const WhoWeServeSection = (props)=>{
             ]
         },
         {
-            icon: "\uD83D\uDD28",
+            icon: (0, _outline.WrenchScrewdriverIcon),
             title: "DIY Homeowners",
             description: "Property owners tackling their own projects",
             services: [
@@ -19306,7 +19519,7 @@ const WhoWeServeSection = (props)=>{
                             children: "Who We Serve"
                         }, void 0, false, {
                             fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                            lineNumber: 47,
+                            lineNumber: 56,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -19314,111 +19527,100 @@ const WhoWeServeSection = (props)=>{
                             children: "Professional hauling services for contractors, builders, and homeowners throughout Utah County"
                         }, void 0, false, {
                             fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                            lineNumber: 50,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                    lineNumber: 46,
+                    lineNumber: 55,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12",
-                    children: customers.map((customer, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: customers.map((customer, index)=>{
+                        const IconComponent = customer.icon;
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "card bg-base-100 shadow-lg hover:shadow-xl transition-shadow duration-300",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "card-body",
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-4xl mb-4 text-center",
-                                        children: customer.icon
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(IconComponent, {
+                                        className: "w-12 h-12 mx-auto mb-4 text-secondary"
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                                        lineNumber: 63,
-                                        columnNumber: 17
+                                        lineNumber: 74,
+                                        columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         className: "card-title justify-center text-xl font-bold text-base-content mb-2",
                                         children: customer.title
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                                        lineNumber: 64,
-                                        columnNumber: 17
+                                        lineNumber: 75,
+                                        columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: "text-base-content/70 text-sm text-center mb-4",
                                         children: customer.description
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                                        lineNumber: 67,
-                                        columnNumber: 17
+                                        lineNumber: 78,
+                                        columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "divider my-2"
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                                        lineNumber: 70,
-                                        columnNumber: 17
+                                        lineNumber: 81,
+                                        columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "space-y-2",
                                         children: customer.services.map((service, serviceIndex)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "flex items-center",
                                                 children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                        className: "w-4 h-4 text-primary mr-2 flex-shrink-0",
-                                                        fill: "none",
-                                                        viewBox: "0 0 24 24",
-                                                        stroke: "currentColor",
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                            strokeLinecap: "round",
-                                                            strokeLinejoin: "round",
-                                                            strokeWidth: 2,
-                                                            d: "M5 13l4 4L19 7"
-                                                        }, void 0, false, {
-                                                            fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                                                            lineNumber: 80,
-                                                            columnNumber: 25
-                                                        }, undefined)
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckIcon), {
+                                                        className: "w-4 h-4 text-primary mr-2 flex-shrink-0"
                                                     }, void 0, false, {
                                                         fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                                                        lineNumber: 74,
-                                                        columnNumber: 23
+                                                        lineNumber: 85,
+                                                        columnNumber: 25
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                         className: "text-sm text-base-content",
                                                         children: service
                                                     }, void 0, false, {
                                                         fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                                                        lineNumber: 87,
-                                                        columnNumber: 23
+                                                        lineNumber: 86,
+                                                        columnNumber: 25
                                                     }, undefined)
                                                 ]
                                             }, serviceIndex, true, {
                                                 fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                                                lineNumber: 73,
-                                                columnNumber: 21
+                                                lineNumber: 84,
+                                                columnNumber: 23
                                             }, undefined))
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                                        lineNumber: 71,
-                                        columnNumber: 17
+                                        lineNumber: 82,
+                                        columnNumber: 19
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                                lineNumber: 62,
-                                columnNumber: 15
+                                lineNumber: 73,
+                                columnNumber: 17
                             }, undefined)
                         }, index, false, {
                             fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                            lineNumber: 58,
-                            columnNumber: 13
-                        }, undefined))
+                            lineNumber: 69,
+                            columnNumber: 15
+                        }, undefined);
+                    })
                 }, void 0, false, {
                     fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                    lineNumber: 56,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -19449,21 +19651,8 @@ const WhoWeServeSection = (props)=>{
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                         className: "btn btn-secondary btn-lg",
                                         children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                className: "mr-2 h-5 w-5",
-                                                fill: "none",
-                                                viewBox: "0 0 24 24",
-                                                stroke: "currentColor",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                    strokeLinecap: "round",
-                                                    strokeLinejoin: "round",
-                                                    strokeWidth: 2,
-                                                    d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                                                }, void 0, false, {
-                                                    fileName: "src/features/services/components/WhoWeServeSection.tsx",
-                                                    lineNumber: 118,
-                                                    columnNumber: 21
-                                                }, undefined)
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.PhoneIcon), {
+                                                className: "mr-2 h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/WhoWeServeSection.tsx",
                                                 lineNumber: 112,
@@ -19500,12 +19689,12 @@ const WhoWeServeSection = (props)=>{
             ]
         }, void 0, true, {
             fileName: "src/features/services/components/WhoWeServeSection.tsx",
-            lineNumber: 45,
+            lineNumber: 54,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/features/services/components/WhoWeServeSection.tsx",
-        lineNumber: 44,
+        lineNumber: 53,
         columnNumber: 5
     }, undefined);
 };
@@ -19518,7 +19707,7 @@ $RefreshReg$(_c, "WhoWeServeSection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dZZdP":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@heroicons/react/24/outline":"d2LWn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dZZdP":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$8d93 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$8d93.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -19530,7 +19719,6 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "NotFoundPage", ()=>NotFoundPage);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
 const NotFoundPage = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -19548,7 +19736,7 @@ const NotFoundPage = ()=>{
                                 children: "404"
                             }, void 0, false, {
                                 fileName: "src/components/pages/NotFoundPage.tsx",
-                                lineNumber: 11,
+                                lineNumber: 10,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -19556,13 +19744,13 @@ const NotFoundPage = ()=>{
                                 children: "Page Not Found"
                             }, void 0, false, {
                                 fileName: "src/components/pages/NotFoundPage.tsx",
-                                lineNumber: 12,
+                                lineNumber: 11,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/pages/NotFoundPage.tsx",
-                        lineNumber: 10,
+                        lineNumber: 9,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -19573,7 +19761,7 @@ const NotFoundPage = ()=>{
                                 children: "Oops! We can't find that page"
                             }, void 0, false, {
                                 fileName: "src/components/pages/NotFoundPage.tsx",
-                                lineNumber: 19,
+                                lineNumber: 18,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -19581,13 +19769,13 @@ const NotFoundPage = ()=>{
                                 children: "The page you're looking for doesn't exist or has been moved."
                             }, void 0, false, {
                                 fileName: "src/components/pages/NotFoundPage.tsx",
-                                lineNumber: 22,
+                                lineNumber: 21,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/pages/NotFoundPage.tsx",
-                        lineNumber: 18,
+                        lineNumber: 17,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -19605,17 +19793,17 @@ const NotFoundPage = ()=>{
                                 d: "M9.172 16.172a4 4 0 015.656 0M9 12h6m-3-8a8 8 0 100 16 8 8 0 000-16z"
                             }, void 0, false, {
                                 fileName: "src/components/pages/NotFoundPage.tsx",
-                                lineNumber: 36,
+                                lineNumber: 35,
                                 columnNumber: 15
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/pages/NotFoundPage.tsx",
-                            lineNumber: 29,
+                            lineNumber: 28,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/pages/NotFoundPage.tsx",
-                        lineNumber: 28,
+                        lineNumber: 27,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -19637,19 +19825,19 @@ const NotFoundPage = ()=>{
                                             d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                                         }, void 0, false, {
                                             fileName: "src/components/pages/NotFoundPage.tsx",
-                                            lineNumber: 54,
+                                            lineNumber: 53,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/pages/NotFoundPage.tsx",
-                                        lineNumber: 48,
+                                        lineNumber: 47,
                                         columnNumber: 15
                                     }, undefined),
                                     "Go Home"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/pages/NotFoundPage.tsx",
-                                lineNumber: 47,
+                                lineNumber: 46,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -19668,25 +19856,25 @@ const NotFoundPage = ()=>{
                                             d: "M10 19l-7-7m0 0l7-7m-7 7h18"
                                         }, void 0, false, {
                                             fileName: "src/components/pages/NotFoundPage.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 73,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/pages/NotFoundPage.tsx",
-                                        lineNumber: 68,
+                                        lineNumber: 67,
                                         columnNumber: 15
                                     }, undefined),
                                     "Go Back"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/pages/NotFoundPage.tsx",
-                                lineNumber: 64,
+                                lineNumber: 63,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/pages/NotFoundPage.tsx",
-                        lineNumber: 46,
+                        lineNumber: 45,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -19702,7 +19890,7 @@ const NotFoundPage = ()=>{
                                     children: "contact page"
                                 }, void 0, false, {
                                     fileName: "src/components/pages/NotFoundPage.tsx",
-                                    lineNumber: 89,
+                                    lineNumber: 88,
                                     columnNumber: 15
                                 }, undefined),
                                 " ",
@@ -19714,35 +19902,35 @@ const NotFoundPage = ()=>{
                                     children: "services"
                                 }, void 0, false, {
                                     fileName: "src/components/pages/NotFoundPage.tsx",
-                                    lineNumber: 93,
+                                    lineNumber: 92,
                                     columnNumber: 15
                                 }, undefined),
                                 "."
                             ]
                         }, void 0, true, {
                             fileName: "src/components/pages/NotFoundPage.tsx",
-                            lineNumber: 87,
+                            lineNumber: 86,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/pages/NotFoundPage.tsx",
-                        lineNumber: 86,
+                        lineNumber: 85,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/pages/NotFoundPage.tsx",
-                lineNumber: 8,
+                lineNumber: 7,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/pages/NotFoundPage.tsx",
-            lineNumber: 7,
+            lineNumber: 6,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/pages/NotFoundPage.tsx",
-        lineNumber: 6,
+        lineNumber: 5,
         columnNumber: 5
     }, undefined);
 };
@@ -19756,7 +19944,7 @@ $RefreshReg$(_c, "NotFoundPage");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"fKeYf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"fKeYf":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react-router-dom":"fKeYf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"fKeYf":[function(require,module,exports,__globalThis) {
 /**
  * react-router-dom v7.6.3
  *
@@ -19787,7 +19975,6 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Layout", ()=>Layout);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
 var _navbar = require("../components/Navbar");
 var _footer = require("../components/Footer");
@@ -19797,30 +19984,30 @@ const Layout = (props)=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbar.Navbar), {}, void 0, false, {
                 fileName: "src/routes/Layout.tsx",
-                lineNumber: 11,
+                lineNumber: 10,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
                 className: "flex-1",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "src/routes/Layout.tsx",
-                    lineNumber: 13,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/routes/Layout.tsx",
-                lineNumber: 12,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footer.Footer), {}, void 0, false, {
                 fileName: "src/routes/Layout.tsx",
-                lineNumber: 15,
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/routes/Layout.tsx",
-        lineNumber: 10,
+        lineNumber: 9,
         columnNumber: 5
     }, undefined);
 };
@@ -19833,7 +20020,7 @@ $RefreshReg$(_c, "Layout");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"fKeYf","../components/Navbar":"9czgh","../components/Footer":"h30z4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"9czgh":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react-router-dom":"fKeYf","../components/Navbar":"9czgh","../components/Footer":"h30z4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"9czgh":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$74c8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$74c8.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -19845,7 +20032,6 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Navbar", ()=>Navbar);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
 const Navbar = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "navbar bg-base-100 shadow-sm",
@@ -19873,17 +20059,17 @@ const Navbar = (props)=>{
                                         d: "M4 6h16M4 12h8m-8 6h16"
                                     }, void 0, false, {
                                         fileName: "src/components/Navbar.tsx",
-                                        lineNumber: 18,
+                                        lineNumber: 16,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Navbar.tsx",
-                                    lineNumber: 11,
+                                    lineNumber: 9,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 10,
+                                lineNumber: 8,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -19896,12 +20082,12 @@ const Navbar = (props)=>{
                                             children: "Home"
                                         }, void 0, false, {
                                             fileName: "src/components/Navbar.tsx",
-                                            lineNumber: 31,
+                                            lineNumber: 29,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Navbar.tsx",
-                                        lineNumber: 30,
+                                        lineNumber: 28,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -19910,12 +20096,12 @@ const Navbar = (props)=>{
                                             children: "Services"
                                         }, void 0, false, {
                                             fileName: "src/components/Navbar.tsx",
-                                            lineNumber: 34,
+                                            lineNumber: 32,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Navbar.tsx",
-                                        lineNumber: 33,
+                                        lineNumber: 31,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -19924,12 +20110,12 @@ const Navbar = (props)=>{
                                             children: "About"
                                         }, void 0, false, {
                                             fileName: "src/components/Navbar.tsx",
-                                            lineNumber: 37,
+                                            lineNumber: 35,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Navbar.tsx",
-                                        lineNumber: 36,
+                                        lineNumber: 34,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -19938,24 +20124,24 @@ const Navbar = (props)=>{
                                             children: "Contact"
                                         }, void 0, false, {
                                             fileName: "src/components/Navbar.tsx",
-                                            lineNumber: 40,
+                                            lineNumber: 38,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Navbar.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 37,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 26,
+                                lineNumber: 24,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Navbar.tsx",
-                        lineNumber: 9,
+                        lineNumber: 7,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -19964,13 +20150,13 @@ const Navbar = (props)=>{
                         children: "McKell Logistics"
                     }, void 0, false, {
                         fileName: "src/components/Navbar.tsx",
-                        lineNumber: 44,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Navbar.tsx",
-                lineNumber: 8,
+                lineNumber: 6,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -19984,12 +20170,12 @@ const Navbar = (props)=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 51,
+                                lineNumber: 49,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 50,
+                            lineNumber: 48,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -19998,12 +20184,12 @@ const Navbar = (props)=>{
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 54,
+                                lineNumber: 52,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 53,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -20012,12 +20198,12 @@ const Navbar = (props)=>{
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 57,
+                                lineNumber: 55,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 56,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -20026,23 +20212,23 @@ const Navbar = (props)=>{
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 60,
+                                lineNumber: 58,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 59,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Navbar.tsx",
-                    lineNumber: 49,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Navbar.tsx",
-                lineNumber: 48,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20063,12 +20249,12 @@ const Navbar = (props)=>{
                                 d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 72,
+                                lineNumber: 70,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 66,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -20076,24 +20262,24 @@ const Navbar = (props)=>{
                             children: "Call Now"
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 79,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Navbar.tsx",
-                    lineNumber: 65,
+                    lineNumber: 63,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Navbar.tsx",
-                lineNumber: 64,
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Navbar.tsx",
-        lineNumber: 7,
+        lineNumber: 5,
         columnNumber: 5
     }, undefined);
 };
@@ -20106,7 +20292,7 @@ $RefreshReg$(_c, "Navbar");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"h30z4":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"h30z4":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$01fe = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$01fe.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -20118,7 +20304,6 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Footer", ()=>Footer);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
 const Footer = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
         className: "bg-base-300 text-base-content",
@@ -20135,7 +20320,7 @@ const Footer = (props)=>{
                                     children: "McKell Logistics"
                                 }, void 0, false, {
                                     fileName: "src/components/Footer.tsx",
-                                    lineNumber: 12,
+                                    lineNumber: 10,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -20143,7 +20328,7 @@ const Footer = (props)=>{
                                     children: "Professional construction hauling services in Utah County"
                                 }, void 0, false, {
                                     fileName: "src/components/Footer.tsx",
-                                    lineNumber: 13,
+                                    lineNumber: 11,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -20151,13 +20336,13 @@ const Footer = (props)=>{
                                     children: "Licensed & Insured"
                                 }, void 0, false, {
                                     fileName: "src/components/Footer.tsx",
-                                    lineNumber: 16,
+                                    lineNumber: 14,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Footer.tsx",
-                            lineNumber: 11,
+                            lineNumber: 9,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20167,7 +20352,7 @@ const Footer = (props)=>{
                                     children: "Quick Links"
                                 }, void 0, false, {
                                     fileName: "src/components/Footer.tsx",
-                                    lineNumber: 21,
+                                    lineNumber: 19,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -20180,12 +20365,12 @@ const Footer = (props)=>{
                                                 children: "Home"
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.tsx",
-                                                lineNumber: 24,
+                                                lineNumber: 22,
                                                 columnNumber: 17
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Footer.tsx",
-                                            lineNumber: 23,
+                                            lineNumber: 21,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -20195,12 +20380,12 @@ const Footer = (props)=>{
                                                 children: "Services"
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.tsx",
-                                                lineNumber: 29,
+                                                lineNumber: 27,
                                                 columnNumber: 17
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Footer.tsx",
-                                            lineNumber: 28,
+                                            lineNumber: 26,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -20210,12 +20395,12 @@ const Footer = (props)=>{
                                                 children: "About"
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.tsx",
-                                                lineNumber: 37,
+                                                lineNumber: 35,
                                                 columnNumber: 17
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Footer.tsx",
-                                            lineNumber: 36,
+                                            lineNumber: 34,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -20225,24 +20410,24 @@ const Footer = (props)=>{
                                                 children: "Contact"
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.tsx",
-                                                lineNumber: 45,
+                                                lineNumber: 43,
                                                 columnNumber: 17
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Footer.tsx",
-                                            lineNumber: 44,
+                                            lineNumber: 42,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Footer.tsx",
-                                    lineNumber: 22,
+                                    lineNumber: 20,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Footer.tsx",
-                            lineNumber: 20,
+                            lineNumber: 18,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20252,7 +20437,7 @@ const Footer = (props)=>{
                                     children: "Contact"
                                 }, void 0, false, {
                                     fileName: "src/components/Footer.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 55,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20265,12 +20450,12 @@ const Footer = (props)=>{
                                                 children: "(123) 456-7890"
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.tsx",
-                                                lineNumber: 60,
+                                                lineNumber: 58,
                                                 columnNumber: 17
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Footer.tsx",
-                                            lineNumber: 59,
+                                            lineNumber: 57,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -20280,37 +20465,37 @@ const Footer = (props)=>{
                                                 children: "info@mckelllogistics.com"
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.tsx",
-                                                lineNumber: 68,
+                                                lineNumber: 66,
                                                 columnNumber: 17
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Footer.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 65,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                             children: "Utah County, UT"
                                         }, void 0, false, {
                                             fileName: "src/components/Footer.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 73,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Footer.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 56,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Footer.tsx",
-                            lineNumber: 56,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Footer.tsx",
-                    lineNumber: 9,
+                    lineNumber: 7,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20319,23 +20504,23 @@ const Footer = (props)=>{
                         children: "\xa9 2025 McKell Logistics. All rights reserved."
                     }, void 0, false, {
                         fileName: "src/components/Footer.tsx",
-                        lineNumber: 82,
+                        lineNumber: 80,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Footer.tsx",
-                    lineNumber: 81,
+                    lineNumber: 79,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Footer.tsx",
-            lineNumber: 8,
+            lineNumber: 6,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Footer.tsx",
-        lineNumber: 7,
+        lineNumber: 5,
         columnNumber: 5
     }, undefined);
 };
@@ -20348,7 +20533,7 @@ $RefreshReg$(_c, "Footer");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"hrvwu":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"hrvwu":[function(require,module,exports,__globalThis) {
 'use strict';
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== 'function') return;
@@ -34777,6 +34962,6 @@ module.exports = require("b0f0e6b9e8349dac");
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
-},{"6f0162e9ab224cd4":"jMk1U"}],"irmnC":[function() {},{}]},["eluO8","lzhIH"], "lzhIH", "parcelRequired9ce", {}, null, null, "http://localhost:1234")
+},{"6f0162e9ab224cd4":"jMk1U"}],"irmnC":[function() {},{}]},["eluO8","lzhIH"], "lzhIH", "parcelRequired9ce", {}, "./", "/", "http://localhost:1234")
 
 //# sourceMappingURL=public.2ef0291c.js.map

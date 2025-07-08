@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react"
+import { PhoneIcon, CheckIcon } from "@heroicons/react/24/outline";
 
 type HowToBookSectionProps = {};
 
@@ -69,7 +70,6 @@ export const HowToBookSection = (props: HowToBookSectionProps) => {
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="form-control">
-                  
                   <input
                     type="text"
                     name="name"
@@ -82,7 +82,6 @@ export const HowToBookSection = (props: HowToBookSectionProps) => {
                 </div>
 
                 <div className="form-control">
-                 
                   <input
                     type="tel"
                     name="phone"
@@ -95,7 +94,6 @@ export const HowToBookSection = (props: HowToBookSectionProps) => {
                 </div>
 
                 <div className="form-control">
-                  
                   <select
                     name="jobType"
                     value={formData.jobType}
@@ -154,7 +152,7 @@ export const HowToBookSection = (props: HowToBookSectionProps) => {
             {/* Phone Contact */}
             <div className="card bg-primary text-primary-content shadow-lg">
               <div className="card-body text-center">
-                <div className="text-4xl mb-4">📞</div>
+                <PhoneIcon className="w-16 h-16 mx-auto mb-4 text-primary-content" />
                 <h3 className="card-title justify-center text-xl font-bold mb-2">
                   Call Us Directly
                 </h3>
@@ -180,53 +178,17 @@ export const HowToBookSection = (props: HowToBookSectionProps) => {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-center">
-                    <svg
-                      className="w-5 h-5 text-primary mr-3"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
+                    <CheckIcon className="w-5 h-5 text-primary mr-3" />
                     <span className="text-sm">
                       Form responses within 2 hours
                     </span>
                   </div>
                   <div className="flex items-center">
-                    <svg
-                      className="w-5 h-5 text-primary mr-3"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
+                    <CheckIcon className="w-5 h-5 text-primary mr-3" />
                     <span className="text-sm">Free quotes and estimates</span>
                   </div>
                   <div className="flex items-center">
-                    <svg
-                      className="w-5 h-5 text-primary mr-3"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
+                    <CheckIcon className="w-5 h-5 text-primary mr-3" />
                     <span className="text-sm">Same-day service available</span>
                   </div>
                 </div>

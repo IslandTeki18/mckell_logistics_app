@@ -1,23 +1,32 @@
-import * as React from "react";
+import React from "react";
+import {
+  BuildingOffice2Icon,
+  UserGroupIcon,
+  TruckIcon,
+  HomeIcon,
+  WrenchScrewdriverIcon,
+  CheckIcon,
+  PhoneIcon,
+} from "@heroicons/react/24/outline";
 
 type WhoWeServeSectionProps = {};
 
 export const WhoWeServeSection = (props: WhoWeServeSectionProps) => {
   const customers = [
     {
-      icon: "🏗️",
+      icon: BuildingOffice2Icon,
       title: "Builders",
       description: "Residential and commercial construction projects",
       services: ["Material delivery", "Site cleanup", "Debris removal"],
     },
     {
-      icon: "👷",
+      icon: UserGroupIcon,
       title: "General Contractors",
       description: "Multi-phase construction and renovation projects",
       services: ["Bulk material transport", "Waste management", "Site prep"],
     },
     {
-      icon: "🚜",
+      icon: TruckIcon,
       title: "Excavation & Grading Crews",
       description: "Earthwork and site preparation specialists",
       services: [
@@ -27,13 +36,13 @@ export const WhoWeServeSection = (props: WhoWeServeSectionProps) => {
       ],
     },
     {
-      icon: "🏠",
+      icon: HomeIcon,
       title: "Roofers & Demo Teams",
       description: "Roofing and demolition professionals",
       services: ["Debris disposal", "Material cleanup", "Waste removal"],
     },
     {
-      icon: "🔨",
+      icon: WrenchScrewdriverIcon,
       title: "DIY Homeowners",
       description: "Property owners tackling their own projects",
       services: ["Material delivery", "Yard waste removal", "Small loads"],
@@ -54,45 +63,36 @@ export const WhoWeServeSection = (props: WhoWeServeSectionProps) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {customers.map((customer, index) => (
-            <div
-              key={index}
-              className="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="card-body">
-                <div className="text-4xl mb-4 text-center">{customer.icon}</div>
-                <h3 className="card-title justify-center text-xl font-bold text-base-content mb-2">
-                  {customer.title}
-                </h3>
-                <p className="text-base-content/70 text-sm text-center mb-4">
-                  {customer.description}
-                </p>
-                <div className="divider my-2"></div>
-                <div className="space-y-2">
-                  {customer.services.map((service, serviceIndex) => (
-                    <div key={serviceIndex} className="flex items-center">
-                      <svg
-                        className="w-4 h-4 text-primary mr-2 flex-shrink-0"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      <span className="text-sm text-base-content">
-                        {service}
-                      </span>
-                    </div>
-                  ))}
+          {customers.map((customer, index) => {
+            const IconComponent = customer.icon;
+            return (
+              <div
+                key={index}
+                className="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="card-body">
+                  <IconComponent className="w-12 h-12 mx-auto mb-4 text-secondary" />
+                  <h3 className="card-title justify-center text-xl font-bold text-base-content mb-2">
+                    {customer.title}
+                  </h3>
+                  <p className="text-base-content/70 text-sm text-center mb-4">
+                    {customer.description}
+                  </p>
+                  <div className="divider my-2"></div>
+                  <div className="space-y-2">
+                    {customer.services.map((service, serviceIndex) => (
+                      <div key={serviceIndex} className="flex items-center">
+                        <CheckIcon className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
+                        <span className="text-sm text-base-content">
+                          {service}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Call to Action */}
@@ -109,19 +109,7 @@ export const WhoWeServeSection = (props: WhoWeServeSectionProps) => {
               </p>
               <div className="card-actions justify-center">
                 <button className="btn btn-secondary btn-lg">
-                  <svg
-                    className="mr-2 h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
+                  <PhoneIcon className="mr-2 h-5 w-5" />
                   Contact Us Today
                 </button>
               </div>

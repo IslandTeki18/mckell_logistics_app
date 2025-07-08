@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { CallToActionHeaderSection } from "../components/CalledToActionHeaderSection";
 import { CallOrTextSection } from "../components/CallOrTextSection";
 import { HowToBookSection } from "~src/features/services/components/HowToBookSection";

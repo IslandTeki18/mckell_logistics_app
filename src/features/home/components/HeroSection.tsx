@@ -1,5 +1,7 @@
-import * as React from "react";
+import React from "react";
 import { PhoneIcon } from "@heroicons/react/24/outline";
+// @ts-ignore
+import truck from "url:~src/assets/images/truck_trailer.jpg";
 
 type HeroSectionProps = {};
 
@@ -10,7 +12,7 @@ export const HeroSection = (props: HeroSectionProps) => {
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="max-w-md lg:max-w-lg">
             <img
-              src="https://placehold.co/600x400"
+              src={truck}
               alt="Construction hauling truck with side dump trailer"
               className="rounded-lg shadow-2xl w-full"
             />

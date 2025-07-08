@@ -1,5 +1,3 @@
-import * as React from "react";
-
 type NavbarProps = {};
 
 export const Navbar = (props: NavbarProps) => {

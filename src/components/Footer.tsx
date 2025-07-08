@@ -1,5 +1,3 @@
-import * as React from "react";
-
 type FooterProps = {};
 
 export const Footer = (props: FooterProps) => {
@@ -79,10 +77,7 @@ export const Footer = (props: FooterProps) => {
 
         {/* Bottom Bar */}
         <div className="border-t border-base-content/20 mt-8 pt-8 text-center text-base-content/60">
-          <p>
-            &copy; 2025 McKell Logistics. All rights
-            reserved.
-          </p>
+          <p>&copy; 2025 McKell Logistics. All rights reserved.</p>
         </div>
       </div>
     </footer>

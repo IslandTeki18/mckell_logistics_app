@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { WhatWeHaulSection } from "../components/WhatWeHaulSection";
 import { EquipmentCapabilitiesSection } from "../components/EquipmentCapabilitiesSection";
 import { ServiceAreaSection } from "~src/features/home/components/ServiceAreaSection";
