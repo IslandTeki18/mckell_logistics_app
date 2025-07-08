@@ -1,4 +1,11 @@
 import * as React from "react";
+import {
+  UserIcon,
+  ClockIcon,
+  ShieldCheckIcon,
+  CurrencyDollarIcon,
+  CheckIcon,
+} from "@heroicons/react/24/outline";
 
 type WhyChooseUsSectionProps = {};
 
@@ -18,20 +25,8 @@ export const WhyChooseUsSection = (props: WhyChooseUsSectionProps) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {/* Experienced Operator */}
           <div className="text-center">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg
-                className="w-8 h-8 text-primary"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                />
-              </svg>
+            <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <UserIcon className="w-8 h-8 text-secondary" />
             </div>
             <h3 className="text-xl font-semibold text-base-content mb-2">
               Experienced Operator
@@ -44,20 +39,8 @@ export const WhyChooseUsSection = (props: WhyChooseUsSectionProps) => {
 
           {/* On-Time Delivery */}
           <div className="text-center">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg
-                className="w-8 h-8 text-primary"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+            <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <ClockIcon className="w-8 h-8 text-secondary" />
             </div>
             <h3 className="text-xl font-semibold text-base-content mb-2">
               On-Time Delivery
@@ -70,20 +53,8 @@ export const WhyChooseUsSection = (props: WhyChooseUsSectionProps) => {
 
           {/* Licensed & Insured */}
           <div className="text-center">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg
-                className="w-8 h-8 text-primary"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                />
-              </svg>
+            <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <ShieldCheckIcon className="w-8 h-8 text-secondary" />
             </div>
             <h3 className="text-xl font-semibold text-base-content mb-2">
               Licensed & Insured
@@ -95,20 +66,8 @@ export const WhyChooseUsSection = (props: WhyChooseUsSectionProps) => {
 
           {/* Straightforward Pricing */}
           <div className="text-center">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg
-                className="w-8 h-8 text-primary"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"
-                />
-              </svg>
+            <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <CurrencyDollarIcon className="w-8 h-8 text-secondary" />
             </div>
             <h3 className="text-xl font-semibold text-base-content mb-2">
               Straightforward Pricing
@@ -121,21 +80,9 @@ export const WhyChooseUsSection = (props: WhyChooseUsSectionProps) => {
 
         {/* Trust Badge */}
         <div className="text-center mt-12">
-          <div className="inline-flex items-center space-x-2 bg-primary/10 rounded-full px-6 py-3">
-            <svg
-              className="w-5 h-5 text-primary"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            <span className="text-primary font-semibold">
+          <div className="inline-flex items-center space-x-2 bg-secondary/10 rounded-full px-6 py-3">
+            <CheckIcon className="w-5 h-5 text-secondary" />
+            <span className="text-secondary font-semibold">
               Trusted by Utah County contractors
             </span>
           </div>
