@@ -1,0 +1,18 @@
+import * as React from "react";
+import { Outlet } from "react-router-dom";
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
+
+type LayoutProps = {};
+
+export const Layout = (props: LayoutProps) => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-1">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
+};
