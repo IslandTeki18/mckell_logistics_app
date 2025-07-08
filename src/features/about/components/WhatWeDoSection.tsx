@@ -1,20 +1,29 @@
 import React from "react";
+import {
+  CheckCircleIcon,
+  TruckIcon,
+  WrenchScrewdriverIcon,
+  BoltIcon,
+} from "@heroicons/react/24/outline";
+// @ts-ignore
+import loadedTruckTrailerImage from "url:~/src/assets/images/loaded_truck_trailer.jpg";
+
 type WhatWeDoSectionProps = {};
 
 export const WhatWeDoSection = (props: WhatWeDoSectionProps) => {
   const services = [
     {
-      icon: "🚛",
+      icon: TruckIcon,
       title: "Material Hauling",
       description: "Dirt, gravel, sand, and construction materials",
     },
     {
-      icon: "🏗️",
+      icon: WrenchScrewdriverIcon,
       title: "Debris Removal",
       description: "Construction waste and demolition cleanup",
     },
     {
-      icon: "⚡",
+      icon: BoltIcon,
       title: "Side Dump Trailer",
       description: "Efficient unloading for faster project completion",
     },
@@ -56,55 +65,19 @@ export const WhatWeDoSection = (props: WhatWeDoSectionProps) => {
               {/* Key Features */}
               <div className="space-y-3">
                 <div className="flex items-center">
-                  <svg
-                    className="w-5 h-5 text-primary mr-3"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
+                  <CheckCircleIcon className="w-5 h-5 text-primary mr-3" />
                   <span className="text-base-content">
                     Safe handling and transport
                   </span>
                 </div>
                 <div className="flex items-center">
-                  <svg
-                    className="w-5 h-5 text-primary mr-3"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
+                  <CheckCircleIcon className="w-5 h-5 text-primary mr-3" />
                   <span className="text-base-content">
                     On-time delivery guarantee
                   </span>
                 </div>
                 <div className="flex items-center">
-                  <svg
-                    className="w-5 h-5 text-primary mr-3"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
+                  <CheckCircleIcon className="w-5 h-5 text-primary mr-3" />
                   <span className="text-base-content">
                     Construction industry expertise
                   </span>
@@ -115,10 +88,10 @@ export const WhatWeDoSection = (props: WhatWeDoSectionProps) => {
 
           {/* Equipment Image */}
           <div className="order-1 lg:order-2">
-            <div className="card bg-base-100 shadow-lg">
-              <figure className="px-6 pt-6">
+            <div className="card bg-base-100 shadow-lg border border-base-300">
+              <figure className="p-2">
                 <img
-                  src="https://placehold.co/500x350/4A5568/FFFFFF?text=Side+Dump+Trailer+in+Action"
+                  src={loadedTruckTrailerImage}
                   alt="Side dump trailer unloading materials"
                   className="rounded-lg w-full h-64 object-cover"
                 />
@@ -129,24 +102,32 @@ export const WhatWeDoSection = (props: WhatWeDoSectionProps) => {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {services.map((service, index) => (
-            <div key={index} className="card bg-base-100 shadow-lg">
-              <div className="card-body text-center">
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <h4 className="card-title justify-center text-lg font-bold text-base-content mb-2">
-                  {service.title}
-                </h4>
-                <p className="text-base-content/70 text-sm">
-                  {service.description}
-                </p>
+          {services.map((service, index) => {
+            const IconComponent = service.icon;
+            return (
+              <div
+                key={index}
+                className="card bg-base-100 shadow-lg border border-base-300"
+              >
+                <div className="card-body text-center">
+                  <div className="flex justify-center mb-4">
+                    <IconComponent className="w-12 h-12 text-primary" />
+                  </div>
+                  <h4 className="card-title justify-center text-lg font-bold text-base-content mb-2">
+                    {service.title}
+                  </h4>
+                  <p className="text-base-content/70 text-sm">
+                    {service.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Mission Statement */}
         <div className="text-center">
-          <div className="card bg-primary text-primary-content shadow-lg max-w-3xl mx-auto">
+          <div className="card bg-primary text-primary-content shadow-lg border border-primary/20 max-w-3xl mx-auto">
             <div className="card-body">
               <h3 className="text-xl font-bold mb-4">Our Mission</h3>
               <p className="text-lg text-primary-content/90">

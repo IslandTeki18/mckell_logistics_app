@@ -25,7 +25,7 @@ export const ServiceAreaSection = (props: ServiceAreaSectionProps) => {
               <img
                 src={utahCountyMap}
                 alt="Utah County Service Area Map"
-                className="rounded-lg w-full h-full object-cover"
+                className="rounded-lg w-full h-auto object-cover"
               />
             </div>
           </div>

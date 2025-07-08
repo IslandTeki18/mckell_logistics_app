@@ -1,4 +1,13 @@
 import React from "react";
+import {
+  PhoneIcon,
+  ChatBubbleLeftRightIcon,
+  DocumentTextIcon,
+  ClockIcon,
+  CheckCircleIcon,
+  BoltIcon,
+} from "@heroicons/react/24/outline";
+
 type CallToActionHeaderSectionProps = {};
 
 export const CallToActionHeaderSection = (
@@ -19,35 +28,43 @@ export const CallToActionHeaderSection = (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <div className="card bg-primary-content text-primary shadow-lg">
               <div className="card-body text-center">
-                <div className="text-3xl mb-3">📞</div>
+                <div className="flex justify-center mb-3">
+                  <PhoneIcon className="w-12 h-12" />
+                </div>
                 <h3 className="card-title justify-center text-lg font-bold mb-2">
                   Call Us
                 </h3>
                 <p className="text-primary/80 text-sm mb-4">
                   Speak directly with us for immediate assistance
                 </p>
-                <button className="btn btn-primary btn-sm">
+                <a href="tel:+18015550123" className="btn btn-primary btn-sm">
                   (801) 555-0123
-                </button>
+                </a>
               </div>
             </div>
 
             <div className="card bg-primary-content text-primary shadow-lg">
               <div className="card-body text-center">
-                <div className="text-3xl mb-3">💬</div>
+                <div className="flex justify-center mb-3">
+                  <ChatBubbleLeftRightIcon className="w-12 h-12" />
+                </div>
                 <h3 className="card-title justify-center text-lg font-bold mb-2">
                   Text Us
                 </h3>
                 <p className="text-primary/80 text-sm mb-4">
                   Quick questions or schedule via text
                 </p>
-                <button className="btn btn-primary btn-sm">Send Text</button>
+                <a href="sms:+18015550123" className="btn btn-primary btn-sm">
+                  Send Text
+                </a>
               </div>
             </div>
 
             <div className="card bg-primary-content text-primary shadow-lg">
               <div className="card-body text-center">
-                <div className="text-3xl mb-3">📋</div>
+                <div className="flex justify-center mb-3">
+                  <DocumentTextIcon className="w-12 h-12" />
+                </div>
                 <h3 className="card-title justify-center text-lg font-bold mb-2">
                   Send Request
                 </h3>
@@ -62,51 +79,15 @@ export const CallToActionHeaderSection = (
           {/* Quick Info */}
           <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-6 text-primary-content/80">
             <div className="flex items-center">
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+              <ClockIcon className="w-5 h-5 mr-2" />
               <span>Response within 2 hours</span>
             </div>
             <div className="flex items-center">
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+              <CheckCircleIcon className="w-5 h-5 mr-2" />
               <span>Free estimates</span>
             </div>
             <div className="flex items-center">
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                />
-              </svg>
+              <BoltIcon className="w-5 h-5 mr-2" />
               <span>Same-day service available</span>
             </div>
           </div>

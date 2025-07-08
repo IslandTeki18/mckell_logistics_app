@@ -64,86 +64,91 @@ export const HowToBookSection = (props: HowToBookSectionProps) => {
           {/* Booking Form */}
           <div className="card bg-base-200 shadow-lg">
             <div className="card-body">
-              <h3 className="card-title text-xl font-bold text-base-content mb-6">
+              <h3 className="card-title text-xl font-bold text-base-content mb-6 justify-center">
                 Request a Quote
               </h3>
 
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="form-control">
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Your full name"
-                    className="input input-bordered"
-                    required
-                  />
-                </div>
+              <div className="max-w-md mx-auto w-full">
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div className="form-control">
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="Your full name"
+                      className="input input-bordered w-full"
+                      required
+                    />
+                  </div>
 
-                <div className="form-control">
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="(555) 123-4567"
-                    className="input input-bordered"
-                    required
-                  />
-                </div>
+                  <div className="form-control">
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="(555) 123-4567"
+                      className="input input-bordered w-full"
+                      required
+                    />
+                  </div>
 
-                <div className="form-control">
-                  <select
-                    name="jobType"
-                    value={formData.jobType}
-                    onChange={handleChange}
-                    className="select select-bordered"
-                    required
-                  >
-                    <option value="">Select job type</option>
-                    {jobTypes.map((type, index) => (
-                      <option key={index} value={type}>
-                        {type}
-                      </option>
-                    ))}
-                  </select>
-                </div>
+                  <div className="form-control">
+                    <select
+                      name="jobType"
+                      value={formData.jobType}
+                      onChange={handleChange}
+                      className="select select-bordered w-full"
+                      required
+                    >
+                      <option value="">Select job type</option>
+                      {jobTypes.map((type, index) => (
+                        <option key={index} value={type}>
+                          {type}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
 
-                <div className="form-control">
-                  <textarea
-                    name="address"
-                    value={formData.address}
-                    onChange={handleChange}
-                    placeholder="Job site address or location"
-                    className="textarea textarea-bordered h-20"
-                    required
-                  />
-                </div>
+                  <div className="form-control">
+                    <textarea
+                      name="address"
+                      value={formData.address}
+                      onChange={handleChange}
+                      placeholder="Job site address or location"
+                      className="textarea textarea-bordered h-20 w-full"
+                      required
+                    />
+                  </div>
 
-                <div className="form-control">
-                  <select
-                    name="timeframe"
-                    value={formData.timeframe}
-                    onChange={handleChange}
-                    className="select select-bordered"
-                    required
-                  >
-                    <option value="">When do you need this done?</option>
-                    {timeframes.map((timeframe, index) => (
-                      <option key={index} value={timeframe}>
-                        {timeframe}
-                      </option>
-                    ))}
-                  </select>
-                </div>
+                  <div className="form-control">
+                    <select
+                      name="timeframe"
+                      value={formData.timeframe}
+                      onChange={handleChange}
+                      className="select select-bordered w-full"
+                      required
+                    >
+                      <option value="">When do you need this done?</option>
+                      {timeframes.map((timeframe, index) => (
+                        <option key={index} value={timeframe}>
+                          {timeframe}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
 
-                <div className="form-control mt-6">
-                  <button type="submit" className="btn btn-primary btn-lg">
-                    Submit Request
-                  </button>
-                </div>
-              </form>
+                  <div className="form-control mt-6">
+                    <button
+                      type="submit"
+                      className="btn btn-primary btn-lg w-full"
+                    >
+                      Submit Request
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
 

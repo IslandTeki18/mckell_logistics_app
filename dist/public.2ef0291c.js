@@ -11755,6 +11755,9 @@ parcelHelpers.export(exports, "WhoWeAreSection", ()=>WhoWeAreSection);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _outline = require("@heroicons/react/24/outline");
+var _portraitFinalJpeg = require("url:../assets/images/portrait_final.jpeg");
+var _portraitFinalJpegDefault = parcelHelpers.interopDefault(_portraitFinalJpeg);
 const WhoWeAreSection = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "py-16 bg-base-100",
@@ -11769,7 +11772,7 @@ const WhoWeAreSection = (props)=>{
                             children: "Who We Are"
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                            lineNumber: 9,
+                            lineNumber: 17,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11777,13 +11780,13 @@ const WhoWeAreSection = (props)=>{
                             children: "Local expertise you can trust for all your hauling needs"
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                            lineNumber: 12,
+                            lineNumber: 20,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                    lineNumber: 8,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11792,31 +11795,31 @@ const WhoWeAreSection = (props)=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "order-2 lg:order-1",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "card bg-base-200 shadow-lg",
+                                className: "card bg-base-200 shadow-xl border border-base-300",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
-                                    className: "px-6 pt-6",
+                                    className: "p-2",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: "https://placehold.co/500x400/4A5568/FFFFFF?text=McKell+Logistics+Owner",
+                                        src: (0, _portraitFinalJpegDefault.default),
                                         alt: "McKell Logistics owner with truck",
-                                        className: "rounded-lg w-full h-80 object-cover"
+                                        className: "rounded-lg w-full h-auto object-cover object-center"
                                     }, void 0, false, {
                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                        lineNumber: 22,
+                                        lineNumber: 30,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                    lineNumber: 21,
+                                    lineNumber: 29,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                lineNumber: 20,
+                                lineNumber: 28,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                            lineNumber: 19,
+                            lineNumber: 27,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11827,19 +11830,19 @@ const WhoWeAreSection = (props)=>{
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                className: "text-2xl font-bold text-base-content mb-4",
+                                                className: "text-2xl font-bold text-primary mb-4",
                                                 children: "McKell Logistics"
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 35,
+                                                lineNumber: 43,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                className: "text-lg text-base-content/80 mb-4",
+                                                className: "text-lg text-base-content mb-4",
                                                 children: "McKell Logistics is a solo-owned hauling company serving the Utah County area with reliable, professional service."
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 38,
+                                                lineNumber: 46,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11847,29 +11850,35 @@ const WhoWeAreSection = (props)=>{
                                                 children: "Founded with a passion for construction and a commitment to excellence, we've built our reputation on punctuality, fair pricing, and going the extra mile for every client."
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 42,
+                                                lineNumber: 50,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                        lineNumber: 34,
+                                        lineNumber: 42,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "grid grid-cols-1 sm:grid-cols-3 gap-4",
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "card bg-primary text-primary-content shadow-md",
+                                                className: "card bg-primary text-primary-content shadow-lg border border-primary/20",
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     className: "card-body text-center p-4",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            className: "text-2xl mb-2",
-                                                            children: "\uD83C\uDFE0"
+                                                            className: "flex justify-center mb-2",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.HomeIcon), {
+                                                                className: "w-8 h-8"
+                                                            }, void 0, false, {
+                                                                fileName: "src/features/about/components/WhoWeAreSection.tsx",
+                                                                lineNumber: 62,
+                                                                columnNumber: 23
+                                                            }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 53,
+                                                            lineNumber: 61,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -11877,52 +11886,12 @@ const WhoWeAreSection = (props)=>{
                                                             children: "Local Roots"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 54,
+                                                            lineNumber: 64,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                             className: "text-xs text-primary-content/80",
                                                             children: "Utah County native"
-                                                        }, void 0, false, {
-                                                            fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 55,
-                                                            columnNumber: 21
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 52,
-                                                    columnNumber: 19
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 51,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "card bg-secondary text-secondary-content shadow-md",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "card-body text-center p-4",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            className: "text-2xl mb-2",
-                                                            children: "\u26A1"
-                                                        }, void 0, false, {
-                                                            fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 63,
-                                                            columnNumber: 21
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                            className: "font-bold text-sm",
-                                                            children: "Reliability"
-                                                        }, void 0, false, {
-                                                            fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 64,
-                                                            columnNumber: 21
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                            className: "text-xs text-secondary-content/80",
-                                                            children: "On-time service"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
                                                             lineNumber: 65,
@@ -11931,22 +11900,28 @@ const WhoWeAreSection = (props)=>{
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 62,
+                                                    lineNumber: 60,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 61,
+                                                lineNumber: 59,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "card bg-accent text-accent-content shadow-md",
+                                                className: "card bg-secondary text-secondary-content shadow-lg border border-secondary/20",
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     className: "card-body text-center p-4",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            className: "text-2xl mb-2",
-                                                            children: "\uD83E\uDD1D"
+                                                            className: "flex justify-center mb-2",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.BoltIcon), {
+                                                                className: "w-8 h-8"
+                                                            }, void 0, false, {
+                                                                fileName: "src/features/about/components/WhoWeAreSection.tsx",
+                                                                lineNumber: 74,
+                                                                columnNumber: 23
+                                                            }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
                                                             lineNumber: 73,
@@ -11954,18 +11929,18 @@ const WhoWeAreSection = (props)=>{
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                                             className: "font-bold text-sm",
-                                                            children: "Hands-On"
+                                                            children: "Reliability"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 74,
+                                                            lineNumber: 76,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                            className: "text-xs text-accent-content/80",
-                                                            children: "Personal service"
+                                                            className: "text-xs text-secondary-content/80",
+                                                            children: "On-time service"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 75,
+                                                            lineNumber: 77,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     ]
@@ -11978,24 +11953,70 @@ const WhoWeAreSection = (props)=>{
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
                                                 lineNumber: 71,
                                                 columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "card bg-accent text-accent-content shadow-lg border border-accent/20",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "card-body text-center p-4",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "flex justify-center mb-2",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.HandRaisedIcon), {
+                                                                className: "w-8 h-8"
+                                                            }, void 0, false, {
+                                                                fileName: "src/features/about/components/WhoWeAreSection.tsx",
+                                                                lineNumber: 86,
+                                                                columnNumber: 23
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/features/about/components/WhoWeAreSection.tsx",
+                                                            lineNumber: 85,
+                                                            columnNumber: 21
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                            className: "font-bold text-sm",
+                                                            children: "Hands-On"
+                                                        }, void 0, false, {
+                                                            fileName: "src/features/about/components/WhoWeAreSection.tsx",
+                                                            lineNumber: 88,
+                                                            columnNumber: 21
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            className: "text-xs text-accent-content/80",
+                                                            children: "Personal service"
+                                                        }, void 0, false, {
+                                                            fileName: "src/features/about/components/WhoWeAreSection.tsx",
+                                                            lineNumber: 89,
+                                                            columnNumber: 21
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/features/about/components/WhoWeAreSection.tsx",
+                                                    lineNumber: 84,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/features/about/components/WhoWeAreSection.tsx",
+                                                lineNumber: 83,
+                                                columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                        lineNumber: 50,
+                                        lineNumber: 58,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "card bg-base-200 shadow-md",
+                                        className: "card bg-base-200 shadow-lg border border-base-300",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "card-body",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                    className: "font-bold text-base-content mb-2",
+                                                    className: "font-bold text-primary mb-2",
                                                     children: "Our Mission"
                                                 }, void 0, false, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 85,
+                                                    lineNumber: 99,
                                                     columnNumber: 19
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -12003,46 +12024,9 @@ const WhoWeAreSection = (props)=>{
                                                     children: "To provide Utah County contractors and homeowners with dependable, professional hauling services that keep projects moving forward on time and on budget."
                                                 }, void 0, false, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 88,
+                                                    lineNumber: 100,
                                                     columnNumber: 19
                                                 }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                            lineNumber: 84,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                        lineNumber: 83,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-center lg:text-left",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                            className: "btn btn-primary btn-lg",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                    className: "mr-2 h-5 w-5",
-                                                    fill: "none",
-                                                    viewBox: "0 0 24 24",
-                                                    stroke: "currentColor",
-                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                        strokeLinecap: "round",
-                                                        strokeLinejoin: "round",
-                                                        strokeWidth: 2,
-                                                        d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                                                    }, void 0, false, {
-                                                        fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                        lineNumber: 105,
-                                                        columnNumber: 21
-                                                    }, undefined)
-                                                }, void 0, false, {
-                                                    fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 99,
-                                                    columnNumber: 19
-                                                }, undefined),
-                                                "Get In Touch"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
@@ -12053,33 +12037,57 @@ const WhoWeAreSection = (props)=>{
                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
                                         lineNumber: 97,
                                         columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-center lg:text-left",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                            className: "btn btn-primary btn-lg shadow-lg hover:shadow-xl transition-shadow",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.PhoneIcon), {
+                                                    className: "mr-2 h-5 w-5"
+                                                }, void 0, false, {
+                                                    fileName: "src/features/about/components/WhoWeAreSection.tsx",
+                                                    lineNumber: 111,
+                                                    columnNumber: 19
+                                                }, undefined),
+                                                "Get In Touch"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/features/about/components/WhoWeAreSection.tsx",
+                                            lineNumber: 110,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/features/about/components/WhoWeAreSection.tsx",
+                                        lineNumber: 109,
+                                        columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                lineNumber: 33,
+                                lineNumber: 41,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                            lineNumber: 32,
+                            lineNumber: 40,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                    lineNumber: 17,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-            lineNumber: 7,
+            lineNumber: 15,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-        lineNumber: 6,
+        lineNumber: 14,
         columnNumber: 5
     }, undefined);
 };
@@ -12092,7 +12100,7 @@ $RefreshReg$(_c, "WhoWeAreSection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"7h6Pi":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","@heroicons/react/24/outline":"d2LWn","url:../assets/images/portrait_final.jpeg":"68neP"}],"7h6Pi":[function(require,module,exports,__globalThis) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -14370,662 +14378,7 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8WeR6":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$911d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$911d.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$911d.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "WhatWeDoSection", ()=>WhatWeDoSection);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const WhatWeDoSection = (props)=>{
-    const services = [
-        {
-            icon: "\uD83D\uDE9B",
-            title: "Material Hauling",
-            description: "Dirt, gravel, sand, and construction materials"
-        },
-        {
-            icon: "\uD83C\uDFD7\uFE0F",
-            title: "Debris Removal",
-            description: "Construction waste and demolition cleanup"
-        },
-        {
-            icon: "\u26A1",
-            title: "Side Dump Trailer",
-            description: "Efficient unloading for faster project completion"
-        }
-    ];
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "py-16 bg-base-200",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "container mx-auto px-4",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-center mb-12",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            className: "text-3xl md:text-4xl font-bold text-base-content mb-4",
-                            children: "What We Do"
-                        }, void 0, false, {
-                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                            lineNumber: 27,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "text-lg text-base-content/70 max-w-3xl mx-auto",
-                            children: "We haul dirt, gravel, sand, debris, and other materials using a side dump trailer"
-                        }, void 0, false, {
-                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                            lineNumber: 30,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                    lineNumber: 26,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "order-2 lg:order-1",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "space-y-6",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                className: "text-2xl font-bold text-base-content mb-4",
-                                                children: "Construction-Focused Hauling"
-                                            }, void 0, false, {
-                                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                lineNumber: 41,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                className: "text-lg text-base-content/80 mb-4",
-                                                children: "Our specialized side dump trailer and professional approach ensure safe, on-time delivery for all your construction hauling needs."
-                                            }, void 0, false, {
-                                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                lineNumber: 44,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                className: "text-base-content/70",
-                                                children: "Whether you're moving materials between job sites, delivering from quarries, or removing debris, we handle every load with the care and professionalism your project deserves."
-                                            }, void 0, false, {
-                                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                lineNumber: 49,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                        lineNumber: 40,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "space-y-3",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "flex items-center",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                        className: "w-5 h-5 text-primary mr-3",
-                                                        fill: "none",
-                                                        viewBox: "0 0 24 24",
-                                                        stroke: "currentColor",
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                            strokeLinecap: "round",
-                                                            strokeLinejoin: "round",
-                                                            strokeWidth: 2,
-                                                            d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                                        }, void 0, false, {
-                                                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                            lineNumber: 65,
-                                                            columnNumber: 21
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                        lineNumber: 59,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        className: "text-base-content",
-                                                        children: "Safe handling and transport"
-                                                    }, void 0, false, {
-                                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                        lineNumber: 72,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                lineNumber: 58,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "flex items-center",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                        className: "w-5 h-5 text-primary mr-3",
-                                                        fill: "none",
-                                                        viewBox: "0 0 24 24",
-                                                        stroke: "currentColor",
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                            strokeLinecap: "round",
-                                                            strokeLinejoin: "round",
-                                                            strokeWidth: 2,
-                                                            d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                                        }, void 0, false, {
-                                                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                            lineNumber: 83,
-                                                            columnNumber: 21
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                        lineNumber: 77,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        className: "text-base-content",
-                                                        children: "On-time delivery guarantee"
-                                                    }, void 0, false, {
-                                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                        lineNumber: 90,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                lineNumber: 76,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "flex items-center",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                        className: "w-5 h-5 text-primary mr-3",
-                                                        fill: "none",
-                                                        viewBox: "0 0 24 24",
-                                                        stroke: "currentColor",
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                            strokeLinecap: "round",
-                                                            strokeLinejoin: "round",
-                                                            strokeWidth: 2,
-                                                            d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                                        }, void 0, false, {
-                                                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                            lineNumber: 101,
-                                                            columnNumber: 21
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                        lineNumber: 95,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        className: "text-base-content",
-                                                        children: "Construction industry expertise"
-                                                    }, void 0, false, {
-                                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                        lineNumber: 108,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                                lineNumber: 94,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                        lineNumber: 57,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                lineNumber: 39,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                            lineNumber: 38,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "order-1 lg:order-2",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "card bg-base-100 shadow-lg",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
-                                    className: "px-6 pt-6",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: "https://placehold.co/500x350/4A5568/FFFFFF?text=Side+Dump+Trailer+in+Action",
-                                        alt: "Side dump trailer unloading materials",
-                                        className: "rounded-lg w-full h-64 object-cover"
-                                    }, void 0, false, {
-                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                        lineNumber: 120,
-                                        columnNumber: 17
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                    lineNumber: 119,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                lineNumber: 118,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                            lineNumber: 117,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                    lineNumber: 36,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "grid grid-cols-1 md:grid-cols-3 gap-6 mb-12",
-                    children: services.map((service, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "card bg-base-100 shadow-lg",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "card-body text-center",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "text-4xl mb-4",
-                                        children: service.icon
-                                    }, void 0, false, {
-                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                        lineNumber: 135,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                        className: "card-title justify-center text-lg font-bold text-base-content mb-2",
-                                        children: service.title
-                                    }, void 0, false, {
-                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                        lineNumber: 136,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "text-base-content/70 text-sm",
-                                        children: service.description
-                                    }, void 0, false, {
-                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                        lineNumber: 139,
-                                        columnNumber: 17
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                lineNumber: 134,
-                                columnNumber: 15
-                            }, undefined)
-                        }, index, false, {
-                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                            lineNumber: 133,
-                            columnNumber: 13
-                        }, undefined))
-                }, void 0, false, {
-                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                    lineNumber: 131,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-center",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "card bg-primary text-primary-content shadow-lg max-w-3xl mx-auto",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "card-body",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                    className: "text-xl font-bold mb-4",
-                                    children: "Our Mission"
-                                }, void 0, false, {
-                                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                    lineNumber: 151,
-                                    columnNumber: 15
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "text-lg text-primary-content/90",
-                                    children: '"To deliver reliable hauling that keeps your projects moving."'
-                                }, void 0, false, {
-                                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                                    lineNumber: 152,
-                                    columnNumber: 15
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                            lineNumber: 150,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                        lineNumber: 149,
-                        columnNumber: 11
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
-                    lineNumber: 148,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/features/about/components/WhatWeDoSection.tsx",
-            lineNumber: 25,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/features/about/components/WhatWeDoSection.tsx",
-        lineNumber: 24,
-        columnNumber: 5
-    }, undefined);
-};
-_c = WhatWeDoSection;
-var _c;
-$RefreshReg$(_c, "WhatWeDoSection");
-
-  $parcel$ReactRefreshHelpers$911d.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"8XcfA":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$1c02 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$1c02.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1c02.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "ServiceAreaSection", ()=>ServiceAreaSection);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _outline = require("@heroicons/react/24/outline");
-var _utahCountyJpg = require("url:~src/assets/images/utah_county.jpg");
-var _utahCountyJpgDefault = parcelHelpers.interopDefault(_utahCountyJpg);
-const ServiceAreaSection = (props)=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "py-24 bg-base-200",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "container mx-auto px-4",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-center mb-12",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            className: "text-3xl lg:text-4xl font-bold text-base-content mb-4",
-                            children: "Service Area"
-                        }, void 0, false, {
-                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                            lineNumber: 12,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "text-xl text-base-content/80 max-w-3xl mx-auto",
-                            children: "Proudly serving Provo, Orem, Spanish Fork, American Fork, and surrounding areas within 25 miles."
-                        }, void 0, false, {
-                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                            lineNumber: 15,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                    lineNumber: 11,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "order-2 lg:order-1",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "bg-base-100 rounded-lg shadow-xl h-80 flex items-center justify-center",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: (0, _utahCountyJpgDefault.default),
-                                    alt: "Utah County Service Area Map",
-                                    className: "rounded-lg w-full h-full object-cover"
-                                }, void 0, false, {
-                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                    lineNumber: 25,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                lineNumber: 24,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                            lineNumber: 23,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "order-1 lg:order-2",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                    className: "text-2xl font-bold text-base-content mb-6",
-                                    children: "Utah County & Surrounding Areas"
-                                }, void 0, false, {
-                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                    lineNumber: 35,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "space-y-6",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                    className: "text-lg font-semibold text-base-content mb-3 flex items-center",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.MapPinIcon), {
-                                                            className: "w-5 h-5 text-secondary mr-2"
-                                                        }, void 0, false, {
-                                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                            lineNumber: 43,
-                                                            columnNumber: 19
-                                                        }, undefined),
-                                                        "Primary Service Cities"
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                    lineNumber: 42,
-                                                    columnNumber: 17
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "grid grid-cols-2 gap-2",
-                                                    children: [
-                                                        "Provo",
-                                                        "Orem",
-                                                        "Spanish Fork",
-                                                        "American Fork",
-                                                        "Lehi",
-                                                        "Pleasant Grove",
-                                                        "Payson",
-                                                        "Springville"
-                                                    ].map((city)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            className: "flex items-center space-x-2",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                    className: "w-2 h-2 bg-secondary rounded-full"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                                    lineNumber: 58,
-                                                                    columnNumber: 23
-                                                                }, undefined),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                    className: "text-base-content/80",
-                                                                    children: city
-                                                                }, void 0, false, {
-                                                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                                    lineNumber: 59,
-                                                                    columnNumber: 23
-                                                                }, undefined)
-                                                            ]
-                                                        }, city, true, {
-                                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                            lineNumber: 57,
-                                                            columnNumber: 21
-                                                        }, undefined))
-                                                }, void 0, false, {
-                                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                    lineNumber: 46,
-                                                    columnNumber: 17
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                            lineNumber: 41,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "bg-secondary/10 rounded-lg p-4",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "flex items-center space-x-3",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "flex-shrink-0",
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            className: "w-10 h-10 bg-secondary/20 rounded-full flex items-center justify-center",
-                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.BoltIcon), {
-                                                                className: "w-5 h-5 text-secondary"
-                                                            }, void 0, false, {
-                                                                fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                                lineNumber: 70,
-                                                                columnNumber: 23
-                                                            }, undefined)
-                                                        }, void 0, false, {
-                                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                            lineNumber: 69,
-                                                            columnNumber: 21
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                        lineNumber: 68,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                                className: "font-semibold text-base-content",
-                                                                children: "25 Mile Service Radius"
-                                                            }, void 0, false, {
-                                                                fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                                lineNumber: 74,
-                                                                columnNumber: 21
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                                className: "text-sm text-base-content/70",
-                                                                children: "Fast response times within our coverage area"
-                                                            }, void 0, false, {
-                                                                fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                                lineNumber: 77,
-                                                                columnNumber: 21
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                        lineNumber: 73,
-                                                        columnNumber: 19
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                lineNumber: 67,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                            lineNumber: 66,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "border-l-4 border-secondary pl-4",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                className: "text-base-content/80",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                                        className: "text-base-content",
-                                                        children: "Outside our standard area?"
-                                                    }, void 0, false, {
-                                                        fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                        lineNumber: 87,
-                                                        columnNumber: 19
-                                                    }, undefined),
-                                                    " ",
-                                                    "We may still be able to help! Contact us to discuss your specific location and project needs."
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                lineNumber: 86,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                            lineNumber: 85,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                    lineNumber: 39,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                            lineNumber: 34,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                    lineNumber: 21,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/features/home/components/ServiceAreaSection.tsx",
-            lineNumber: 10,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/features/home/components/ServiceAreaSection.tsx",
-        lineNumber: 9,
-        columnNumber: 5
-    }, undefined);
-};
-_c = ServiceAreaSection;
-var _c;
-$RefreshReg$(_c, "ServiceAreaSection");
-
-  $parcel$ReactRefreshHelpers$1c02.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@heroicons/react/24/outline":"d2LWn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:~src/assets/images/utah_county.jpg":"iGWNR"}],"d2LWn":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"d2LWn":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AcademicCapIcon", ()=>(0, _academicCapIconJsDefault.default));
@@ -16001,7 +15354,7 @@ var _xcircleIconJsDefault = parcelHelpers.interopDefault(_xcircleIconJs);
 var _xmarkIconJs = require("./XMarkIcon.js");
 var _xmarkIconJsDefault = parcelHelpers.interopDefault(_xmarkIconJs);
 
-},{"./AcademicCapIcon.js":false,"./AdjustmentsHorizontalIcon.js":false,"./AdjustmentsVerticalIcon.js":false,"./ArchiveBoxArrowDownIcon.js":false,"./ArchiveBoxXMarkIcon.js":false,"./ArchiveBoxIcon.js":false,"./ArrowDownCircleIcon.js":false,"./ArrowDownLeftIcon.js":false,"./ArrowDownOnSquareStackIcon.js":false,"./ArrowDownOnSquareIcon.js":false,"./ArrowDownRightIcon.js":false,"./ArrowDownTrayIcon.js":false,"./ArrowDownIcon.js":false,"./ArrowLeftCircleIcon.js":false,"./ArrowLeftEndOnRectangleIcon.js":false,"./ArrowLeftOnRectangleIcon.js":false,"./ArrowLeftStartOnRectangleIcon.js":false,"./ArrowLeftIcon.js":false,"./ArrowLongDownIcon.js":false,"./ArrowLongLeftIcon.js":false,"./ArrowLongRightIcon.js":false,"./ArrowLongUpIcon.js":false,"./ArrowPathRoundedSquareIcon.js":false,"./ArrowPathIcon.js":false,"./ArrowRightCircleIcon.js":false,"./ArrowRightEndOnRectangleIcon.js":false,"./ArrowRightOnRectangleIcon.js":false,"./ArrowRightStartOnRectangleIcon.js":false,"./ArrowRightIcon.js":false,"./ArrowSmallDownIcon.js":false,"./ArrowSmallLeftIcon.js":false,"./ArrowSmallRightIcon.js":false,"./ArrowSmallUpIcon.js":false,"./ArrowTopRightOnSquareIcon.js":false,"./ArrowTrendingDownIcon.js":false,"./ArrowTrendingUpIcon.js":false,"./ArrowTurnDownLeftIcon.js":false,"./ArrowTurnDownRightIcon.js":false,"./ArrowTurnLeftDownIcon.js":false,"./ArrowTurnLeftUpIcon.js":false,"./ArrowTurnRightDownIcon.js":false,"./ArrowTurnRightUpIcon.js":false,"./ArrowTurnUpLeftIcon.js":false,"./ArrowTurnUpRightIcon.js":false,"./ArrowUpCircleIcon.js":false,"./ArrowUpLeftIcon.js":false,"./ArrowUpOnSquareStackIcon.js":false,"./ArrowUpOnSquareIcon.js":false,"./ArrowUpRightIcon.js":false,"./ArrowUpTrayIcon.js":false,"./ArrowUpIcon.js":false,"./ArrowUturnDownIcon.js":false,"./ArrowUturnLeftIcon.js":false,"./ArrowUturnRightIcon.js":false,"./ArrowUturnUpIcon.js":false,"./ArrowsPointingInIcon.js":false,"./ArrowsPointingOutIcon.js":false,"./ArrowsRightLeftIcon.js":"dYvGu","./ArrowsUpDownIcon.js":false,"./AtSymbolIcon.js":false,"./BackspaceIcon.js":false,"./BackwardIcon.js":false,"./BanknotesIcon.js":false,"./Bars2Icon.js":false,"./Bars3BottomLeftIcon.js":false,"./Bars3BottomRightIcon.js":false,"./Bars3CenterLeftIcon.js":false,"./Bars3Icon.js":false,"./Bars4Icon.js":false,"./BarsArrowDownIcon.js":false,"./BarsArrowUpIcon.js":false,"./Battery0Icon.js":false,"./Battery100Icon.js":false,"./Battery50Icon.js":false,"./BeakerIcon.js":false,"./BellAlertIcon.js":false,"./BellSlashIcon.js":false,"./BellSnoozeIcon.js":false,"./BellIcon.js":false,"./BoldIcon.js":false,"./BoltSlashIcon.js":false,"./BoltIcon.js":"7V2rv","./BookOpenIcon.js":false,"./BookmarkSlashIcon.js":false,"./BookmarkSquareIcon.js":false,"./BookmarkIcon.js":false,"./BriefcaseIcon.js":false,"./BugAntIcon.js":false,"./BuildingLibraryIcon.js":false,"./BuildingOffice2Icon.js":"iu4kT","./BuildingOfficeIcon.js":"4mcIW","./BuildingStorefrontIcon.js":false,"./CakeIcon.js":false,"./CalculatorIcon.js":false,"./CalendarDateRangeIcon.js":false,"./CalendarDaysIcon.js":"eIW9B","./CalendarIcon.js":false,"./CameraIcon.js":false,"./ChartBarSquareIcon.js":false,"./ChartBarIcon.js":false,"./ChartPieIcon.js":false,"./ChatBubbleBottomCenterTextIcon.js":false,"./ChatBubbleBottomCenterIcon.js":false,"./ChatBubbleLeftEllipsisIcon.js":false,"./ChatBubbleLeftRightIcon.js":false,"./ChatBubbleLeftIcon.js":false,"./ChatBubbleOvalLeftEllipsisIcon.js":false,"./ChatBubbleOvalLeftIcon.js":false,"./CheckBadgeIcon.js":false,"./CheckCircleIcon.js":false,"./CheckIcon.js":"1HyMb","./ChevronDoubleDownIcon.js":false,"./ChevronDoubleLeftIcon.js":false,"./ChevronDoubleRightIcon.js":false,"./ChevronDoubleUpIcon.js":false,"./ChevronDownIcon.js":false,"./ChevronLeftIcon.js":false,"./ChevronRightIcon.js":false,"./ChevronUpDownIcon.js":false,"./ChevronUpIcon.js":false,"./CircleStackIcon.js":false,"./ClipboardDocumentCheckIcon.js":false,"./ClipboardDocumentListIcon.js":false,"./ClipboardDocumentIcon.js":false,"./ClipboardIcon.js":false,"./ClockIcon.js":"e4kfP","./CloudArrowDownIcon.js":false,"./CloudArrowUpIcon.js":false,"./CloudIcon.js":false,"./CodeBracketSquareIcon.js":false,"./CodeBracketIcon.js":false,"./Cog6ToothIcon.js":false,"./Cog8ToothIcon.js":false,"./CogIcon.js":false,"./CommandLineIcon.js":false,"./ComputerDesktopIcon.js":false,"./CpuChipIcon.js":false,"./CreditCardIcon.js":false,"./CubeTransparentIcon.js":false,"./CubeIcon.js":"f57cV","./CurrencyBangladeshiIcon.js":false,"./CurrencyDollarIcon.js":"4RNRU","./CurrencyEuroIcon.js":false,"./CurrencyPoundIcon.js":false,"./CurrencyRupeeIcon.js":false,"./CurrencyYenIcon.js":false,"./CursorArrowRaysIcon.js":false,"./CursorArrowRippleIcon.js":false,"./DevicePhoneMobileIcon.js":false,"./DeviceTabletIcon.js":false,"./DivideIcon.js":false,"./DocumentArrowDownIcon.js":false,"./DocumentArrowUpIcon.js":false,"./DocumentChartBarIcon.js":false,"./DocumentCheckIcon.js":false,"./DocumentCurrencyBangladeshiIcon.js":false,"./DocumentCurrencyDollarIcon.js":false,"./DocumentCurrencyEuroIcon.js":false,"./DocumentCurrencyPoundIcon.js":false,"./DocumentCurrencyRupeeIcon.js":false,"./DocumentCurrencyYenIcon.js":false,"./DocumentDuplicateIcon.js":false,"./DocumentMagnifyingGlassIcon.js":false,"./DocumentMinusIcon.js":false,"./DocumentPlusIcon.js":false,"./DocumentTextIcon.js":"arDnW","./DocumentIcon.js":false,"./EllipsisHorizontalCircleIcon.js":false,"./EllipsisHorizontalIcon.js":false,"./EllipsisVerticalIcon.js":false,"./EnvelopeOpenIcon.js":false,"./EnvelopeIcon.js":"cAzIn","./EqualsIcon.js":false,"./ExclamationCircleIcon.js":false,"./ExclamationTriangleIcon.js":false,"./EyeDropperIcon.js":false,"./EyeSlashIcon.js":false,"./EyeIcon.js":false,"./FaceFrownIcon.js":false,"./FaceSmileIcon.js":false,"./FilmIcon.js":false,"./FingerPrintIcon.js":false,"./FireIcon.js":false,"./FlagIcon.js":false,"./FolderArrowDownIcon.js":false,"./FolderMinusIcon.js":false,"./FolderOpenIcon.js":false,"./FolderPlusIcon.js":false,"./FolderIcon.js":false,"./ForwardIcon.js":false,"./FunnelIcon.js":false,"./GifIcon.js":false,"./GiftTopIcon.js":false,"./GiftIcon.js":false,"./GlobeAltIcon.js":false,"./GlobeAmericasIcon.js":false,"./GlobeAsiaAustraliaIcon.js":false,"./GlobeEuropeAfricaIcon.js":false,"./H1Icon.js":false,"./H2Icon.js":false,"./H3Icon.js":false,"./HandRaisedIcon.js":false,"./HandThumbDownIcon.js":false,"./HandThumbUpIcon.js":false,"./HashtagIcon.js":false,"./HeartIcon.js":false,"./HomeModernIcon.js":"8SuEh","./HomeIcon.js":"3b5Ew","./IdentificationIcon.js":false,"./InboxArrowDownIcon.js":false,"./InboxStackIcon.js":false,"./InboxIcon.js":false,"./InformationCircleIcon.js":"i8nGV","./ItalicIcon.js":false,"./KeyIcon.js":false,"./LanguageIcon.js":false,"./LifebuoyIcon.js":false,"./LightBulbIcon.js":false,"./LinkSlashIcon.js":false,"./LinkIcon.js":false,"./ListBulletIcon.js":false,"./LockClosedIcon.js":false,"./LockOpenIcon.js":false,"./MagnifyingGlassCircleIcon.js":false,"./MagnifyingGlassMinusIcon.js":false,"./MagnifyingGlassPlusIcon.js":false,"./MagnifyingGlassIcon.js":false,"./MapPinIcon.js":"gjH9X","./MapIcon.js":false,"./MegaphoneIcon.js":false,"./MicrophoneIcon.js":false,"./MinusCircleIcon.js":false,"./MinusSmallIcon.js":false,"./MinusIcon.js":false,"./MoonIcon.js":false,"./MusicalNoteIcon.js":false,"./NewspaperIcon.js":false,"./NoSymbolIcon.js":false,"./NumberedListIcon.js":false,"./PaintBrushIcon.js":false,"./PaperAirplaneIcon.js":false,"./PaperClipIcon.js":false,"./PauseCircleIcon.js":false,"./PauseIcon.js":false,"./PencilSquareIcon.js":false,"./PencilIcon.js":false,"./PercentBadgeIcon.js":false,"./PhoneArrowDownLeftIcon.js":false,"./PhoneArrowUpRightIcon.js":false,"./PhoneXMarkIcon.js":false,"./PhoneIcon.js":"6RaIi","./PhotoIcon.js":false,"./PlayCircleIcon.js":false,"./PlayPauseIcon.js":false,"./PlayIcon.js":false,"./PlusCircleIcon.js":false,"./PlusSmallIcon.js":false,"./PlusIcon.js":false,"./PowerIcon.js":false,"./PresentationChartBarIcon.js":false,"./PresentationChartLineIcon.js":false,"./PrinterIcon.js":false,"./PuzzlePieceIcon.js":false,"./QrCodeIcon.js":false,"./QuestionMarkCircleIcon.js":false,"./QueueListIcon.js":false,"./RadioIcon.js":false,"./ReceiptPercentIcon.js":false,"./ReceiptRefundIcon.js":false,"./RectangleGroupIcon.js":false,"./RectangleStackIcon.js":false,"./RocketLaunchIcon.js":false,"./RssIcon.js":false,"./ScaleIcon.js":false,"./ScissorsIcon.js":false,"./ServerStackIcon.js":false,"./ServerIcon.js":false,"./ShareIcon.js":false,"./ShieldCheckIcon.js":"hRbKc","./ShieldExclamationIcon.js":false,"./ShoppingBagIcon.js":false,"./ShoppingCartIcon.js":false,"./SignalSlashIcon.js":false,"./SignalIcon.js":false,"./SlashIcon.js":false,"./SparklesIcon.js":false,"./SpeakerWaveIcon.js":false,"./SpeakerXMarkIcon.js":false,"./Square2StackIcon.js":false,"./Square3Stack3DIcon.js":false,"./Squares2X2Icon.js":false,"./SquaresPlusIcon.js":false,"./StarIcon.js":false,"./StopCircleIcon.js":false,"./StopIcon.js":false,"./StrikethroughIcon.js":false,"./SunIcon.js":false,"./SwatchIcon.js":false,"./TableCellsIcon.js":false,"./TagIcon.js":false,"./TicketIcon.js":false,"./TrashIcon.js":"92Ra3","./TrophyIcon.js":false,"./TruckIcon.js":"5low1","./TvIcon.js":false,"./UnderlineIcon.js":false,"./UserCircleIcon.js":false,"./UserGroupIcon.js":"brb1O","./UserMinusIcon.js":false,"./UserPlusIcon.js":false,"./UserIcon.js":"gzGpt","./UsersIcon.js":false,"./VariableIcon.js":false,"./VideoCameraSlashIcon.js":false,"./VideoCameraIcon.js":false,"./ViewColumnsIcon.js":false,"./ViewfinderCircleIcon.js":false,"./WalletIcon.js":false,"./WifiIcon.js":false,"./WindowIcon.js":false,"./WrenchScrewdriverIcon.js":"eLuUT","./WrenchIcon.js":false,"./XCircleIcon.js":false,"./XMarkIcon.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"dYvGu":[function(require,module,exports,__globalThis) {
+},{"./AcademicCapIcon.js":false,"./AdjustmentsHorizontalIcon.js":false,"./AdjustmentsVerticalIcon.js":false,"./ArchiveBoxArrowDownIcon.js":false,"./ArchiveBoxXMarkIcon.js":false,"./ArchiveBoxIcon.js":false,"./ArrowDownCircleIcon.js":false,"./ArrowDownLeftIcon.js":false,"./ArrowDownOnSquareStackIcon.js":false,"./ArrowDownOnSquareIcon.js":false,"./ArrowDownRightIcon.js":false,"./ArrowDownTrayIcon.js":false,"./ArrowDownIcon.js":false,"./ArrowLeftCircleIcon.js":false,"./ArrowLeftEndOnRectangleIcon.js":false,"./ArrowLeftOnRectangleIcon.js":false,"./ArrowLeftStartOnRectangleIcon.js":false,"./ArrowLeftIcon.js":false,"./ArrowLongDownIcon.js":false,"./ArrowLongLeftIcon.js":false,"./ArrowLongRightIcon.js":false,"./ArrowLongUpIcon.js":false,"./ArrowPathRoundedSquareIcon.js":false,"./ArrowPathIcon.js":false,"./ArrowRightCircleIcon.js":false,"./ArrowRightEndOnRectangleIcon.js":false,"./ArrowRightOnRectangleIcon.js":false,"./ArrowRightStartOnRectangleIcon.js":false,"./ArrowRightIcon.js":false,"./ArrowSmallDownIcon.js":false,"./ArrowSmallLeftIcon.js":false,"./ArrowSmallRightIcon.js":false,"./ArrowSmallUpIcon.js":false,"./ArrowTopRightOnSquareIcon.js":false,"./ArrowTrendingDownIcon.js":false,"./ArrowTrendingUpIcon.js":false,"./ArrowTurnDownLeftIcon.js":false,"./ArrowTurnDownRightIcon.js":false,"./ArrowTurnLeftDownIcon.js":false,"./ArrowTurnLeftUpIcon.js":false,"./ArrowTurnRightDownIcon.js":false,"./ArrowTurnRightUpIcon.js":false,"./ArrowTurnUpLeftIcon.js":false,"./ArrowTurnUpRightIcon.js":false,"./ArrowUpCircleIcon.js":false,"./ArrowUpLeftIcon.js":false,"./ArrowUpOnSquareStackIcon.js":false,"./ArrowUpOnSquareIcon.js":false,"./ArrowUpRightIcon.js":false,"./ArrowUpTrayIcon.js":false,"./ArrowUpIcon.js":false,"./ArrowUturnDownIcon.js":false,"./ArrowUturnLeftIcon.js":false,"./ArrowUturnRightIcon.js":false,"./ArrowUturnUpIcon.js":false,"./ArrowsPointingInIcon.js":false,"./ArrowsPointingOutIcon.js":false,"./ArrowsRightLeftIcon.js":"dYvGu","./ArrowsUpDownIcon.js":false,"./AtSymbolIcon.js":false,"./BackspaceIcon.js":false,"./BackwardIcon.js":false,"./BanknotesIcon.js":false,"./Bars2Icon.js":false,"./Bars3BottomLeftIcon.js":false,"./Bars3BottomRightIcon.js":false,"./Bars3CenterLeftIcon.js":false,"./Bars3Icon.js":false,"./Bars4Icon.js":false,"./BarsArrowDownIcon.js":false,"./BarsArrowUpIcon.js":false,"./Battery0Icon.js":false,"./Battery100Icon.js":false,"./Battery50Icon.js":false,"./BeakerIcon.js":false,"./BellAlertIcon.js":false,"./BellSlashIcon.js":false,"./BellSnoozeIcon.js":false,"./BellIcon.js":false,"./BoldIcon.js":false,"./BoltSlashIcon.js":false,"./BoltIcon.js":"7V2rv","./BookOpenIcon.js":false,"./BookmarkSlashIcon.js":false,"./BookmarkSquareIcon.js":false,"./BookmarkIcon.js":false,"./BriefcaseIcon.js":false,"./BugAntIcon.js":false,"./BuildingLibraryIcon.js":false,"./BuildingOffice2Icon.js":"iu4kT","./BuildingOfficeIcon.js":"4mcIW","./BuildingStorefrontIcon.js":false,"./CakeIcon.js":false,"./CalculatorIcon.js":false,"./CalendarDateRangeIcon.js":false,"./CalendarDaysIcon.js":"eIW9B","./CalendarIcon.js":false,"./CameraIcon.js":false,"./ChartBarSquareIcon.js":false,"./ChartBarIcon.js":false,"./ChartPieIcon.js":false,"./ChatBubbleBottomCenterTextIcon.js":false,"./ChatBubbleBottomCenterIcon.js":false,"./ChatBubbleLeftEllipsisIcon.js":false,"./ChatBubbleLeftRightIcon.js":"gZ3Wo","./ChatBubbleLeftIcon.js":false,"./ChatBubbleOvalLeftEllipsisIcon.js":false,"./ChatBubbleOvalLeftIcon.js":false,"./CheckBadgeIcon.js":false,"./CheckCircleIcon.js":"1X7Uw","./CheckIcon.js":"1HyMb","./ChevronDoubleDownIcon.js":false,"./ChevronDoubleLeftIcon.js":false,"./ChevronDoubleRightIcon.js":false,"./ChevronDoubleUpIcon.js":false,"./ChevronDownIcon.js":false,"./ChevronLeftIcon.js":false,"./ChevronRightIcon.js":false,"./ChevronUpDownIcon.js":false,"./ChevronUpIcon.js":false,"./CircleStackIcon.js":false,"./ClipboardDocumentCheckIcon.js":false,"./ClipboardDocumentListIcon.js":false,"./ClipboardDocumentIcon.js":false,"./ClipboardIcon.js":false,"./ClockIcon.js":"e4kfP","./CloudArrowDownIcon.js":false,"./CloudArrowUpIcon.js":false,"./CloudIcon.js":false,"./CodeBracketSquareIcon.js":false,"./CodeBracketIcon.js":false,"./Cog6ToothIcon.js":false,"./Cog8ToothIcon.js":false,"./CogIcon.js":false,"./CommandLineIcon.js":false,"./ComputerDesktopIcon.js":false,"./CpuChipIcon.js":false,"./CreditCardIcon.js":false,"./CubeTransparentIcon.js":false,"./CubeIcon.js":"f57cV","./CurrencyBangladeshiIcon.js":false,"./CurrencyDollarIcon.js":"4RNRU","./CurrencyEuroIcon.js":false,"./CurrencyPoundIcon.js":false,"./CurrencyRupeeIcon.js":false,"./CurrencyYenIcon.js":false,"./CursorArrowRaysIcon.js":false,"./CursorArrowRippleIcon.js":false,"./DevicePhoneMobileIcon.js":false,"./DeviceTabletIcon.js":false,"./DivideIcon.js":false,"./DocumentArrowDownIcon.js":false,"./DocumentArrowUpIcon.js":false,"./DocumentChartBarIcon.js":false,"./DocumentCheckIcon.js":false,"./DocumentCurrencyBangladeshiIcon.js":false,"./DocumentCurrencyDollarIcon.js":false,"./DocumentCurrencyEuroIcon.js":false,"./DocumentCurrencyPoundIcon.js":false,"./DocumentCurrencyRupeeIcon.js":false,"./DocumentCurrencyYenIcon.js":false,"./DocumentDuplicateIcon.js":false,"./DocumentMagnifyingGlassIcon.js":false,"./DocumentMinusIcon.js":false,"./DocumentPlusIcon.js":false,"./DocumentTextIcon.js":"arDnW","./DocumentIcon.js":false,"./EllipsisHorizontalCircleIcon.js":false,"./EllipsisHorizontalIcon.js":false,"./EllipsisVerticalIcon.js":false,"./EnvelopeOpenIcon.js":false,"./EnvelopeIcon.js":"cAzIn","./EqualsIcon.js":false,"./ExclamationCircleIcon.js":false,"./ExclamationTriangleIcon.js":false,"./EyeDropperIcon.js":false,"./EyeSlashIcon.js":false,"./EyeIcon.js":false,"./FaceFrownIcon.js":false,"./FaceSmileIcon.js":false,"./FilmIcon.js":false,"./FingerPrintIcon.js":false,"./FireIcon.js":false,"./FlagIcon.js":false,"./FolderArrowDownIcon.js":false,"./FolderMinusIcon.js":false,"./FolderOpenIcon.js":false,"./FolderPlusIcon.js":false,"./FolderIcon.js":false,"./ForwardIcon.js":false,"./FunnelIcon.js":false,"./GifIcon.js":false,"./GiftTopIcon.js":false,"./GiftIcon.js":false,"./GlobeAltIcon.js":false,"./GlobeAmericasIcon.js":false,"./GlobeAsiaAustraliaIcon.js":false,"./GlobeEuropeAfricaIcon.js":false,"./H1Icon.js":false,"./H2Icon.js":false,"./H3Icon.js":false,"./HandRaisedIcon.js":"58pO1","./HandThumbDownIcon.js":false,"./HandThumbUpIcon.js":false,"./HashtagIcon.js":false,"./HeartIcon.js":false,"./HomeModernIcon.js":"8SuEh","./HomeIcon.js":"3b5Ew","./IdentificationIcon.js":false,"./InboxArrowDownIcon.js":false,"./InboxStackIcon.js":false,"./InboxIcon.js":false,"./InformationCircleIcon.js":"i8nGV","./ItalicIcon.js":false,"./KeyIcon.js":false,"./LanguageIcon.js":false,"./LifebuoyIcon.js":false,"./LightBulbIcon.js":false,"./LinkSlashIcon.js":false,"./LinkIcon.js":false,"./ListBulletIcon.js":false,"./LockClosedIcon.js":false,"./LockOpenIcon.js":false,"./MagnifyingGlassCircleIcon.js":false,"./MagnifyingGlassMinusIcon.js":false,"./MagnifyingGlassPlusIcon.js":false,"./MagnifyingGlassIcon.js":false,"./MapPinIcon.js":"gjH9X","./MapIcon.js":false,"./MegaphoneIcon.js":false,"./MicrophoneIcon.js":false,"./MinusCircleIcon.js":false,"./MinusSmallIcon.js":false,"./MinusIcon.js":false,"./MoonIcon.js":false,"./MusicalNoteIcon.js":false,"./NewspaperIcon.js":false,"./NoSymbolIcon.js":false,"./NumberedListIcon.js":false,"./PaintBrushIcon.js":false,"./PaperAirplaneIcon.js":false,"./PaperClipIcon.js":false,"./PauseCircleIcon.js":false,"./PauseIcon.js":false,"./PencilSquareIcon.js":false,"./PencilIcon.js":false,"./PercentBadgeIcon.js":false,"./PhoneArrowDownLeftIcon.js":false,"./PhoneArrowUpRightIcon.js":false,"./PhoneXMarkIcon.js":false,"./PhoneIcon.js":"6RaIi","./PhotoIcon.js":false,"./PlayCircleIcon.js":false,"./PlayPauseIcon.js":false,"./PlayIcon.js":false,"./PlusCircleIcon.js":false,"./PlusSmallIcon.js":false,"./PlusIcon.js":false,"./PowerIcon.js":false,"./PresentationChartBarIcon.js":false,"./PresentationChartLineIcon.js":false,"./PrinterIcon.js":false,"./PuzzlePieceIcon.js":false,"./QrCodeIcon.js":false,"./QuestionMarkCircleIcon.js":false,"./QueueListIcon.js":false,"./RadioIcon.js":false,"./ReceiptPercentIcon.js":false,"./ReceiptRefundIcon.js":false,"./RectangleGroupIcon.js":false,"./RectangleStackIcon.js":false,"./RocketLaunchIcon.js":false,"./RssIcon.js":false,"./ScaleIcon.js":false,"./ScissorsIcon.js":false,"./ServerStackIcon.js":false,"./ServerIcon.js":false,"./ShareIcon.js":false,"./ShieldCheckIcon.js":"hRbKc","./ShieldExclamationIcon.js":false,"./ShoppingBagIcon.js":false,"./ShoppingCartIcon.js":false,"./SignalSlashIcon.js":false,"./SignalIcon.js":false,"./SlashIcon.js":false,"./SparklesIcon.js":false,"./SpeakerWaveIcon.js":false,"./SpeakerXMarkIcon.js":false,"./Square2StackIcon.js":false,"./Square3Stack3DIcon.js":false,"./Squares2X2Icon.js":false,"./SquaresPlusIcon.js":false,"./StarIcon.js":false,"./StopCircleIcon.js":false,"./StopIcon.js":false,"./StrikethroughIcon.js":false,"./SunIcon.js":false,"./SwatchIcon.js":false,"./TableCellsIcon.js":false,"./TagIcon.js":false,"./TicketIcon.js":false,"./TrashIcon.js":"92Ra3","./TrophyIcon.js":false,"./TruckIcon.js":"5low1","./TvIcon.js":false,"./UnderlineIcon.js":false,"./UserCircleIcon.js":false,"./UserGroupIcon.js":"brb1O","./UserMinusIcon.js":false,"./UserPlusIcon.js":false,"./UserIcon.js":"gzGpt","./UsersIcon.js":false,"./VariableIcon.js":false,"./VideoCameraSlashIcon.js":false,"./VideoCameraIcon.js":false,"./ViewColumnsIcon.js":false,"./ViewfinderCircleIcon.js":false,"./WalletIcon.js":false,"./WifiIcon.js":false,"./WindowIcon.js":false,"./WrenchScrewdriverIcon.js":"eLuUT","./WrenchIcon.js":false,"./XCircleIcon.js":false,"./XMarkIcon.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"dYvGu":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -16129,6 +15482,58 @@ function CalendarDaysIcon({ title, titleId, ...props }, svgRef) {
     }));
 }
 const ForwardRef = /*#__PURE__*/ _react.forwardRef(CalendarDaysIcon);
+exports.default = ForwardRef;
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"gZ3Wo":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function ChatBubbleLeftRightIcon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(ChatBubbleLeftRightIcon);
+exports.default = ForwardRef;
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1X7Uw":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function CheckCircleIcon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(CheckCircleIcon);
 exports.default = ForwardRef;
 
 },{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1HyMb":[function(require,module,exports,__globalThis) {
@@ -16285,6 +15690,32 @@ function EnvelopeIcon({ title, titleId, ...props }, svgRef) {
     }));
 }
 const ForwardRef = /*#__PURE__*/ _react.forwardRef(EnvelopeIcon);
+exports.default = ForwardRef;
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"58pO1":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function HandRaisedIcon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "M10.05 4.575a1.575 1.575 0 1 0-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 0 1 3.15 0v1.5m-3.15 0 .075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 0 1 3.15 0V15M6.9 7.575a1.575 1.575 0 1 0-3.15 0v8.175a6.75 6.75 0 0 0 6.75 6.75h2.018a5.25 5.25 0 0 0 3.712-1.538l1.732-1.732a5.25 5.25 0 0 0 1.538-3.712l.003-2.024a.668.668 0 0 1 .198-.471 1.575 1.575 0 1 0-2.228-2.228 3.818 3.818 0 0 0-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0 1 16.35 15m.002 0h-.002"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(HandRaisedIcon);
 exports.default = ForwardRef;
 
 },{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8SuEh":[function(require,module,exports,__globalThis) {
@@ -16577,7 +16008,642 @@ function WrenchScrewdriverIcon({ title, titleId, ...props }, svgRef) {
 const ForwardRef = /*#__PURE__*/ _react.forwardRef(WrenchScrewdriverIcon);
 exports.default = ForwardRef;
 
-},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"iGWNR":[function(require,module,exports,__globalThis) {
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"68neP":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("portrait_final.f7f2e12e.jpeg") + "?" + Date.now();
+
+},{}],"8WeR6":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$911d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$911d.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$911d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "WhatWeDoSection", ()=>WhatWeDoSection);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _outline = require("@heroicons/react/24/outline");
+// @ts-ignore
+var _loadedTruckTrailerJpg = require("url:~/src/assets/images/loaded_truck_trailer.jpg");
+var _loadedTruckTrailerJpgDefault = parcelHelpers.interopDefault(_loadedTruckTrailerJpg);
+const WhatWeDoSection = (props)=>{
+    const services = [
+        {
+            icon: (0, _outline.TruckIcon),
+            title: "Material Hauling",
+            description: "Dirt, gravel, sand, and construction materials"
+        },
+        {
+            icon: (0, _outline.WrenchScrewdriverIcon),
+            title: "Debris Removal",
+            description: "Construction waste and demolition cleanup"
+        },
+        {
+            icon: (0, _outline.BoltIcon),
+            title: "Side Dump Trailer",
+            description: "Efficient unloading for faster project completion"
+        }
+    ];
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "py-16 bg-base-200",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "container mx-auto px-4",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-center mb-12",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            className: "text-3xl md:text-4xl font-bold text-base-content mb-4",
+                            children: "What We Do"
+                        }, void 0, false, {
+                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-lg text-base-content/70 max-w-3xl mx-auto",
+                            children: "We haul dirt, gravel, sand, debris, and other materials using a side dump trailer"
+                        }, void 0, false, {
+                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                            lineNumber: 39,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                    lineNumber: 35,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "order-2 lg:order-1",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "space-y-6",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                className: "text-2xl font-bold text-base-content mb-4",
+                                                children: "Construction-Focused Hauling"
+                                            }, void 0, false, {
+                                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                                lineNumber: 50,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: "text-lg text-base-content/80 mb-4",
+                                                children: "Our specialized side dump trailer and professional approach ensure safe, on-time delivery for all your construction hauling needs."
+                                            }, void 0, false, {
+                                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                                lineNumber: 53,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: "text-base-content/70",
+                                                children: "Whether you're moving materials between job sites, delivering from quarries, or removing debris, we handle every load with the care and professionalism your project deserves."
+                                            }, void 0, false, {
+                                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                                lineNumber: 58,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                        lineNumber: 49,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "space-y-3",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex items-center",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckCircleIcon), {
+                                                        className: "w-5 h-5 text-primary mr-3"
+                                                    }, void 0, false, {
+                                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                                        lineNumber: 68,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "text-base-content",
+                                                        children: "Safe handling and transport"
+                                                    }, void 0, false, {
+                                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                                        lineNumber: 69,
+                                                        columnNumber: 19
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                                lineNumber: 67,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex items-center",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckCircleIcon), {
+                                                        className: "w-5 h-5 text-primary mr-3"
+                                                    }, void 0, false, {
+                                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                                        lineNumber: 74,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "text-base-content",
+                                                        children: "On-time delivery guarantee"
+                                                    }, void 0, false, {
+                                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                                        lineNumber: 75,
+                                                        columnNumber: 19
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                                lineNumber: 73,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex items-center",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckCircleIcon), {
+                                                        className: "w-5 h-5 text-primary mr-3"
+                                                    }, void 0, false, {
+                                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                                        lineNumber: 80,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "text-base-content",
+                                                        children: "Construction industry expertise"
+                                                    }, void 0, false, {
+                                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                                        lineNumber: 81,
+                                                        columnNumber: 19
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                                lineNumber: 79,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                lineNumber: 48,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                            lineNumber: 47,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "order-1 lg:order-2",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "card bg-base-100 shadow-lg border border-base-300",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
+                                    className: "p-2",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: (0, _loadedTruckTrailerJpgDefault.default),
+                                        alt: "Side dump trailer unloading materials",
+                                        className: "rounded-lg w-full h-64 object-cover"
+                                    }, void 0, false, {
+                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                        lineNumber: 93,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                    lineNumber: 92,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                lineNumber: 91,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                            lineNumber: 90,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                    lineNumber: 45,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid grid-cols-1 md:grid-cols-3 gap-6 mb-12",
+                    children: services.map((service, index)=>{
+                        const IconComponent = service.icon;
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "card bg-base-100 shadow-lg border border-base-300",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "card-body text-center",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "flex justify-center mb-4",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(IconComponent, {
+                                            className: "w-12 h-12 text-primary"
+                                        }, void 0, false, {
+                                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                            lineNumber: 114,
+                                            columnNumber: 21
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                        lineNumber: 113,
+                                        columnNumber: 19
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                        className: "card-title justify-center text-lg font-bold text-base-content mb-2",
+                                        children: service.title
+                                    }, void 0, false, {
+                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                        lineNumber: 116,
+                                        columnNumber: 19
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-base-content/70 text-sm",
+                                        children: service.description
+                                    }, void 0, false, {
+                                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                        lineNumber: 119,
+                                        columnNumber: 19
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                lineNumber: 112,
+                                columnNumber: 17
+                            }, undefined)
+                        }, index, false, {
+                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                            lineNumber: 108,
+                            columnNumber: 15
+                        }, undefined);
+                    })
+                }, void 0, false, {
+                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                    lineNumber: 104,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-center",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "card bg-primary text-primary-content shadow-lg border border-primary/20 max-w-3xl mx-auto",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "card-body",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    className: "text-xl font-bold mb-4",
+                                    children: "Our Mission"
+                                }, void 0, false, {
+                                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                    lineNumber: 132,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "text-lg text-primary-content/90",
+                                    children: '"To deliver reliable hauling that keeps your projects moving."'
+                                }, void 0, false, {
+                                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                                    lineNumber: 133,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                            lineNumber: 131,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                        lineNumber: 130,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/features/about/components/WhatWeDoSection.tsx",
+                    lineNumber: 129,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/features/about/components/WhatWeDoSection.tsx",
+            lineNumber: 34,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/features/about/components/WhatWeDoSection.tsx",
+        lineNumber: 33,
+        columnNumber: 5
+    }, undefined);
+};
+_c = WhatWeDoSection;
+var _c;
+$RefreshReg$(_c, "WhatWeDoSection");
+
+  $parcel$ReactRefreshHelpers$911d.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:~/src/assets/images/loaded_truck_trailer.jpg":"ko9rT","@heroicons/react/24/outline":"d2LWn"}],"ko9rT":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("loaded_truck_trailer.9c5e9f1d.jpg") + "?" + Date.now();
+
+},{}],"8XcfA":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$1c02 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$1c02.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1c02.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ServiceAreaSection", ()=>ServiceAreaSection);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _outline = require("@heroicons/react/24/outline");
+var _utahCountyJpg = require("url:~src/assets/images/utah_county.jpg");
+var _utahCountyJpgDefault = parcelHelpers.interopDefault(_utahCountyJpg);
+const ServiceAreaSection = (props)=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "py-24 bg-base-200",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "container mx-auto px-4",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-center mb-12",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            className: "text-3xl lg:text-4xl font-bold text-base-content mb-4",
+                            children: "Service Area"
+                        }, void 0, false, {
+                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                            lineNumber: 12,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-xl text-base-content/80 max-w-3xl mx-auto",
+                            children: "Proudly serving Provo, Orem, Spanish Fork, American Fork, and surrounding areas within 25 miles."
+                        }, void 0, false, {
+                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                            lineNumber: 15,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "order-2 lg:order-1",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "bg-base-100 rounded-lg shadow-xl h-80 flex items-center justify-center",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _utahCountyJpgDefault.default),
+                                    alt: "Utah County Service Area Map",
+                                    className: "rounded-lg w-full h-auto object-cover"
+                                }, void 0, false, {
+                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                    lineNumber: 25,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                lineNumber: 24,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                            lineNumber: 23,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "order-1 lg:order-2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    className: "text-2xl font-bold text-base-content mb-6",
+                                    children: "Utah County & Surrounding Areas"
+                                }, void 0, false, {
+                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                    lineNumber: 35,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "space-y-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                    className: "text-lg font-semibold text-base-content mb-3 flex items-center",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.MapPinIcon), {
+                                                            className: "w-5 h-5 text-secondary mr-2"
+                                                        }, void 0, false, {
+                                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                            lineNumber: 43,
+                                                            columnNumber: 19
+                                                        }, undefined),
+                                                        "Primary Service Cities"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                    lineNumber: 42,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "grid grid-cols-2 gap-2",
+                                                    children: [
+                                                        "Provo",
+                                                        "Orem",
+                                                        "Spanish Fork",
+                                                        "American Fork",
+                                                        "Lehi",
+                                                        "Pleasant Grove",
+                                                        "Payson",
+                                                        "Springville"
+                                                    ].map((city)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "flex items-center space-x-2",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                    className: "w-2 h-2 bg-secondary rounded-full"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                                    lineNumber: 58,
+                                                                    columnNumber: 23
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    className: "text-base-content/80",
+                                                                    children: city
+                                                                }, void 0, false, {
+                                                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                                    lineNumber: 59,
+                                                                    columnNumber: 23
+                                                                }, undefined)
+                                                            ]
+                                                        }, city, true, {
+                                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                            lineNumber: 57,
+                                                            columnNumber: 21
+                                                        }, undefined))
+                                                }, void 0, false, {
+                                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                    lineNumber: 46,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                            lineNumber: 41,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "bg-secondary/10 rounded-lg p-4",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex items-center space-x-3",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "flex-shrink-0",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "w-10 h-10 bg-secondary/20 rounded-full flex items-center justify-center",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.BoltIcon), {
+                                                                className: "w-5 h-5 text-secondary"
+                                                            }, void 0, false, {
+                                                                fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                                lineNumber: 70,
+                                                                columnNumber: 23
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                            lineNumber: 69,
+                                                            columnNumber: 21
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                        lineNumber: 68,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                className: "font-semibold text-base-content",
+                                                                children: "25 Mile Service Radius"
+                                                            }, void 0, false, {
+                                                                fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                                lineNumber: 74,
+                                                                columnNumber: 21
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                className: "text-sm text-base-content/70",
+                                                                children: "Fast response times within our coverage area"
+                                                            }, void 0, false, {
+                                                                fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                                lineNumber: 77,
+                                                                columnNumber: 21
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                        lineNumber: 73,
+                                                        columnNumber: 19
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                lineNumber: 67,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                            lineNumber: 66,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "border-l-4 border-secondary pl-4",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: "text-base-content/80",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                                        className: "text-base-content",
+                                                        children: "Outside our standard area?"
+                                                    }, void 0, false, {
+                                                        fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                        lineNumber: 87,
+                                                        columnNumber: 19
+                                                    }, undefined),
+                                                    " ",
+                                                    "We may still be able to help! Contact us to discuss your specific location and project needs."
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                                lineNumber: 86,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                            lineNumber: 85,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                                    lineNumber: 39,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                            lineNumber: 34,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/features/home/components/ServiceAreaSection.tsx",
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/features/home/components/ServiceAreaSection.tsx",
+            lineNumber: 10,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/features/home/components/ServiceAreaSection.tsx",
+        lineNumber: 9,
+        columnNumber: 5
+    }, undefined);
+};
+_c = ServiceAreaSection;
+var _c;
+$RefreshReg$(_c, "ServiceAreaSection");
+
+  $parcel$ReactRefreshHelpers$1c02.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@heroicons/react/24/outline":"d2LWn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:~src/assets/images/utah_county.jpg":"iGWNR"}],"iGWNR":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("utah_county.8a715d07.jpg") + "?" + Date.now();
 
 },{}],"01Ecn":[function(require,module,exports,__globalThis) {
@@ -17272,6 +17338,7 @@ parcelHelpers.export(exports, "CallToActionHeaderSection", ()=>CallToActionHeade
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _outline = require("@heroicons/react/24/outline");
 const CallToActionHeaderSection = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "py-16 bg-primary text-primary-content",
@@ -17285,7 +17352,7 @@ const CallToActionHeaderSection = (props)=>{
                         children: "Need Hauling? Let's Get You Scheduled."
                     }, void 0, false, {
                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                        lineNumber: 11,
+                        lineNumber: 20,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17293,7 +17360,7 @@ const CallToActionHeaderSection = (props)=>{
                         children: "Call, text, or send a request\u2014whatever works best for you."
                     }, void 0, false, {
                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                        lineNumber: 14,
+                        lineNumber: 23,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17305,11 +17372,17 @@ const CallToActionHeaderSection = (props)=>{
                                     className: "card-body text-center",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-3xl mb-3",
-                                            children: "\uD83D\uDCDE"
+                                            className: "flex justify-center mb-3",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.PhoneIcon), {
+                                                className: "w-12 h-12"
+                                            }, void 0, false, {
+                                                fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
+                                                lineNumber: 32,
+                                                columnNumber: 19
+                                            }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 22,
+                                            lineNumber: 31,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -17317,7 +17390,7 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "Call Us"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 23,
+                                            lineNumber: 34,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17325,26 +17398,27 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "Speak directly with us for immediate assistance"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 26,
+                                            lineNumber: 37,
                                             columnNumber: 17
                                         }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "tel:+18015550123",
                                             className: "btn btn-primary btn-sm",
                                             children: "(801) 555-0123"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 29,
+                                            lineNumber: 40,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                    lineNumber: 21,
+                                    lineNumber: 30,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                lineNumber: 20,
+                                lineNumber: 29,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17353,11 +17427,17 @@ const CallToActionHeaderSection = (props)=>{
                                     className: "card-body text-center",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-3xl mb-3",
-                                            children: "\uD83D\uDCAC"
+                                            className: "flex justify-center mb-3",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.ChatBubbleLeftRightIcon), {
+                                                className: "w-12 h-12"
+                                            }, void 0, false, {
+                                                fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
+                                                lineNumber: 49,
+                                                columnNumber: 19
+                                            }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 37,
+                                            lineNumber: 48,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -17365,7 +17445,7 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "Text Us"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 38,
+                                            lineNumber: 51,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17373,60 +17453,13 @@ const CallToActionHeaderSection = (props)=>{
                                             children: "Quick questions or schedule via text"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 41,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                            className: "btn btn-primary btn-sm",
-                                            children: "Send Text"
-                                        }, void 0, false, {
-                                            fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 44,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                    lineNumber: 36,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                lineNumber: 35,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "card bg-primary-content text-primary shadow-lg",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "card-body text-center",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-3xl mb-3",
-                                            children: "\uD83D\uDCCB"
-                                        }, void 0, false, {
-                                            fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 50,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                            className: "card-title justify-center text-lg font-bold mb-2",
-                                            children: "Send Request"
-                                        }, void 0, false, {
-                                            fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 51,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: "text-primary/80 text-sm mb-4",
-                                            children: "Fill out our form for detailed quotes"
-                                        }, void 0, false, {
-                                            fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
                                             lineNumber: 54,
                                             columnNumber: 17
                                         }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "sms:+18015550123",
                                             className: "btn btn-primary btn-sm",
-                                            children: "Get Started"
+                                            children: "Send Text"
                                         }, void 0, false, {
                                             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
                                             lineNumber: 57,
@@ -17435,18 +17468,72 @@ const CallToActionHeaderSection = (props)=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                    lineNumber: 49,
+                                    lineNumber: 47,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                lineNumber: 48,
+                                lineNumber: 46,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "card bg-primary-content text-primary shadow-lg",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "card-body text-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex justify-center mb-3",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.DocumentTextIcon), {
+                                                className: "w-12 h-12"
+                                            }, void 0, false, {
+                                                fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
+                                                lineNumber: 66,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
+                                            lineNumber: 65,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            className: "card-title justify-center text-lg font-bold mb-2",
+                                            children: "Send Request"
+                                        }, void 0, false, {
+                                            fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
+                                            lineNumber: 68,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "text-primary/80 text-sm mb-4",
+                                            children: "Fill out our form for detailed quotes"
+                                        }, void 0, false, {
+                                            fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
+                                            lineNumber: 71,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                            className: "btn btn-primary btn-sm",
+                                            children: "Get Started"
+                                        }, void 0, false, {
+                                            fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
+                                            lineNumber: 74,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
+                                    lineNumber: 64,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
+                                lineNumber: 63,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                        lineNumber: 19,
+                        lineNumber: 28,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17455,131 +17542,92 @@ const CallToActionHeaderSection = (props)=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "flex items-center",
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                        className: "w-5 h-5 mr-2",
-                                        fill: "none",
-                                        viewBox: "0 0 24 24",
-                                        stroke: "currentColor",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                            strokeLinecap: "round",
-                                            strokeLinejoin: "round",
-                                            strokeWidth: 2,
-                                            d: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                                        }, void 0, false, {
-                                            fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 71,
-                                            columnNumber: 17
-                                        }, undefined)
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.ClockIcon), {
+                                        className: "w-5 h-5 mr-2"
                                     }, void 0, false, {
                                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                        lineNumber: 65,
+                                        lineNumber: 82,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: "Response within 2 hours"
                                     }, void 0, false, {
                                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                        lineNumber: 78,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                lineNumber: 64,
+                                lineNumber: 81,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "flex items-center",
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                        className: "w-5 h-5 mr-2",
-                                        fill: "none",
-                                        viewBox: "0 0 24 24",
-                                        stroke: "currentColor",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                            strokeLinecap: "round",
-                                            strokeLinejoin: "round",
-                                            strokeWidth: 2,
-                                            d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                        }, void 0, false, {
-                                            fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 87,
-                                            columnNumber: 17
-                                        }, undefined)
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckCircleIcon), {
+                                        className: "w-5 h-5 mr-2"
                                     }, void 0, false, {
                                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 86,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: "Free estimates"
                                     }, void 0, false, {
                                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                        lineNumber: 94,
+                                        lineNumber: 87,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                lineNumber: 80,
+                                lineNumber: 85,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "flex items-center",
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                        className: "w-5 h-5 mr-2",
-                                        fill: "none",
-                                        viewBox: "0 0 24 24",
-                                        stroke: "currentColor",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                            strokeLinecap: "round",
-                                            strokeLinejoin: "round",
-                                            strokeWidth: 2,
-                                            d: "M13 10V3L4 14h7v7l9-11h-7z"
-                                        }, void 0, false, {
-                                            fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                            lineNumber: 103,
-                                            columnNumber: 17
-                                        }, undefined)
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.BoltIcon), {
+                                        className: "w-5 h-5 mr-2"
                                     }, void 0, false, {
                                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 90,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: "Same-day service available"
                                     }, void 0, false, {
                                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                        lineNumber: 110,
+                                        lineNumber: 91,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                                lineNumber: 96,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                        lineNumber: 63,
+                        lineNumber: 80,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-                lineNumber: 10,
+                lineNumber: 19,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-            lineNumber: 9,
+            lineNumber: 18,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/features/contact/components/CalledToActionHeaderSection.tsx",
-        lineNumber: 8,
+        lineNumber: 17,
         columnNumber: 5
     }, undefined);
 };
@@ -17592,7 +17640,7 @@ $RefreshReg$(_c, "CallToActionHeaderSection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"fJHrk":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","@heroicons/react/24/outline":"d2LWn"}],"fJHrk":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$c38d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$c38d.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -17683,166 +17731,173 @@ const HowToBookSection = (props)=>{
                                 className: "card-body",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        className: "card-title text-xl font-bold text-base-content mb-6",
+                                        className: "card-title text-xl font-bold text-base-content mb-6 justify-center",
                                         children: "Request a Quote"
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/HowToBookSection.tsx",
                                         lineNumber: 67,
                                         columnNumber: 15
                                     }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                                        onSubmit: handleSubmit,
-                                        className: "space-y-4",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "form-control",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                                    type: "text",
-                                                    name: "name",
-                                                    value: formData.name,
-                                                    onChange: handleChange,
-                                                    placeholder: "Your full name",
-                                                    className: "input input-bordered",
-                                                    required: true
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "max-w-md mx-auto w-full",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                                            onSubmit: handleSubmit,
+                                            className: "space-y-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "form-control",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                        type: "text",
+                                                        name: "name",
+                                                        value: formData.name,
+                                                        onChange: handleChange,
+                                                        placeholder: "Your full name",
+                                                        className: "input input-bordered w-full",
+                                                        required: true
+                                                    }, void 0, false, {
+                                                        fileName: "src/features/services/components/HowToBookSection.tsx",
+                                                        lineNumber: 74,
+                                                        columnNumber: 21
+                                                    }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/features/services/components/HowToBookSection.tsx",
                                                     lineNumber: 73,
                                                     columnNumber: 19
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 72,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "form-control",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                                    type: "tel",
-                                                    name: "phone",
-                                                    value: formData.phone,
-                                                    onChange: handleChange,
-                                                    placeholder: "(555) 123-4567",
-                                                    className: "input input-bordered",
-                                                    required: true
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "form-control",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                        type: "tel",
+                                                        name: "phone",
+                                                        value: formData.phone,
+                                                        onChange: handleChange,
+                                                        placeholder: "(555) 123-4567",
+                                                        className: "input input-bordered w-full",
+                                                        required: true
+                                                    }, void 0, false, {
+                                                        fileName: "src/features/services/components/HowToBookSection.tsx",
+                                                        lineNumber: 86,
+                                                        columnNumber: 21
+                                                    }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/features/services/components/HowToBookSection.tsx",
                                                     lineNumber: 85,
                                                     columnNumber: 19
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 84,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "form-control",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                                                    name: "jobType",
-                                                    value: formData.jobType,
-                                                    onChange: handleChange,
-                                                    className: "select select-bordered",
-                                                    required: true,
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                            value: "",
-                                                            children: "Select job type"
-                                                        }, void 0, false, {
-                                                            fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                            lineNumber: 104,
-                                                            columnNumber: 21
-                                                        }, undefined),
-                                                        jobTypes.map((type, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                                value: type,
-                                                                children: type
-                                                            }, index, false, {
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "form-control",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                                                        name: "jobType",
+                                                        value: formData.jobType,
+                                                        onChange: handleChange,
+                                                        className: "select select-bordered w-full",
+                                                        required: true,
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                                                value: "",
+                                                                children: "Select job type"
+                                                            }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 106,
+                                                                lineNumber: 105,
                                                                 columnNumber: 23
-                                                            }, undefined))
-                                                    ]
-                                                }, void 0, true, {
+                                                            }, undefined),
+                                                            jobTypes.map((type, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                                                    value: type,
+                                                                    children: type
+                                                                }, index, false, {
+                                                                    fileName: "src/features/services/components/HowToBookSection.tsx",
+                                                                    lineNumber: 107,
+                                                                    columnNumber: 25
+                                                                }, undefined))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/features/services/components/HowToBookSection.tsx",
+                                                        lineNumber: 98,
+                                                        columnNumber: 21
+                                                    }, undefined)
+                                                }, void 0, false, {
                                                     fileName: "src/features/services/components/HowToBookSection.tsx",
                                                     lineNumber: 97,
                                                     columnNumber: 19
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 96,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "form-control",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                                                    name: "address",
-                                                    value: formData.address,
-                                                    onChange: handleChange,
-                                                    placeholder: "Job site address or location",
-                                                    className: "textarea textarea-bordered h-20",
-                                                    required: true
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "form-control",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                                        name: "address",
+                                                        value: formData.address,
+                                                        onChange: handleChange,
+                                                        placeholder: "Job site address or location",
+                                                        className: "textarea textarea-bordered h-20 w-full",
+                                                        required: true
+                                                    }, void 0, false, {
+                                                        fileName: "src/features/services/components/HowToBookSection.tsx",
+                                                        lineNumber: 115,
+                                                        columnNumber: 21
+                                                    }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/features/services/components/HowToBookSection.tsx",
                                                     lineNumber: 114,
                                                     columnNumber: 19
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 113,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "form-control",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                                                    name: "timeframe",
-                                                    value: formData.timeframe,
-                                                    onChange: handleChange,
-                                                    className: "select select-bordered",
-                                                    required: true,
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                            value: "",
-                                                            children: "When do you need this done?"
-                                                        }, void 0, false, {
-                                                            fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                            lineNumber: 132,
-                                                            columnNumber: 21
-                                                        }, undefined),
-                                                        timeframes.map((timeframe, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                                                value: timeframe,
-                                                                children: timeframe
-                                                            }, index, false, {
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "form-control",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                                                        name: "timeframe",
+                                                        value: formData.timeframe,
+                                                        onChange: handleChange,
+                                                        className: "select select-bordered w-full",
+                                                        required: true,
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                                                value: "",
+                                                                children: "When do you need this done?"
+                                                            }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 134,
+                                                                lineNumber: 133,
                                                                 columnNumber: 23
-                                                            }, undefined))
-                                                    ]
-                                                }, void 0, true, {
+                                                            }, undefined),
+                                                            timeframes.map((timeframe, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                                                    value: timeframe,
+                                                                    children: timeframe
+                                                                }, index, false, {
+                                                                    fileName: "src/features/services/components/HowToBookSection.tsx",
+                                                                    lineNumber: 135,
+                                                                    columnNumber: 25
+                                                                }, undefined))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/features/services/components/HowToBookSection.tsx",
+                                                        lineNumber: 126,
+                                                        columnNumber: 21
+                                                    }, undefined)
+                                                }, void 0, false, {
                                                     fileName: "src/features/services/components/HowToBookSection.tsx",
                                                     lineNumber: 125,
                                                     columnNumber: 19
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 124,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "form-control mt-6",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                    type: "submit",
-                                                    className: "btn btn-primary btn-lg",
-                                                    children: "Submit Request"
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "form-control mt-6",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                        type: "submit",
+                                                        className: "btn btn-primary btn-lg w-full",
+                                                        children: "Submit Request"
+                                                    }, void 0, false, {
+                                                        fileName: "src/features/services/components/HowToBookSection.tsx",
+                                                        lineNumber: 143,
+                                                        columnNumber: 21
+                                                    }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/features/services/components/HowToBookSection.tsx",
                                                     lineNumber: 142,
                                                     columnNumber: 19
                                                 }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 141,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/features/services/components/HowToBookSection.tsx",
+                                            lineNumber: 72,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    }, void 0, false, {
                                         fileName: "src/features/services/components/HowToBookSection.tsx",
                                         lineNumber: 71,
                                         columnNumber: 15
@@ -17870,7 +17925,7 @@ const HowToBookSection = (props)=>{
                                                 className: "w-16 h-16 mx-auto mb-4 text-primary-content"
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 155,
+                                                lineNumber: 160,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -17878,7 +17933,7 @@ const HowToBookSection = (props)=>{
                                                 children: "Call Us Directly"
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 156,
+                                                lineNumber: 161,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17886,7 +17941,7 @@ const HowToBookSection = (props)=>{
                                                 children: "For immediate assistance or urgent requests"
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 159,
+                                                lineNumber: 164,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17894,7 +17949,7 @@ const HowToBookSection = (props)=>{
                                                 children: "(801) 555-0123"
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 162,
+                                                lineNumber: 167,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17903,31 +17958,31 @@ const HowToBookSection = (props)=>{
                                                     "Monday - Friday: 7 AM - 6 PM",
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                        lineNumber: 165,
+                                                        lineNumber: 170,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     "Saturday: 8 AM - 4 PM",
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                        lineNumber: 167,
+                                                        lineNumber: 172,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     "Sunday: Emergency only"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 163,
+                                                lineNumber: 168,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                        lineNumber: 154,
+                                        lineNumber: 159,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/services/components/HowToBookSection.tsx",
-                                    lineNumber: 153,
+                                    lineNumber: 158,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17940,7 +17995,7 @@ const HowToBookSection = (props)=>{
                                                 children: "Quick Response Guarantee"
                                             }, void 0, false, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 176,
+                                                lineNumber: 181,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17953,7 +18008,7 @@ const HowToBookSection = (props)=>{
                                                                 className: "w-5 h-5 text-primary mr-3"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 181,
+                                                                lineNumber: 186,
                                                                 columnNumber: 21
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -17961,13 +18016,13 @@ const HowToBookSection = (props)=>{
                                                                 children: "Form responses within 2 hours"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 182,
+                                                                lineNumber: 187,
                                                                 columnNumber: 21
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                        lineNumber: 180,
+                                                        lineNumber: 185,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17977,7 +18032,7 @@ const HowToBookSection = (props)=>{
                                                                 className: "w-5 h-5 text-primary mr-3"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 187,
+                                                                lineNumber: 192,
                                                                 columnNumber: 21
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -17985,13 +18040,13 @@ const HowToBookSection = (props)=>{
                                                                 children: "Free quotes and estimates"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 188,
+                                                                lineNumber: 193,
                                                                 columnNumber: 21
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                        lineNumber: 186,
+                                                        lineNumber: 191,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18001,7 +18056,7 @@ const HowToBookSection = (props)=>{
                                                                 className: "w-5 h-5 text-primary mr-3"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 191,
+                                                                lineNumber: 196,
                                                                 columnNumber: 21
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -18009,36 +18064,36 @@ const HowToBookSection = (props)=>{
                                                                 children: "Same-day service available"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                                lineNumber: 192,
+                                                                lineNumber: 197,
                                                                 columnNumber: 21
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                        lineNumber: 190,
+                                                        lineNumber: 195,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/features/services/components/HowToBookSection.tsx",
-                                                lineNumber: 179,
+                                                lineNumber: 184,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/services/components/HowToBookSection.tsx",
-                                        lineNumber: 175,
+                                        lineNumber: 180,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/services/components/HowToBookSection.tsx",
-                                    lineNumber: 174,
+                                    lineNumber: 179,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/features/services/components/HowToBookSection.tsx",
-                            lineNumber: 151,
+                            lineNumber: 156,
                             columnNumber: 11
                         }, undefined)
                     ]
@@ -18069,7 +18124,7 @@ $RefreshReg$(_c, "HowToBookSection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@heroicons/react/24/outline":"d2LWn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"1U4S4":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","@heroicons/react/24/outline":"d2LWn"}],"1U4S4":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _homePage = require("./pages/HomePage");
@@ -18762,7 +18817,7 @@ const WhatWeHaulSection = (props)=>{
                             className: "card bg-base-200 shadow-lg hover:shadow-xl transition-shadow duration-300",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("figure", {
-                                    className: "px-4 pt-4",
+                                    className: "px-2 pt-2",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                         src: material.image,
                                         alt: material.title,

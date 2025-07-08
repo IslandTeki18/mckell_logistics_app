@@ -57,7 +57,7 @@ export const WhatWeHaulSection = (props: WhatWeHaulSectionProps) => {
                 key={index}
                 className="card bg-base-200 shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <figure className="px-4 pt-4">
+                <figure className="px-2 pt-2">
                   <img
                     src={material.image}
                     alt={material.title}
