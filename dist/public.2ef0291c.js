@@ -15354,7 +15354,7 @@ var _xcircleIconJsDefault = parcelHelpers.interopDefault(_xcircleIconJs);
 var _xmarkIconJs = require("./XMarkIcon.js");
 var _xmarkIconJsDefault = parcelHelpers.interopDefault(_xmarkIconJs);
 
-},{"./AcademicCapIcon.js":false,"./AdjustmentsHorizontalIcon.js":false,"./AdjustmentsVerticalIcon.js":false,"./ArchiveBoxArrowDownIcon.js":false,"./ArchiveBoxXMarkIcon.js":false,"./ArchiveBoxIcon.js":false,"./ArrowDownCircleIcon.js":false,"./ArrowDownLeftIcon.js":false,"./ArrowDownOnSquareStackIcon.js":false,"./ArrowDownOnSquareIcon.js":false,"./ArrowDownRightIcon.js":false,"./ArrowDownTrayIcon.js":false,"./ArrowDownIcon.js":false,"./ArrowLeftCircleIcon.js":false,"./ArrowLeftEndOnRectangleIcon.js":false,"./ArrowLeftOnRectangleIcon.js":false,"./ArrowLeftStartOnRectangleIcon.js":false,"./ArrowLeftIcon.js":false,"./ArrowLongDownIcon.js":false,"./ArrowLongLeftIcon.js":false,"./ArrowLongRightIcon.js":false,"./ArrowLongUpIcon.js":false,"./ArrowPathRoundedSquareIcon.js":false,"./ArrowPathIcon.js":false,"./ArrowRightCircleIcon.js":false,"./ArrowRightEndOnRectangleIcon.js":false,"./ArrowRightOnRectangleIcon.js":false,"./ArrowRightStartOnRectangleIcon.js":false,"./ArrowRightIcon.js":false,"./ArrowSmallDownIcon.js":false,"./ArrowSmallLeftIcon.js":false,"./ArrowSmallRightIcon.js":false,"./ArrowSmallUpIcon.js":false,"./ArrowTopRightOnSquareIcon.js":false,"./ArrowTrendingDownIcon.js":false,"./ArrowTrendingUpIcon.js":false,"./ArrowTurnDownLeftIcon.js":false,"./ArrowTurnDownRightIcon.js":false,"./ArrowTurnLeftDownIcon.js":false,"./ArrowTurnLeftUpIcon.js":false,"./ArrowTurnRightDownIcon.js":false,"./ArrowTurnRightUpIcon.js":false,"./ArrowTurnUpLeftIcon.js":false,"./ArrowTurnUpRightIcon.js":false,"./ArrowUpCircleIcon.js":false,"./ArrowUpLeftIcon.js":false,"./ArrowUpOnSquareStackIcon.js":false,"./ArrowUpOnSquareIcon.js":false,"./ArrowUpRightIcon.js":false,"./ArrowUpTrayIcon.js":false,"./ArrowUpIcon.js":false,"./ArrowUturnDownIcon.js":false,"./ArrowUturnLeftIcon.js":false,"./ArrowUturnRightIcon.js":false,"./ArrowUturnUpIcon.js":false,"./ArrowsPointingInIcon.js":false,"./ArrowsPointingOutIcon.js":false,"./ArrowsRightLeftIcon.js":"dYvGu","./ArrowsUpDownIcon.js":false,"./AtSymbolIcon.js":false,"./BackspaceIcon.js":false,"./BackwardIcon.js":false,"./BanknotesIcon.js":false,"./Bars2Icon.js":false,"./Bars3BottomLeftIcon.js":false,"./Bars3BottomRightIcon.js":false,"./Bars3CenterLeftIcon.js":false,"./Bars3Icon.js":false,"./Bars4Icon.js":false,"./BarsArrowDownIcon.js":false,"./BarsArrowUpIcon.js":false,"./Battery0Icon.js":false,"./Battery100Icon.js":false,"./Battery50Icon.js":false,"./BeakerIcon.js":false,"./BellAlertIcon.js":false,"./BellSlashIcon.js":false,"./BellSnoozeIcon.js":false,"./BellIcon.js":false,"./BoldIcon.js":false,"./BoltSlashIcon.js":false,"./BoltIcon.js":"7V2rv","./BookOpenIcon.js":false,"./BookmarkSlashIcon.js":false,"./BookmarkSquareIcon.js":false,"./BookmarkIcon.js":false,"./BriefcaseIcon.js":false,"./BugAntIcon.js":false,"./BuildingLibraryIcon.js":false,"./BuildingOffice2Icon.js":"iu4kT","./BuildingOfficeIcon.js":"4mcIW","./BuildingStorefrontIcon.js":false,"./CakeIcon.js":false,"./CalculatorIcon.js":false,"./CalendarDateRangeIcon.js":false,"./CalendarDaysIcon.js":"eIW9B","./CalendarIcon.js":false,"./CameraIcon.js":false,"./ChartBarSquareIcon.js":false,"./ChartBarIcon.js":false,"./ChartPieIcon.js":false,"./ChatBubbleBottomCenterTextIcon.js":false,"./ChatBubbleBottomCenterIcon.js":false,"./ChatBubbleLeftEllipsisIcon.js":false,"./ChatBubbleLeftRightIcon.js":"gZ3Wo","./ChatBubbleLeftIcon.js":false,"./ChatBubbleOvalLeftEllipsisIcon.js":false,"./ChatBubbleOvalLeftIcon.js":false,"./CheckBadgeIcon.js":false,"./CheckCircleIcon.js":"1X7Uw","./CheckIcon.js":"1HyMb","./ChevronDoubleDownIcon.js":false,"./ChevronDoubleLeftIcon.js":false,"./ChevronDoubleRightIcon.js":false,"./ChevronDoubleUpIcon.js":false,"./ChevronDownIcon.js":false,"./ChevronLeftIcon.js":false,"./ChevronRightIcon.js":false,"./ChevronUpDownIcon.js":false,"./ChevronUpIcon.js":false,"./CircleStackIcon.js":false,"./ClipboardDocumentCheckIcon.js":false,"./ClipboardDocumentListIcon.js":false,"./ClipboardDocumentIcon.js":false,"./ClipboardIcon.js":false,"./ClockIcon.js":"e4kfP","./CloudArrowDownIcon.js":false,"./CloudArrowUpIcon.js":false,"./CloudIcon.js":false,"./CodeBracketSquareIcon.js":false,"./CodeBracketIcon.js":false,"./Cog6ToothIcon.js":false,"./Cog8ToothIcon.js":false,"./CogIcon.js":false,"./CommandLineIcon.js":false,"./ComputerDesktopIcon.js":false,"./CpuChipIcon.js":false,"./CreditCardIcon.js":false,"./CubeTransparentIcon.js":false,"./CubeIcon.js":"f57cV","./CurrencyBangladeshiIcon.js":false,"./CurrencyDollarIcon.js":"4RNRU","./CurrencyEuroIcon.js":false,"./CurrencyPoundIcon.js":false,"./CurrencyRupeeIcon.js":false,"./CurrencyYenIcon.js":false,"./CursorArrowRaysIcon.js":false,"./CursorArrowRippleIcon.js":false,"./DevicePhoneMobileIcon.js":false,"./DeviceTabletIcon.js":false,"./DivideIcon.js":false,"./DocumentArrowDownIcon.js":false,"./DocumentArrowUpIcon.js":false,"./DocumentChartBarIcon.js":false,"./DocumentCheckIcon.js":false,"./DocumentCurrencyBangladeshiIcon.js":false,"./DocumentCurrencyDollarIcon.js":false,"./DocumentCurrencyEuroIcon.js":false,"./DocumentCurrencyPoundIcon.js":false,"./DocumentCurrencyRupeeIcon.js":false,"./DocumentCurrencyYenIcon.js":false,"./DocumentDuplicateIcon.js":false,"./DocumentMagnifyingGlassIcon.js":false,"./DocumentMinusIcon.js":false,"./DocumentPlusIcon.js":false,"./DocumentTextIcon.js":"arDnW","./DocumentIcon.js":false,"./EllipsisHorizontalCircleIcon.js":false,"./EllipsisHorizontalIcon.js":false,"./EllipsisVerticalIcon.js":false,"./EnvelopeOpenIcon.js":false,"./EnvelopeIcon.js":"cAzIn","./EqualsIcon.js":false,"./ExclamationCircleIcon.js":false,"./ExclamationTriangleIcon.js":false,"./EyeDropperIcon.js":false,"./EyeSlashIcon.js":false,"./EyeIcon.js":false,"./FaceFrownIcon.js":false,"./FaceSmileIcon.js":false,"./FilmIcon.js":false,"./FingerPrintIcon.js":false,"./FireIcon.js":false,"./FlagIcon.js":false,"./FolderArrowDownIcon.js":false,"./FolderMinusIcon.js":false,"./FolderOpenIcon.js":false,"./FolderPlusIcon.js":false,"./FolderIcon.js":false,"./ForwardIcon.js":false,"./FunnelIcon.js":false,"./GifIcon.js":false,"./GiftTopIcon.js":false,"./GiftIcon.js":false,"./GlobeAltIcon.js":false,"./GlobeAmericasIcon.js":false,"./GlobeAsiaAustraliaIcon.js":false,"./GlobeEuropeAfricaIcon.js":false,"./H1Icon.js":false,"./H2Icon.js":false,"./H3Icon.js":false,"./HandRaisedIcon.js":"58pO1","./HandThumbDownIcon.js":false,"./HandThumbUpIcon.js":false,"./HashtagIcon.js":false,"./HeartIcon.js":false,"./HomeModernIcon.js":"8SuEh","./HomeIcon.js":"3b5Ew","./IdentificationIcon.js":false,"./InboxArrowDownIcon.js":false,"./InboxStackIcon.js":false,"./InboxIcon.js":false,"./InformationCircleIcon.js":"i8nGV","./ItalicIcon.js":false,"./KeyIcon.js":false,"./LanguageIcon.js":false,"./LifebuoyIcon.js":false,"./LightBulbIcon.js":false,"./LinkSlashIcon.js":false,"./LinkIcon.js":false,"./ListBulletIcon.js":false,"./LockClosedIcon.js":false,"./LockOpenIcon.js":false,"./MagnifyingGlassCircleIcon.js":false,"./MagnifyingGlassMinusIcon.js":false,"./MagnifyingGlassPlusIcon.js":false,"./MagnifyingGlassIcon.js":false,"./MapPinIcon.js":"gjH9X","./MapIcon.js":false,"./MegaphoneIcon.js":false,"./MicrophoneIcon.js":false,"./MinusCircleIcon.js":false,"./MinusSmallIcon.js":false,"./MinusIcon.js":false,"./MoonIcon.js":false,"./MusicalNoteIcon.js":false,"./NewspaperIcon.js":false,"./NoSymbolIcon.js":false,"./NumberedListIcon.js":false,"./PaintBrushIcon.js":false,"./PaperAirplaneIcon.js":false,"./PaperClipIcon.js":false,"./PauseCircleIcon.js":false,"./PauseIcon.js":false,"./PencilSquareIcon.js":false,"./PencilIcon.js":false,"./PercentBadgeIcon.js":false,"./PhoneArrowDownLeftIcon.js":false,"./PhoneArrowUpRightIcon.js":false,"./PhoneXMarkIcon.js":false,"./PhoneIcon.js":"6RaIi","./PhotoIcon.js":false,"./PlayCircleIcon.js":false,"./PlayPauseIcon.js":false,"./PlayIcon.js":false,"./PlusCircleIcon.js":false,"./PlusSmallIcon.js":false,"./PlusIcon.js":false,"./PowerIcon.js":false,"./PresentationChartBarIcon.js":false,"./PresentationChartLineIcon.js":false,"./PrinterIcon.js":false,"./PuzzlePieceIcon.js":false,"./QrCodeIcon.js":false,"./QuestionMarkCircleIcon.js":false,"./QueueListIcon.js":false,"./RadioIcon.js":false,"./ReceiptPercentIcon.js":false,"./ReceiptRefundIcon.js":false,"./RectangleGroupIcon.js":false,"./RectangleStackIcon.js":false,"./RocketLaunchIcon.js":false,"./RssIcon.js":false,"./ScaleIcon.js":false,"./ScissorsIcon.js":false,"./ServerStackIcon.js":false,"./ServerIcon.js":false,"./ShareIcon.js":false,"./ShieldCheckIcon.js":"hRbKc","./ShieldExclamationIcon.js":false,"./ShoppingBagIcon.js":false,"./ShoppingCartIcon.js":false,"./SignalSlashIcon.js":false,"./SignalIcon.js":false,"./SlashIcon.js":false,"./SparklesIcon.js":false,"./SpeakerWaveIcon.js":false,"./SpeakerXMarkIcon.js":false,"./Square2StackIcon.js":false,"./Square3Stack3DIcon.js":false,"./Squares2X2Icon.js":false,"./SquaresPlusIcon.js":false,"./StarIcon.js":false,"./StopCircleIcon.js":false,"./StopIcon.js":false,"./StrikethroughIcon.js":false,"./SunIcon.js":false,"./SwatchIcon.js":false,"./TableCellsIcon.js":false,"./TagIcon.js":false,"./TicketIcon.js":false,"./TrashIcon.js":"92Ra3","./TrophyIcon.js":false,"./TruckIcon.js":"5low1","./TvIcon.js":false,"./UnderlineIcon.js":false,"./UserCircleIcon.js":false,"./UserGroupIcon.js":"brb1O","./UserMinusIcon.js":false,"./UserPlusIcon.js":false,"./UserIcon.js":"gzGpt","./UsersIcon.js":false,"./VariableIcon.js":false,"./VideoCameraSlashIcon.js":false,"./VideoCameraIcon.js":false,"./ViewColumnsIcon.js":false,"./ViewfinderCircleIcon.js":false,"./WalletIcon.js":false,"./WifiIcon.js":false,"./WindowIcon.js":false,"./WrenchScrewdriverIcon.js":"eLuUT","./WrenchIcon.js":false,"./XCircleIcon.js":false,"./XMarkIcon.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"dYvGu":[function(require,module,exports,__globalThis) {
+},{"./AcademicCapIcon.js":false,"./AdjustmentsHorizontalIcon.js":false,"./AdjustmentsVerticalIcon.js":false,"./ArchiveBoxArrowDownIcon.js":false,"./ArchiveBoxXMarkIcon.js":false,"./ArchiveBoxIcon.js":false,"./ArrowDownCircleIcon.js":false,"./ArrowDownLeftIcon.js":false,"./ArrowDownOnSquareStackIcon.js":false,"./ArrowDownOnSquareIcon.js":false,"./ArrowDownRightIcon.js":false,"./ArrowDownTrayIcon.js":false,"./ArrowDownIcon.js":false,"./ArrowLeftCircleIcon.js":false,"./ArrowLeftEndOnRectangleIcon.js":false,"./ArrowLeftOnRectangleIcon.js":false,"./ArrowLeftStartOnRectangleIcon.js":false,"./ArrowLeftIcon.js":false,"./ArrowLongDownIcon.js":false,"./ArrowLongLeftIcon.js":false,"./ArrowLongRightIcon.js":false,"./ArrowLongUpIcon.js":false,"./ArrowPathRoundedSquareIcon.js":false,"./ArrowPathIcon.js":false,"./ArrowRightCircleIcon.js":false,"./ArrowRightEndOnRectangleIcon.js":false,"./ArrowRightOnRectangleIcon.js":false,"./ArrowRightStartOnRectangleIcon.js":false,"./ArrowRightIcon.js":false,"./ArrowSmallDownIcon.js":false,"./ArrowSmallLeftIcon.js":false,"./ArrowSmallRightIcon.js":false,"./ArrowSmallUpIcon.js":false,"./ArrowTopRightOnSquareIcon.js":false,"./ArrowTrendingDownIcon.js":false,"./ArrowTrendingUpIcon.js":false,"./ArrowTurnDownLeftIcon.js":false,"./ArrowTurnDownRightIcon.js":false,"./ArrowTurnLeftDownIcon.js":false,"./ArrowTurnLeftUpIcon.js":false,"./ArrowTurnRightDownIcon.js":false,"./ArrowTurnRightUpIcon.js":false,"./ArrowTurnUpLeftIcon.js":false,"./ArrowTurnUpRightIcon.js":false,"./ArrowUpCircleIcon.js":false,"./ArrowUpLeftIcon.js":false,"./ArrowUpOnSquareStackIcon.js":false,"./ArrowUpOnSquareIcon.js":false,"./ArrowUpRightIcon.js":false,"./ArrowUpTrayIcon.js":false,"./ArrowUpIcon.js":false,"./ArrowUturnDownIcon.js":false,"./ArrowUturnLeftIcon.js":false,"./ArrowUturnRightIcon.js":false,"./ArrowUturnUpIcon.js":false,"./ArrowsPointingInIcon.js":false,"./ArrowsPointingOutIcon.js":false,"./ArrowsRightLeftIcon.js":"dYvGu","./ArrowsUpDownIcon.js":false,"./AtSymbolIcon.js":false,"./BackspaceIcon.js":false,"./BackwardIcon.js":false,"./BanknotesIcon.js":false,"./Bars2Icon.js":false,"./Bars3BottomLeftIcon.js":false,"./Bars3BottomRightIcon.js":false,"./Bars3CenterLeftIcon.js":false,"./Bars3Icon.js":false,"./Bars4Icon.js":false,"./BarsArrowDownIcon.js":false,"./BarsArrowUpIcon.js":false,"./Battery0Icon.js":false,"./Battery100Icon.js":false,"./Battery50Icon.js":false,"./BeakerIcon.js":false,"./BellAlertIcon.js":false,"./BellSlashIcon.js":false,"./BellSnoozeIcon.js":false,"./BellIcon.js":false,"./BoldIcon.js":false,"./BoltSlashIcon.js":false,"./BoltIcon.js":"7V2rv","./BookOpenIcon.js":false,"./BookmarkSlashIcon.js":false,"./BookmarkSquareIcon.js":false,"./BookmarkIcon.js":false,"./BriefcaseIcon.js":false,"./BugAntIcon.js":false,"./BuildingLibraryIcon.js":false,"./BuildingOffice2Icon.js":"iu4kT","./BuildingOfficeIcon.js":"4mcIW","./BuildingStorefrontIcon.js":false,"./CakeIcon.js":false,"./CalculatorIcon.js":false,"./CalendarDateRangeIcon.js":false,"./CalendarDaysIcon.js":"eIW9B","./CalendarIcon.js":false,"./CameraIcon.js":false,"./ChartBarSquareIcon.js":false,"./ChartBarIcon.js":false,"./ChartPieIcon.js":false,"./ChatBubbleBottomCenterTextIcon.js":false,"./ChatBubbleBottomCenterIcon.js":false,"./ChatBubbleLeftEllipsisIcon.js":false,"./ChatBubbleLeftRightIcon.js":"gZ3Wo","./ChatBubbleLeftIcon.js":false,"./ChatBubbleOvalLeftEllipsisIcon.js":false,"./ChatBubbleOvalLeftIcon.js":false,"./CheckBadgeIcon.js":false,"./CheckCircleIcon.js":"1X7Uw","./CheckIcon.js":"1HyMb","./ChevronDoubleDownIcon.js":false,"./ChevronDoubleLeftIcon.js":false,"./ChevronDoubleRightIcon.js":false,"./ChevronDoubleUpIcon.js":false,"./ChevronDownIcon.js":false,"./ChevronLeftIcon.js":false,"./ChevronRightIcon.js":false,"./ChevronUpDownIcon.js":false,"./ChevronUpIcon.js":false,"./CircleStackIcon.js":false,"./ClipboardDocumentCheckIcon.js":false,"./ClipboardDocumentListIcon.js":false,"./ClipboardDocumentIcon.js":false,"./ClipboardIcon.js":false,"./ClockIcon.js":"e4kfP","./CloudArrowDownIcon.js":false,"./CloudArrowUpIcon.js":false,"./CloudIcon.js":false,"./CodeBracketSquareIcon.js":false,"./CodeBracketIcon.js":false,"./Cog6ToothIcon.js":false,"./Cog8ToothIcon.js":false,"./CogIcon.js":false,"./CommandLineIcon.js":false,"./ComputerDesktopIcon.js":false,"./CpuChipIcon.js":false,"./CreditCardIcon.js":false,"./CubeTransparentIcon.js":false,"./CubeIcon.js":"f57cV","./CurrencyBangladeshiIcon.js":false,"./CurrencyDollarIcon.js":"4RNRU","./CurrencyEuroIcon.js":false,"./CurrencyPoundIcon.js":false,"./CurrencyRupeeIcon.js":false,"./CurrencyYenIcon.js":false,"./CursorArrowRaysIcon.js":false,"./CursorArrowRippleIcon.js":false,"./DevicePhoneMobileIcon.js":false,"./DeviceTabletIcon.js":false,"./DivideIcon.js":false,"./DocumentArrowDownIcon.js":false,"./DocumentArrowUpIcon.js":false,"./DocumentChartBarIcon.js":false,"./DocumentCheckIcon.js":false,"./DocumentCurrencyBangladeshiIcon.js":false,"./DocumentCurrencyDollarIcon.js":false,"./DocumentCurrencyEuroIcon.js":false,"./DocumentCurrencyPoundIcon.js":false,"./DocumentCurrencyRupeeIcon.js":false,"./DocumentCurrencyYenIcon.js":false,"./DocumentDuplicateIcon.js":false,"./DocumentMagnifyingGlassIcon.js":false,"./DocumentMinusIcon.js":false,"./DocumentPlusIcon.js":false,"./DocumentTextIcon.js":"arDnW","./DocumentIcon.js":false,"./EllipsisHorizontalCircleIcon.js":false,"./EllipsisHorizontalIcon.js":false,"./EllipsisVerticalIcon.js":false,"./EnvelopeOpenIcon.js":false,"./EnvelopeIcon.js":"cAzIn","./EqualsIcon.js":false,"./ExclamationCircleIcon.js":false,"./ExclamationTriangleIcon.js":false,"./EyeDropperIcon.js":false,"./EyeSlashIcon.js":false,"./EyeIcon.js":false,"./FaceFrownIcon.js":false,"./FaceSmileIcon.js":false,"./FilmIcon.js":false,"./FingerPrintIcon.js":false,"./FireIcon.js":false,"./FlagIcon.js":false,"./FolderArrowDownIcon.js":false,"./FolderMinusIcon.js":false,"./FolderOpenIcon.js":false,"./FolderPlusIcon.js":false,"./FolderIcon.js":false,"./ForwardIcon.js":false,"./FunnelIcon.js":false,"./GifIcon.js":false,"./GiftTopIcon.js":false,"./GiftIcon.js":false,"./GlobeAltIcon.js":false,"./GlobeAmericasIcon.js":false,"./GlobeAsiaAustraliaIcon.js":false,"./GlobeEuropeAfricaIcon.js":false,"./H1Icon.js":false,"./H2Icon.js":false,"./H3Icon.js":false,"./HandRaisedIcon.js":"58pO1","./HandThumbDownIcon.js":false,"./HandThumbUpIcon.js":false,"./HashtagIcon.js":false,"./HeartIcon.js":false,"./HomeModernIcon.js":"8SuEh","./HomeIcon.js":"3b5Ew","./IdentificationIcon.js":false,"./InboxArrowDownIcon.js":false,"./InboxStackIcon.js":false,"./InboxIcon.js":false,"./InformationCircleIcon.js":"i8nGV","./ItalicIcon.js":false,"./KeyIcon.js":false,"./LanguageIcon.js":false,"./LifebuoyIcon.js":false,"./LightBulbIcon.js":false,"./LinkSlashIcon.js":false,"./LinkIcon.js":false,"./ListBulletIcon.js":false,"./LockClosedIcon.js":false,"./LockOpenIcon.js":false,"./MagnifyingGlassCircleIcon.js":false,"./MagnifyingGlassMinusIcon.js":false,"./MagnifyingGlassPlusIcon.js":false,"./MagnifyingGlassIcon.js":false,"./MapPinIcon.js":"gjH9X","./MapIcon.js":false,"./MegaphoneIcon.js":false,"./MicrophoneIcon.js":false,"./MinusCircleIcon.js":false,"./MinusSmallIcon.js":false,"./MinusIcon.js":false,"./MoonIcon.js":false,"./MusicalNoteIcon.js":false,"./NewspaperIcon.js":false,"./NoSymbolIcon.js":false,"./NumberedListIcon.js":false,"./PaintBrushIcon.js":false,"./PaperAirplaneIcon.js":false,"./PaperClipIcon.js":false,"./PauseCircleIcon.js":false,"./PauseIcon.js":false,"./PencilSquareIcon.js":false,"./PencilIcon.js":false,"./PercentBadgeIcon.js":false,"./PhoneArrowDownLeftIcon.js":false,"./PhoneArrowUpRightIcon.js":false,"./PhoneXMarkIcon.js":false,"./PhoneIcon.js":"6RaIi","./PhotoIcon.js":false,"./PlayCircleIcon.js":false,"./PlayPauseIcon.js":false,"./PlayIcon.js":false,"./PlusCircleIcon.js":false,"./PlusSmallIcon.js":false,"./PlusIcon.js":false,"./PowerIcon.js":false,"./PresentationChartBarIcon.js":false,"./PresentationChartLineIcon.js":false,"./PrinterIcon.js":false,"./PuzzlePieceIcon.js":false,"./QrCodeIcon.js":false,"./QuestionMarkCircleIcon.js":false,"./QueueListIcon.js":false,"./RadioIcon.js":false,"./ReceiptPercentIcon.js":false,"./ReceiptRefundIcon.js":false,"./RectangleGroupIcon.js":false,"./RectangleStackIcon.js":false,"./RocketLaunchIcon.js":false,"./RssIcon.js":false,"./ScaleIcon.js":false,"./ScissorsIcon.js":false,"./ServerStackIcon.js":false,"./ServerIcon.js":false,"./ShareIcon.js":false,"./ShieldCheckIcon.js":"hRbKc","./ShieldExclamationIcon.js":false,"./ShoppingBagIcon.js":false,"./ShoppingCartIcon.js":false,"./SignalSlashIcon.js":false,"./SignalIcon.js":false,"./SlashIcon.js":false,"./SparklesIcon.js":false,"./SpeakerWaveIcon.js":false,"./SpeakerXMarkIcon.js":false,"./Square2StackIcon.js":false,"./Square3Stack3DIcon.js":false,"./Squares2X2Icon.js":false,"./SquaresPlusIcon.js":false,"./StarIcon.js":"dxvrk","./StopCircleIcon.js":false,"./StopIcon.js":false,"./StrikethroughIcon.js":false,"./SunIcon.js":false,"./SwatchIcon.js":false,"./TableCellsIcon.js":false,"./TagIcon.js":false,"./TicketIcon.js":false,"./TrashIcon.js":"92Ra3","./TrophyIcon.js":false,"./TruckIcon.js":"5low1","./TvIcon.js":false,"./UnderlineIcon.js":false,"./UserCircleIcon.js":false,"./UserGroupIcon.js":"brb1O","./UserMinusIcon.js":false,"./UserPlusIcon.js":false,"./UserIcon.js":"gzGpt","./UsersIcon.js":false,"./VariableIcon.js":false,"./VideoCameraSlashIcon.js":false,"./VideoCameraIcon.js":false,"./ViewColumnsIcon.js":false,"./ViewfinderCircleIcon.js":false,"./WalletIcon.js":false,"./WifiIcon.js":false,"./WindowIcon.js":false,"./WrenchScrewdriverIcon.js":"eLuUT","./WrenchIcon.js":false,"./XCircleIcon.js":false,"./XMarkIcon.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"dYvGu":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -15876,6 +15876,32 @@ function ShieldCheckIcon({ title, titleId, ...props }, svgRef) {
     }));
 }
 const ForwardRef = /*#__PURE__*/ _react.forwardRef(ShieldCheckIcon);
+exports.default = ForwardRef;
+
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"dxvrk":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+function StarIcon({ title, titleId, ...props }, svgRef) {
+    return /*#__PURE__*/ _react.createElement("svg", Object.assign({
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        strokeWidth: 1.5,
+        stroke: "currentColor",
+        "aria-hidden": "true",
+        "data-slot": "icon",
+        ref: svgRef,
+        "aria-labelledby": titleId
+    }, props), title ? /*#__PURE__*/ _react.createElement("title", {
+        id: titleId
+    }, title) : null, /*#__PURE__*/ _react.createElement("path", {
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        d: "M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+    }));
+}
+const ForwardRef = /*#__PURE__*/ _react.forwardRef(StarIcon);
 exports.default = ForwardRef;
 
 },{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"92Ra3":[function(require,module,exports,__globalThis) {
@@ -18214,83 +18240,396 @@ var _truckTrailerJpg = require("url:~src/assets/images/truck_trailer.jpg");
 var _truckTrailerJpgDefault = parcelHelpers.interopDefault(_truckTrailerJpg);
 const HeroSection = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "hero min-h-screen bg-base-200",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "hero-content flex-col lg:flex-row-reverse",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "max-w-md lg:max-w-lg",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _truckTrailerJpgDefault.default),
-                            alt: "Construction hauling truck with side dump trailer",
-                            className: "rounded-lg shadow-2xl w-full"
-                        }, void 0, false, {
-                            fileName: "src/features/home/components/HeroSection.tsx",
-                            lineNumber: 14,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/features/home/components/HeroSection.tsx",
-                        lineNumber: 13,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "max-w-md lg:max-w-lg",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "text-4xl lg:text-5xl font-bold text-base-content",
-                                children: "Reliable Construction Hauling in the Utah County area"
-                            }, void 0, false, {
-                                fileName: "src/features/home/components/HeroSection.tsx",
-                                lineNumber: 21,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "py-6 text-lg text-base-content/80",
-                                children: "We haul dirt, gravel, sand, and debris with a side dump trailer! Fast, safe, dependable!"
-                            }, void 0, false, {
-                                fileName: "src/features/home/components/HeroSection.tsx",
-                                lineNumber: 24,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "btn btn-secondary btn-lg",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.PhoneIcon), {
-                                        className: "mr-2 h-5 w-5"
-                                    }, void 0, false, {
+        className: "relative overflow-hidden",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute inset-0 bg-base-200",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5"
+                }, void 0, false, {
+                    fileName: "src/features/home/components/HeroSection.tsx",
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/features/home/components/HeroSection.tsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "hero min-h-screen relative",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "hero-content flex-col lg:flex-row-reverse max-w-7xl mx-auto px-4",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "max-w-md lg:max-w-xl relative",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "absolute -top-4 -right-4 z-10",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "badge badge-primary badge-lg p-4 shadow-lg",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.StarIcon), {
+                                                className: "w-4 h-4 mr-1"
+                                            }, void 0, false, {
+                                                fileName: "src/features/home/components/HeroSection.tsx",
+                                                lineNumber: 30,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            "Utah County Trusted"
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "src/features/home/components/HeroSection.tsx",
                                         lineNumber: 29,
                                         columnNumber: 15
-                                    }, undefined),
-                                    "Call Now"
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/features/home/components/HeroSection.tsx",
-                                lineNumber: 28,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                    lineNumber: 28,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _truckTrailerJpgDefault.default),
+                                    alt: "Construction hauling truck with side dump trailer",
+                                    className: "rounded-2xl shadow-2xl w-full border-4 border-base-300"
+                                }, void 0, false, {
+                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                    lineNumber: 35,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-full max-w-sm",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "grid grid-cols-3 gap-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "card bg-success text-success-content shadow-lg p-2",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-center",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckCircleIcon), {
+                                                            className: "w-5 h-5 mx-auto mb-1"
+                                                        }, void 0, false, {
+                                                            fileName: "src/features/home/components/HeroSection.tsx",
+                                                            lineNumber: 46,
+                                                            columnNumber: 21
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "text-xs font-bold",
+                                                            children: "Licensed"
+                                                        }, void 0, false, {
+                                                            fileName: "src/features/home/components/HeroSection.tsx",
+                                                            lineNumber: 47,
+                                                            columnNumber: 21
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                                    lineNumber: 45,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/features/home/components/HeroSection.tsx",
+                                                lineNumber: 44,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "card bg-warning text-warning-content shadow-lg p-2",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-center",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.TruckIcon), {
+                                                            className: "w-5 h-5 mx-auto mb-1"
+                                                        }, void 0, false, {
+                                                            fileName: "src/features/home/components/HeroSection.tsx",
+                                                            lineNumber: 52,
+                                                            columnNumber: 21
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "text-xs font-bold",
+                                                            children: "Insured"
+                                                        }, void 0, false, {
+                                                            fileName: "src/features/home/components/HeroSection.tsx",
+                                                            lineNumber: 53,
+                                                            columnNumber: 21
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                                    lineNumber: 51,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/features/home/components/HeroSection.tsx",
+                                                lineNumber: 50,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "card bg-info text-info-content shadow-lg p-2",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-center",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.ClockIcon), {
+                                                            className: "w-5 h-5 mx-auto mb-1"
+                                                        }, void 0, false, {
+                                                            fileName: "src/features/home/components/HeroSection.tsx",
+                                                            lineNumber: 58,
+                                                            columnNumber: 21
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "text-xs font-bold",
+                                                            children: "On-Time"
+                                                        }, void 0, false, {
+                                                            fileName: "src/features/home/components/HeroSection.tsx",
+                                                            lineNumber: 59,
+                                                            columnNumber: 21
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                                    lineNumber: 57,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/features/home/components/HeroSection.tsx",
+                                                lineNumber: 56,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/features/home/components/HeroSection.tsx",
+                                        lineNumber: 43,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                    lineNumber: 42,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/features/home/components/HeroSection.tsx",
+                            lineNumber: 26,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "max-w-md lg:max-w-2xl text-center lg:text-left",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "badge badge-secondary badge-lg mb-4 animate-pulse mt-6 lg:mt-0",
+                                    children: "\uD83D\uDE9B Same Day Service Available"
+                                }, void 0, false, {
+                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                    lineNumber: 69,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                    className: "text-4xl lg:text-6xl font-bold text-base-content leading-tight",
+                                    children: [
+                                        "Reliable Construction Hauling in",
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-primary",
+                                            children: "Utah County"
+                                        }, void 0, false, {
+                                            fileName: "src/features/home/components/HeroSection.tsx",
+                                            lineNumber: 75,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                    lineNumber: 73,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "py-6 text-xl text-base-content/80 leading-relaxed",
+                                    children: [
+                                        "We haul dirt, gravel, sand, and debris with a side dump trailer!",
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-secondary font-semibold",
+                                            children: "Fast, safe, dependable!"
+                                        }, void 0, false, {
+                                            fileName: "src/features/home/components/HeroSection.tsx",
+                                            lineNumber: 80,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                    lineNumber: 78,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "mb-8 space-y-3",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex items-center justify-center lg:justify-start",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckCircleIcon), {
+                                                    className: "w-5 h-5 text-success mr-3"
+                                                }, void 0, false, {
+                                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                                    lineNumber: 88,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-base-content",
+                                                    children: "Free estimates on all projects"
+                                                }, void 0, false, {
+                                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                                    lineNumber: 89,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/features/home/components/HeroSection.tsx",
+                                            lineNumber: 87,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex items-center justify-center lg:justify-start",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckCircleIcon), {
+                                                    className: "w-5 h-5 text-success mr-3"
+                                                }, void 0, false, {
+                                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                                    lineNumber: 94,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-base-content",
+                                                    children: "Response within 2 hours"
+                                                }, void 0, false, {
+                                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                                    lineNumber: 95,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/features/home/components/HeroSection.tsx",
+                                            lineNumber: 93,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex items-center justify-center lg:justify-start",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckCircleIcon), {
+                                                    className: "w-5 h-5 text-success mr-3"
+                                                }, void 0, false, {
+                                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                                    lineNumber: 100,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-base-content",
+                                                    children: "Local Utah County expertise"
+                                                }, void 0, false, {
+                                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                                    lineNumber: 101,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/features/home/components/HeroSection.tsx",
+                                            lineNumber: 99,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                    lineNumber: 86,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "tel:+18015550123",
+                                            className: "btn btn-secondary btn-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.PhoneIcon), {
+                                                    className: "mr-2 h-5 w-5"
+                                                }, void 0, false, {
+                                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                                    lineNumber: 113,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                "Call Now"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/features/home/components/HeroSection.tsx",
+                                            lineNumber: 109,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "sms:+18015550123",
+                                            className: "btn btn-outline btn-lg shadow-lg hover:shadow-xl transition-all duration-300",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.ChatBubbleLeftRightIcon), {
+                                                    className: "mr-2 h-5 w-5"
+                                                }, void 0, false, {
+                                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                                    lineNumber: 120,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                "Quick Text"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/features/home/components/HeroSection.tsx",
+                                            lineNumber: 116,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/features/home/components/HeroSection.tsx",
+                                    lineNumber: 108,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/features/home/components/HeroSection.tsx",
+                            lineNumber: 67,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/features/home/components/HeroSection.tsx",
+                    lineNumber: 24,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/features/home/components/HeroSection.tsx",
+                lineNumber: 23,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "fixed bottom-6 right-6 z-50 lg:hidden",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: "tel:+18015550123",
+                    className: "btn btn-secondary btn-circle btn-lg shadow-2xl animate-bounce",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.PhoneIcon), {
+                        className: "w-6 h-6"
+                    }, void 0, false, {
                         fileName: "src/features/home/components/HeroSection.tsx",
-                        lineNumber: 20,
+                        lineNumber: 134,
                         columnNumber: 11
                     }, undefined)
-                ]
-            }, void 0, true, {
+                }, void 0, false, {
+                    fileName: "src/features/home/components/HeroSection.tsx",
+                    lineNumber: 130,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/features/home/components/HeroSection.tsx",
-                lineNumber: 12,
-                columnNumber: 9
+                lineNumber: 129,
+                columnNumber: 7
             }, undefined)
-        }, void 0, false, {
-            fileName: "src/features/home/components/HeroSection.tsx",
-            lineNumber: 11,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
+        ]
+    }, void 0, true, {
         fileName: "src/features/home/components/HeroSection.tsx",
-        lineNumber: 10,
+        lineNumber: 17,
         columnNumber: 5
     }, undefined);
 };
