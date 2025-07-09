@@ -28,10 +28,10 @@ export const ContactCalloutSection = (props: ContactCalloutSectionProps) => {
                 Call Now
               </h3>
               <a
-                href="tel:+1234567890"
+                href="tel:+18016094144"
                 className="text-2xl font-bold text-primary-content hover:text-primary-content/80 transition-colors"
               >
-                (123) 456-7890
+                (801) 609-4144
               </a>
               <p className="text-primary-content/80 text-sm mt-2">
                 Click to call on mobile
@@ -49,10 +49,10 @@ export const ContactCalloutSection = (props: ContactCalloutSectionProps) => {
                 Email Us
               </h3>
               <a
-                href="mailto:info@mckelllogistics.com"
+                href="mailto:logisticsmckell@gmail.com"
                 className="text-xl font-semibold text-primary-content hover:text-primary-content/80 transition-colors"
               >
-                info@mckelllogistics.com
+                logisticsmckell@gmail.com
               </a>
               <p className="text-primary-content/80 text-sm mt-2">
                 We'll respond within 24 hours
@@ -92,12 +92,12 @@ export const ContactCalloutSection = (props: ContactCalloutSectionProps) => {
               Ready to get started? Contact us for a free quote today!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+1234567890" className="btn btn-secondary btn-lg">
+              <a href="tel:+18016094144" className="btn btn-secondary btn-lg">
                 <PhoneIcon className="mr-2 h-5 w-5" />
                 Call Now
               </a>
               <a
-                href="mailto:info@mckelllogistics.com"
+                href="mailto:logisticsmckell@gmail.com"
                 className="btn btn-outline btn-lg text-primary-content border-primary-content hover:bg-primary-content hover:text-primary"
               >
                 <EnvelopeIcon className="mr-2 h-5 w-5" />

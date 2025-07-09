@@ -1,3 +1,12 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+import {
+  PhoneIcon,
+  EnvelopeIcon,
+  MapPinIcon,
+  TruckIcon,
+} from "@heroicons/react/24/outline";
+
 type FooterProps = {};
 
 export const Footer = (props: FooterProps) => {
@@ -7,7 +16,10 @@ export const Footer = (props: FooterProps) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="font-bold text-lg mb-4">McKell Logistics</h3>
+            <div className="flex items-center mb-4">
+              <TruckIcon className="w-6 h-6 text-primary mr-2" />
+              <h3 className="font-bold text-lg">McKell Logistics</h3>
+            </div>
             <p className="text-base-content/70 mb-2">
               Professional construction hauling services in Utah County
             </p>
@@ -19,33 +31,36 @@ export const Footer = (props: FooterProps) => {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-base-content/80">
               <li>
-                <a href="/" className="hover:text-primary transition-colors">
+                <NavLink
+                  to="/"
+                  className="hover:text-primary transition-colors"
+                >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href="/services"
+                <NavLink
+                  to="/services"
                   className="hover:text-primary transition-colors"
                 >
                   Services
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href="/about"
+                <NavLink
+                  to="/about"
                   className="hover:text-primary transition-colors"
                 >
                   About
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href="/contact"
+                <NavLink
+                  to="/contact"
                   className="hover:text-primary transition-colors"
                 >
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -53,24 +68,29 @@ export const Footer = (props: FooterProps) => {
           {/* Contact Info */}
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
-            <div className="space-y-2 text-base-content/80">
-              <p>
+            <div className="space-y-3 text-base-content/80">
+              <div className="flex items-center">
+                <PhoneIcon className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+18016094144"
                   className="hover:text-primary transition-colors"
                 >
-                  (123) 456-7890
+                  (801) 609-4144
                 </a>
-              </p>
-              <p>
+              </div>
+              <div className="flex items-center">
+                <EnvelopeIcon className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
                 <a
-                  href="mailto:info@mckelllogistics.com"
+                  href="mailto:logisticsmckell@gmail.com"
                   className="hover:text-primary transition-colors"
                 >
-                  info@mckelllogistics.com
+                  logisticsmckell@gmail.com
                 </a>
-              </p>
-              <p>Utah County, UT</p>
+              </div>
+              <div className="flex items-center">
+                <MapPinIcon className="w-4 h-4 text-primary mr-2 flex-shrink-0" />
+                <span>Utah County, UT</span>
+              </div>
             </div>
           </div>
         </div>

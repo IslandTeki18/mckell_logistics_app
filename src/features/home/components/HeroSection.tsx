@@ -107,14 +107,14 @@ export const HeroSection = (props: HeroSectionProps) => {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6">
               <a
-                href="tel:+18015550123"
+                href="tel:+18016094144"
                 className="btn btn-secondary btn-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 <PhoneIcon className="mr-2 h-5 w-5" />
                 Call Now
               </a>
               <a
-                href="sms:+18015550123"
+                href="sms:+18016094144"
                 className="btn btn-outline btn-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <ChatBubbleLeftRightIcon className="mr-2 h-5 w-5" />
@@ -128,7 +128,7 @@ export const HeroSection = (props: HeroSectionProps) => {
       {/* Floating Action Button for Mobile */}
       <div className="fixed bottom-6 right-6 z-50 lg:hidden">
         <a
-          href="tel:+18015550123"
+          href="tel:+18016094144"
           className="btn btn-secondary btn-circle btn-lg shadow-2xl animate-bounce"
         >
           <PhoneIcon className="w-6 h-6" />
