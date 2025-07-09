@@ -143,8 +143,9 @@ export const HowToBookSection = (props: HowToBookSectionProps) => {
                     <button
                       type="submit"
                       className="btn btn-primary btn-lg w-full"
+                      disabled
                     >
-                      Submit Request
+                      Feature Coming Soon
                     </button>
                   </div>
                 </form>
@@ -164,7 +165,7 @@ export const HowToBookSection = (props: HowToBookSectionProps) => {
                 <p className="text-primary-content/90 mb-4">
                   For immediate assistance or urgent requests
                 </p>
-                <div className="text-2xl font-bold mb-2">(801) 555-0123</div>
+                <div className="text-2xl font-bold mb-2">(801) 609-4144</div>
                 <div className="text-sm text-primary-content/80">
                   Monday - Friday: 7 AM - 6 PM
                   <br />

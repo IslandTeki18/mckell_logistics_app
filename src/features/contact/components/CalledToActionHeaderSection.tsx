@@ -37,8 +37,8 @@ export const CallToActionHeaderSection = (
                 <p className="text-primary/80 text-sm mb-4">
                   Speak directly with us for immediate assistance
                 </p>
-                <a href="tel:+18015550123" className="btn btn-primary btn-sm">
-                  (801) 555-0123
+                <a href="tel:+18016094144" className="btn btn-primary btn-sm">
+                  (801) 609-4144
                 </a>
               </div>
             </div>
@@ -54,7 +54,7 @@ export const CallToActionHeaderSection = (
                 <p className="text-primary/80 text-sm mb-4">
                   Quick questions or schedule via text
                 </p>
-                <a href="sms:+18015550123" className="btn btn-primary btn-sm">
+                <a href="sms:+18016094144" className="btn btn-primary btn-sm">
                   Send Text
                 </a>
               </div>
@@ -71,7 +71,7 @@ export const CallToActionHeaderSection = (
                 <p className="text-primary/80 text-sm mb-4">
                   Fill out our form for detailed quotes
                 </p>
-                <button className="btn btn-primary btn-sm">Get Started</button>
+                <button className="btn btn-primary btn-sm" disabled>Feature Coming Soon</button>
               </div>
             </div>
           </div>

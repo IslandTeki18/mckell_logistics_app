@@ -5,6 +5,7 @@ import {
   HandRaisedIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
+// @ts-ignore
 import portrait from "url:../assets/images/portrait_final.jpeg";
 
 type WhoWeAreSectionProps = {};
@@ -104,14 +105,7 @@ export const WhoWeAreSection = (props: WhoWeAreSectionProps) => {
                   </p>
                 </div>
               </div>
-
-              {/* Call to Action */}
-              <div className="text-center lg:text-left">
-                <button className="btn btn-primary btn-lg shadow-lg hover:shadow-xl transition-shadow">
-                  <PhoneIcon className="mr-2 h-5 w-5" />
-                  Get In Touch
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>

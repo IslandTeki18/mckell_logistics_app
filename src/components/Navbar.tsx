@@ -107,7 +107,7 @@ export const Navbar = (props: NavbarProps) => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a href="tel:+18015550123" className="btn btn-primary">
+        <a href="tel:+18016094144" className="btn btn-primary">
           <PhoneIcon className="w-4 h-4 mr-2" />
           <span className="hidden sm:inline">Call Now</span>
         </a>
