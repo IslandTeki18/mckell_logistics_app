@@ -2102,6 +2102,80 @@
     }
   }
 
+  .rating {
+    vertical-align: middle;
+    display: inline-flex;
+    position: relative;
+
+    & input {
+      appearance: none;
+      border: none;
+    }
+
+    & :where(*) {
+      background-color: var(--color-base-content);
+      opacity: .2;
+      border-radius: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      animation: .25s ease-out rating;
+
+      &:is(input) {
+        cursor: pointer;
+      }
+    }
+
+    & .rating-hidden {
+      background-color: #0000;
+      width: .5rem;
+    }
+
+    & input[type="radio"]:checked {
+      background-image: none;
+    }
+
+    & * {
+      &:checked, &[aria-checked="true"], &[aria-current="true"], &:has( ~ :checked,  ~ [aria-checked="true"],  ~ [aria-current="true"]) {
+        opacity: 1;
+      }
+
+      &:focus-visible {
+        transition: scale .2s ease-out;
+        scale: 1.1;
+      }
+    }
+
+    & :active:focus {
+      animation: none;
+      scale: 1.1;
+    }
+
+    &.rating-xs :where(:not(.rating-hidden)) {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    &.rating-sm :where(:not(.rating-hidden)) {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    &.rating-md :where(:not(.rating-hidden)) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    &.rating-lg :where(:not(.rating-hidden)) {
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+
+    &.rating-xl :where(:not(.rating-hidden)) {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
   .progress {
     appearance: none;
     border-radius: var(--radius-box);
@@ -2598,10 +2672,6 @@
     }
   }
 
-  .mt-1 {
-    margin-top: calc(var(--spacing) * 1);
-  }
-
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -2660,10 +2730,6 @@
 
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
-  }
-
-  .ml-2 {
-    margin-left: calc(var(--spacing) * 2);
   }
 
   .status {
@@ -3023,10 +3089,6 @@
     height: calc(var(--spacing) * 20);
   }
 
-  .h-24 {
-    height: calc(var(--spacing) * 24);
-  }
-
   .h-40 {
     height: calc(var(--spacing) * 40);
   }
@@ -3045,10 +3107,6 @@
 
   .h-auto {
     height: auto;
-  }
-
-  .h-full {
-    height: 100%;
   }
 
   .min-h-screen {
@@ -3085,10 +3143,6 @@
 
   .w-16 {
     width: calc(var(--spacing) * 16);
-  }
-
-  .w-24 {
-    width: calc(var(--spacing) * 24);
   }
 
   .w-40 {
@@ -3502,10 +3556,6 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .fill-current {
-    fill: currentColor;
-  }
-
   .stroke-current {
     stroke: currentColor;
   }
@@ -3518,10 +3568,6 @@
     object-position: center;
   }
 
-  .object-top {
-    object-position: top;
-  }
-
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -3532,10 +3578,6 @@
 
   .p-6 {
     padding: calc(var(--spacing) * 6);
-  }
-
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
   }
 
   .badge-lg {
@@ -3584,10 +3626,6 @@
     padding-top: calc(var(--spacing) * 2);
   }
 
-  .pt-4 {
-    padding-top: calc(var(--spacing) * 4);
-  }
-
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
@@ -3617,11 +3655,6 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
 
   .text-9xl {
@@ -3799,10 +3832,6 @@
 
   .text-success-content {
     color: var(--color-success-content);
-  }
-
-  .text-warning {
-    color: var(--color-warning);
   }
 
   .text-warning-content {
@@ -4148,12 +4177,6 @@
     }
   }
 
-  .lg\:max-w-lg {
-    @media (width >= 64rem) {
-      max-width: var(--container-lg);
-    }
-  }
-
   .lg\:max-w-xl {
     @media (width >= 64rem) {
       max-width: var(--container-xl);
@@ -4207,13 +4230,6 @@
     @media (width >= 64rem) {
       font-size: var(--text-4xl);
       line-height: var(--tw-leading, var(--text-4xl--line-height));
-    }
-  }
-
-  .lg\:text-5xl {
-    @media (width >= 64rem) {
-      font-size: var(--text-5xl);
-      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
 

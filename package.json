@@ -16,6 +16,7 @@
     "daisyui": "^5.0.46",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^7.6.3"
   },
   "devDependencies": {
@@ -23,9 +24,12 @@
     "@babel/preset-env": "^7.28.0",
     "@babel/preset-react": "^7.27.1",
     "@babel/preset-typescript": "^7.27.1",
+    "@parcel/packager-raw-url": "^2.15.4",
+    "@parcel/transformer-webmanifest": "^2.15.4",
     "@tailwindcss/postcss": "^4.1.11",
     "@types/node": "^24.0.11",
     "@types/react": "^19.1.8",
+    "@types/react-helmet": "^6.1.11",
     "autoprefixer": "^10.4.21",
     "parcel": "^2.15.4",
     "postcss": "^8.5.6",
