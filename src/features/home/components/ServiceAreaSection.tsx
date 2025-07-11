@@ -19,17 +19,6 @@ export const ServiceAreaSection = (props: ServiceAreaSectionProps) => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
-          {/* Map Placeholder */}
-          <div className="order-2 lg:order-1">
-            <div className="bg-base-100 rounded-lg shadow-xl h-80 flex items-center justify-center">
-              <img
-                src={utahCountyMap}
-                alt="Utah County Service Area Map"
-                className="rounded-lg w-full h-auto object-cover"
-              />
-            </div>
-          </div>
-
           {/* Service Area Details */}
           <div className="order-1 lg:order-2">
             <h3 className="text-2xl font-bold text-base-content mb-6">
@@ -91,6 +80,17 @@ export const ServiceAreaSection = (props: ServiceAreaSectionProps) => {
                   specific location and project needs.
                 </p>
               </div>
+            </div>
+          </div>
+
+          {/* Map Placeholder */}
+          <div className="order-2 lg:order-1">
+            <div className="bg-base-100 rounded-lg shadow-xl h-80 flex items-center justify-center">
+              <img
+                src={utahCountyMap}
+                alt="Utah County Service Area Map"
+                className="rounded-lg w-sm h-auto object-cover"
+              />
             </div>
           </div>
         </div>

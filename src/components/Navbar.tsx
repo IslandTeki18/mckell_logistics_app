@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Bars3Icon, PhoneIcon } from "@heroicons/react/24/outline";
 
 type NavbarProps = {};
 
 export const Navbar = (props: NavbarProps) => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+    // Remove focus from the dropdown button to close it
+    const dropdown = document.activeElement as HTMLElement;
+    if (dropdown) {
+      dropdown.blur();
+    }
+  };
+
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost lg:hidden"
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+          >
             <Bars3Icon className="h-5 w-5" />
           </div>
           <ul
@@ -22,6 +38,7 @@ export const Navbar = (props: NavbarProps) => {
                 className={({ isActive }) =>
                   isActive ? "text-primary font-semibold" : ""
                 }
+                onClick={closeDropdown}
               >
                 Home
               </NavLink>
@@ -32,6 +49,7 @@ export const Navbar = (props: NavbarProps) => {
                 className={({ isActive }) =>
                   isActive ? "text-primary font-semibold" : ""
                 }
+                onClick={closeDropdown}
               >
                 Services
               </NavLink>
@@ -42,6 +60,7 @@ export const Navbar = (props: NavbarProps) => {
                 className={({ isActive }) =>
                   isActive ? "text-primary font-semibold" : ""
                 }
+                onClick={closeDropdown}
               >
                 About
               </NavLink>
@@ -52,6 +71,7 @@ export const Navbar = (props: NavbarProps) => {
                 className={({ isActive }) =>
                   isActive ? "text-primary font-semibold" : ""
                 }
+                onClick={closeDropdown}
               >
                 Contact
               </NavLink>
