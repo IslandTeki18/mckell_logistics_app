@@ -16408,6 +16408,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _outline = require("@heroicons/react/24/outline");
+// @ts-ignore
 var _utahCountyJpg = require("url:~src/assets/images/utah_county.jpg");
 var _utahCountyJpgDefault = parcelHelpers.interopDefault(_utahCountyJpg);
 const ServiceAreaSection = (props)=>{
@@ -16424,7 +16425,7 @@ const ServiceAreaSection = (props)=>{
                             children: "Service Area"
                         }, void 0, false, {
                             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                            lineNumber: 12,
+                            lineNumber: 13,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -16432,13 +16433,13 @@ const ServiceAreaSection = (props)=>{
                             children: "Proudly serving Provo, Orem, Spanish Fork, American Fork, and surrounding areas within 25 miles."
                         }, void 0, false, {
                             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                            lineNumber: 15,
+                            lineNumber: 16,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                    lineNumber: 11,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16452,7 +16453,7 @@ const ServiceAreaSection = (props)=>{
                                     children: "Utah County & Surrounding Areas"
                                 }, void 0, false, {
                                     fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                    lineNumber: 24,
+                                    lineNumber: 25,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16467,14 +16468,14 @@ const ServiceAreaSection = (props)=>{
                                                             className: "w-5 h-5 text-secondary mr-2"
                                                         }, void 0, false, {
                                                             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                            lineNumber: 32,
+                                                            lineNumber: 33,
                                                             columnNumber: 19
                                                         }, undefined),
                                                         "Primary Service Cities"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                    lineNumber: 31,
+                                                    lineNumber: 32,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16495,7 +16496,7 @@ const ServiceAreaSection = (props)=>{
                                                                     className: "w-2 h-2 bg-secondary rounded-full"
                                                                 }, void 0, false, {
                                                                     fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                                    lineNumber: 47,
+                                                                    lineNumber: 48,
                                                                     columnNumber: 23
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -16503,24 +16504,24 @@ const ServiceAreaSection = (props)=>{
                                                                     children: city
                                                                 }, void 0, false, {
                                                                     fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                                    lineNumber: 48,
+                                                                    lineNumber: 49,
                                                                     columnNumber: 23
                                                                 }, undefined)
                                                             ]
                                                         }, city, true, {
                                                             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                            lineNumber: 46,
+                                                            lineNumber: 47,
                                                             columnNumber: 21
                                                         }, undefined))
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                    lineNumber: 35,
+                                                    lineNumber: 36,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                            lineNumber: 30,
+                                            lineNumber: 31,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16536,17 +16537,17 @@ const ServiceAreaSection = (props)=>{
                                                                 className: "w-5 h-5 text-secondary"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                                lineNumber: 59,
+                                                                lineNumber: 60,
                                                                 columnNumber: 23
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                            lineNumber: 58,
+                                                            lineNumber: 59,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                        lineNumber: 57,
+                                                        lineNumber: 58,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16556,7 +16557,7 @@ const ServiceAreaSection = (props)=>{
                                                                 children: "25 Mile Service Radius"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                                lineNumber: 63,
+                                                                lineNumber: 64,
                                                                 columnNumber: 21
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -16564,24 +16565,24 @@ const ServiceAreaSection = (props)=>{
                                                                 children: "Fast response times within our coverage area"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                                lineNumber: 66,
+                                                                lineNumber: 67,
                                                                 columnNumber: 21
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                        lineNumber: 62,
+                                                        lineNumber: 63,
                                                         columnNumber: 19
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                lineNumber: 56,
+                                                lineNumber: 57,
                                                 columnNumber: 17
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                            lineNumber: 55,
+                                            lineNumber: 56,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16594,7 +16595,7 @@ const ServiceAreaSection = (props)=>{
                                                         children: "Outside our standard area?"
                                                     }, void 0, false, {
                                                         fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                        lineNumber: 76,
+                                                        lineNumber: 77,
                                                         columnNumber: 19
                                                     }, undefined),
                                                     " ",
@@ -16602,24 +16603,24 @@ const ServiceAreaSection = (props)=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                                lineNumber: 75,
+                                                lineNumber: 76,
                                                 columnNumber: 17
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 75,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                    lineNumber: 28,
+                                    lineNumber: 29,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                            lineNumber: 23,
+                            lineNumber: 24,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16632,34 +16633,34 @@ const ServiceAreaSection = (props)=>{
                                     className: "rounded-lg w-sm h-auto object-cover"
                                 }, void 0, false, {
                                     fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                    lineNumber: 89,
+                                    lineNumber: 90,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                                lineNumber: 88,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                            lineNumber: 87,
+                            lineNumber: 88,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/home/components/ServiceAreaSection.tsx",
-                    lineNumber: 21,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/features/home/components/ServiceAreaSection.tsx",
-            lineNumber: 10,
+            lineNumber: 11,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/features/home/components/ServiceAreaSection.tsx",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 5
     }, undefined);
 };

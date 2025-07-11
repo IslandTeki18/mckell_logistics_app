@@ -1,5 +1,6 @@
 import React from "react";
 import { MapIcon, MapPinIcon, BoltIcon } from "@heroicons/react/24/outline";
+// @ts-ignore
 import utahCountyMap from "url:~src/assets/images/utah_county.jpg";
 
 type ServiceAreaSectionProps = {};
