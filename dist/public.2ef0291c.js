@@ -11762,6 +11762,7 @@ var _portraitFinalJpegDefault = parcelHelpers.interopDefault(_portraitFinalJpeg)
 const WhoWeAreSection = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "py-16 bg-base-100",
+        "aria-label": "About McKell Logistics - Who we are",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "container mx-auto px-4",
             children: [
@@ -11773,7 +11774,7 @@ const WhoWeAreSection = (props)=>{
                             children: "Who We Are"
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                            lineNumber: 18,
+                            lineNumber: 21,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11781,13 +11782,13 @@ const WhoWeAreSection = (props)=>{
                             children: "Local expertise you can trust for all your hauling needs"
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                            lineNumber: 21,
+                            lineNumber: 24,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                    lineNumber: 17,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11802,25 +11803,35 @@ const WhoWeAreSection = (props)=>{
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                         src: (0, _portraitFinalJpegDefault.default),
                                         alt: "McKell Logistics owner with truck",
-                                        className: "rounded-lg w-full h-auto object-cover object-center"
+                                        className: "rounded-lg w-full h-auto object-cover object-center",
+                                        loading: "lazy",
+                                        decoding: "async",
+                                        width: "600",
+                                        height: "400",
+                                        onLoad: (e)=>{
+                                            // Hide skeleton once image loads
+                                            const img = e.target;
+                                            const skeleton = img.parentElement?.querySelector(".animate-pulse");
+                                            if (skeleton) skeleton.style.display = "none";
+                                        }
                                     }, void 0, false, {
                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                        lineNumber: 31,
+                                        lineNumber: 34,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                    lineNumber: 30,
+                                    lineNumber: 33,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                lineNumber: 29,
+                                lineNumber: 32,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                            lineNumber: 28,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11835,7 +11846,7 @@ const WhoWeAreSection = (props)=>{
                                                 children: "McKell Logistics"
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 44,
+                                                lineNumber: 61,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11843,7 +11854,7 @@ const WhoWeAreSection = (props)=>{
                                                 children: "McKell Logistics is a solo-owned hauling company serving the Utah County area with reliable, professional service."
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 47,
+                                                lineNumber: 64,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11851,17 +11862,19 @@ const WhoWeAreSection = (props)=>{
                                                 children: "Founded with a passion for construction and a commitment to excellence, we've built our reputation on punctuality, fair pricing, and going the extra mile for every client."
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 51,
+                                                lineNumber: 68,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                        lineNumber: 43,
+                                        lineNumber: 60,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "grid grid-cols-1 sm:grid-cols-3 gap-4",
+                                        role: "group",
+                                        "aria-label": "Company values",
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "card bg-primary text-primary-content shadow-lg border border-primary/20",
@@ -11871,15 +11884,16 @@ const WhoWeAreSection = (props)=>{
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                             className: "flex justify-center mb-2",
                                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.HomeIcon), {
-                                                                className: "w-8 h-8"
+                                                                className: "w-8 h-8",
+                                                                "aria-hidden": "true"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                                lineNumber: 63,
+                                                                lineNumber: 84,
                                                                 columnNumber: 23
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 62,
+                                                            lineNumber: 83,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -11887,7 +11901,7 @@ const WhoWeAreSection = (props)=>{
                                                             children: "Local Roots"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 65,
+                                                            lineNumber: 86,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11895,18 +11909,18 @@ const WhoWeAreSection = (props)=>{
                                                             children: "Utah County native"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 66,
+                                                            lineNumber: 87,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 61,
+                                                    lineNumber: 82,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 60,
+                                                lineNumber: 81,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11917,15 +11931,16 @@ const WhoWeAreSection = (props)=>{
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                             className: "flex justify-center mb-2",
                                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.BoltIcon), {
-                                                                className: "w-8 h-8"
+                                                                className: "w-8 h-8",
+                                                                "aria-hidden": "true"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                                lineNumber: 75,
+                                                                lineNumber: 96,
                                                                 columnNumber: 23
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 74,
+                                                            lineNumber: 95,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -11933,7 +11948,7 @@ const WhoWeAreSection = (props)=>{
                                                             children: "Reliability"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 77,
+                                                            lineNumber: 98,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11941,18 +11956,18 @@ const WhoWeAreSection = (props)=>{
                                                             children: "On-time service"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 78,
+                                                            lineNumber: 99,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 73,
+                                                    lineNumber: 94,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 72,
+                                                lineNumber: 93,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11963,15 +11978,16 @@ const WhoWeAreSection = (props)=>{
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                             className: "flex justify-center mb-2",
                                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.HandRaisedIcon), {
-                                                                className: "w-8 h-8"
+                                                                className: "w-8 h-8",
+                                                                "aria-hidden": "true"
                                                             }, void 0, false, {
                                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                                lineNumber: 87,
+                                                                lineNumber: 108,
                                                                 columnNumber: 23
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 86,
+                                                            lineNumber: 107,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -11979,7 +11995,7 @@ const WhoWeAreSection = (props)=>{
                                                             children: "Hands-On"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 89,
+                                                            lineNumber: 110,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -11987,28 +12003,30 @@ const WhoWeAreSection = (props)=>{
                                                             children: "Personal service"
                                                         }, void 0, false, {
                                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                            lineNumber: 90,
+                                                            lineNumber: 111,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 85,
+                                                    lineNumber: 106,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                lineNumber: 84,
+                                                lineNumber: 105,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                        lineNumber: 59,
+                                        lineNumber: 76,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "card bg-base-200 shadow-lg border border-base-300",
+                                        role: "complementary",
+                                        "aria-label": "Company mission statement",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "card-body",
                                             children: [
@@ -12017,7 +12035,7 @@ const WhoWeAreSection = (props)=>{
                                                     children: "Our Mission"
                                                 }, void 0, false, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 100,
+                                                    lineNumber: 125,
                                                     columnNumber: 19
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -12025,41 +12043,41 @@ const WhoWeAreSection = (props)=>{
                                                     children: "To provide Utah County contractors and homeowners with dependable, professional hauling services that keep projects moving forward on time and on budget."
                                                 }, void 0, false, {
                                                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                                    lineNumber: 101,
+                                                    lineNumber: 126,
                                                     columnNumber: 19
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                            lineNumber: 99,
+                                            lineNumber: 124,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                        lineNumber: 98,
+                                        lineNumber: 119,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                                lineNumber: 42,
+                                lineNumber: 59,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                            lineNumber: 41,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/about/components/WhoWeAreSection.tsx",
-                    lineNumber: 26,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/features/about/components/WhoWeAreSection.tsx",
-            lineNumber: 16,
+            lineNumber: 19,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
@@ -20229,9 +20247,11 @@ var _truckTrailerJpgDefault = parcelHelpers.interopDefault(_truckTrailerJpg);
 const HeroSection = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "relative overflow-hidden",
+        "aria-label": "Hero section - McKell Logistics construction hauling services",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "absolute inset-0 bg-base-200",
+                "aria-hidden": "true",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5"
                 }, void 0, false, {
@@ -20256,9 +20276,12 @@ const HeroSection = (props)=>{
                                     className: "absolute -top-4 -right-4 z-10",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "badge badge-primary badge-lg p-4 shadow-lg",
+                                        role: "img",
+                                        "aria-label": "Utah County Trusted Badge",
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.StarIcon), {
-                                                className: "w-4 h-4 mr-1"
+                                                className: "w-4 h-4 mr-1",
+                                                "aria-hidden": "true"
                                             }, void 0, false, {
                                                 fileName: "src/features/home/components/HeroSection.tsx",
                                                 lineNumber: 30,
@@ -20298,6 +20321,8 @@ const HeroSection = (props)=>{
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-full max-w-sm",
+                                    role: "group",
+                                    "aria-label": "Company credentials",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "grid grid-cols-3 gap-2",
                                         children: [
@@ -20307,7 +20332,8 @@ const HeroSection = (props)=>{
                                                     className: "text-center",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckCircleIcon), {
-                                                            className: "w-5 h-5 mx-auto mb-1"
+                                                            className: "w-5 h-5 mx-auto mb-1",
+                                                            "aria-hidden": "true"
                                                         }, void 0, false, {
                                                             fileName: "src/features/home/components/HeroSection.tsx",
                                                             lineNumber: 61,
@@ -20338,7 +20364,8 @@ const HeroSection = (props)=>{
                                                     className: "text-center",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.TruckIcon), {
-                                                            className: "w-5 h-5 mx-auto mb-1"
+                                                            className: "w-5 h-5 mx-auto mb-1",
+                                                            "aria-hidden": "true"
                                                         }, void 0, false, {
                                                             fileName: "src/features/home/components/HeroSection.tsx",
                                                             lineNumber: 67,
@@ -20369,7 +20396,8 @@ const HeroSection = (props)=>{
                                                     className: "text-center",
                                                     children: [
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.ClockIcon), {
-                                                            className: "w-5 h-5 mx-auto mb-1"
+                                                            className: "w-5 h-5 mx-auto mb-1",
+                                                            "aria-hidden": "true"
                                                         }, void 0, false, {
                                                             fileName: "src/features/home/components/HeroSection.tsx",
                                                             lineNumber: 73,
@@ -20462,12 +20490,16 @@ const HeroSection = (props)=>{
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "mb-8 space-y-3",
+                                    role: "list",
+                                    "aria-label": "Service benefits",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "flex items-center justify-center lg:justify-start",
+                                            role: "listitem",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckCircleIcon), {
-                                                    className: "w-5 h-5 text-success mr-3"
+                                                    className: "w-5 h-5 text-success mr-3",
+                                                    "aria-hidden": "true"
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
                                                     lineNumber: 103,
@@ -20489,9 +20521,11 @@ const HeroSection = (props)=>{
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "flex items-center justify-center lg:justify-start",
+                                            role: "listitem",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckCircleIcon), {
-                                                    className: "w-5 h-5 text-success mr-3"
+                                                    className: "w-5 h-5 text-success mr-3",
+                                                    "aria-hidden": "true"
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
                                                     lineNumber: 109,
@@ -20513,9 +20547,11 @@ const HeroSection = (props)=>{
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "flex items-center justify-center lg:justify-start",
+                                            role: "listitem",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CheckCircleIcon), {
-                                                    className: "w-5 h-5 text-success mr-3"
+                                                    className: "w-5 h-5 text-success mr-3",
+                                                    "aria-hidden": "true"
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
                                                     lineNumber: 115,
@@ -20547,12 +20583,14 @@ const HeroSection = (props)=>{
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                             href: "tel:+18016094144",
                                             className: "btn btn-secondary btn-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105",
+                                            "aria-label": "Call McKell Logistics at 801-609-4144",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.PhoneIcon), {
-                                                    className: "mr-2 h-5 w-5"
+                                                    className: "mr-2 h-5 w-5",
+                                                    "aria-hidden": "true"
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                                    lineNumber: 128,
+                                                    lineNumber: 129,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 "Call Now"
@@ -20565,19 +20603,21 @@ const HeroSection = (props)=>{
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                             href: "sms:+18016094144",
                                             className: "btn btn-outline btn-lg shadow-lg hover:shadow-xl transition-all duration-300",
+                                            "aria-label": "Send text message to McKell Logistics at 801-609-4144",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.ChatBubbleLeftRightIcon), {
-                                                    className: "mr-2 h-5 w-5"
+                                                    className: "mr-2 h-5 w-5",
+                                                    "aria-hidden": "true"
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                                    lineNumber: 135,
+                                                    lineNumber: 137,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 "Quick Text"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                            lineNumber: 131,
+                                            lineNumber: 132,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
@@ -20608,21 +20648,23 @@ const HeroSection = (props)=>{
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                     href: "tel:+18016094144",
                     className: "btn btn-secondary btn-circle btn-lg shadow-2xl animate-bounce",
+                    "aria-label": "Call McKell Logistics at 801-609-4144",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.PhoneIcon), {
-                        className: "w-6 h-6"
+                        className: "w-6 h-6",
+                        "aria-hidden": "true"
                     }, void 0, false, {
                         fileName: "src/features/home/components/HeroSection.tsx",
-                        lineNumber: 149,
+                        lineNumber: 152,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/features/home/components/HeroSection.tsx",
-                    lineNumber: 145,
+                    lineNumber: 147,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/features/home/components/HeroSection.tsx",
-                lineNumber: 144,
+                lineNumber: 146,
                 columnNumber: 7
             }, undefined)
         ]
@@ -20662,6 +20704,7 @@ var _outline = require("@heroicons/react/24/outline");
 const ServiceSummarySection = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "py-24 bg-base-100",
+        "aria-label": "Service summary - What McKell Logistics does",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "container mx-auto px-4",
             children: [
@@ -20673,7 +20716,7 @@ const ServiceSummarySection = (props)=>{
                             children: "What We Do"
                         }, void 0, false, {
                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                            lineNumber: 17,
+                            lineNumber: 20,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -20681,40 +20724,45 @@ const ServiceSummarySection = (props)=>{
                             children: "Professional hauling services tailored to your construction needs"
                         }, void 0, false, {
                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                            lineNumber: 20,
+                            lineNumber: 23,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                    lineNumber: 16,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto",
+                    role: "list",
+                    "aria-label": "McKell Logistics services",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "flex items-start space-x-4",
+                            role: "listitem",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "flex-shrink-0",
+                                    "aria-hidden": "true",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.CubeIcon), {
-                                            className: "w-6 h-6 text-secondary"
+                                            className: "w-6 h-6 text-secondary",
+                                            "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 30,
+                                            lineNumber: 37,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                        lineNumber: 29,
+                                        lineNumber: 36,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                    lineNumber: 28,
+                                    lineNumber: 35,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20724,7 +20772,7 @@ const ServiceSummarySection = (props)=>{
                                             children: "Material Hauling"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 34,
+                                            lineNumber: 44,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -20732,43 +20780,46 @@ const ServiceSummarySection = (props)=>{
                                             children: "Dirt, gravel, sand, and construction debris transport"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 37,
+                                            lineNumber: 47,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                    lineNumber: 33,
+                                    lineNumber: 43,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                            lineNumber: 27,
+                            lineNumber: 34,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "flex items-start space-x-4",
+                            role: "listitem",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "flex-shrink-0",
+                                    "aria-hidden": "true",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.ArrowsRightLeftIcon), {
-                                            className: "w-6 h-6 text-secondary"
+                                            className: "w-6 h-6 text-secondary",
+                                            "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 47,
+                                            lineNumber: 57,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                        lineNumber: 46,
+                                        lineNumber: 56,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 55,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20778,7 +20829,7 @@ const ServiceSummarySection = (props)=>{
                                             children: "Side Dump Trailer Service"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 51,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -20786,43 +20837,46 @@ const ServiceSummarySection = (props)=>{
                                             children: "Efficient unloading with specialized side dump equipment"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 54,
+                                            lineNumber: 67,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                    lineNumber: 50,
+                                    lineNumber: 63,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                            lineNumber: 44,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "flex items-start space-x-4",
+                            role: "listitem",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "flex-shrink-0",
+                                    "aria-hidden": "true",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.MapPinIcon), {
-                                            className: "w-6 h-6 text-secondary"
+                                            className: "w-6 h-6 text-secondary",
+                                            "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 64,
+                                            lineNumber: 77,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                        lineNumber: 63,
+                                        lineNumber: 76,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 75,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20832,7 +20886,7 @@ const ServiceSummarySection = (props)=>{
                                             children: "Local Construction Site Delivery"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 84,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -20840,43 +20894,46 @@ const ServiceSummarySection = (props)=>{
                                             children: "Direct delivery to your Utah County construction sites"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 87,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                    lineNumber: 67,
+                                    lineNumber: 83,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                            lineNumber: 61,
+                            lineNumber: 74,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "flex items-start space-x-4",
+                            role: "listitem",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "flex-shrink-0",
+                                    "aria-hidden": "true",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.ClockIcon), {
-                                            className: "w-6 h-6 text-secondary"
+                                            className: "w-6 h-6 text-secondary",
+                                            "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 81,
+                                            lineNumber: 97,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 96,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 95,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20886,7 +20943,7 @@ const ServiceSummarySection = (props)=>{
                                             children: "Short-Notice Availability"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 85,
+                                            lineNumber: 104,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -20894,43 +20951,46 @@ const ServiceSummarySection = (props)=>{
                                             children: "Ready to respond quickly to urgent hauling needs"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 107,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                    lineNumber: 84,
+                                    lineNumber: 103,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                            lineNumber: 78,
+                            lineNumber: 94,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "flex items-start space-x-4 md:col-span-2 lg:col-span-1",
+                            role: "listitem",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "flex-shrink-0",
+                                    "aria-hidden": "true",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.DocumentTextIcon), {
-                                            className: "w-6 h-6 text-secondary"
+                                            className: "w-6 h-6 text-secondary",
+                                            "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 98,
+                                            lineNumber: 120,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 119,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                    lineNumber: 96,
+                                    lineNumber: 118,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20940,7 +21000,7 @@ const ServiceSummarySection = (props)=>{
                                             children: "Hourly or Contract Based Jobs"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 102,
+                                            lineNumber: 127,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -20948,31 +21008,31 @@ const ServiceSummarySection = (props)=>{
                                             children: "Flexible pricing options to fit your project budget"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                            lineNumber: 105,
+                                            lineNumber: 130,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 126,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                            lineNumber: 95,
+                            lineNumber: 114,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/features/home/components/ServiceSummarySection.tsx",
-                    lineNumber: 25,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/features/home/components/ServiceSummarySection.tsx",
-            lineNumber: 15,
+            lineNumber: 18,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
@@ -22983,7 +23043,7 @@ $RefreshReg$(_c, "Layout");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react-router-dom":"fKeYf","../components/Navbar":"9czgh","../components/Footer":"h30z4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U","../components/ScrollToTop":"cJptW"}],"9czgh":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"fKeYf","../components/Navbar":"9czgh","../components/Footer":"h30z4","../components/ScrollToTop":"cJptW","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"9czgh":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$74c8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$74c8.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -23005,11 +23065,17 @@ const Navbar = (props)=>{
     const [isDropdownOpen, setIsDropdownOpen] = (0, _react.useState)(false);
     const closeDropdown = ()=>{
         setIsDropdownOpen(false);
+        // Remove focus from the dropdown button to close it
         const dropdown = document.activeElement;
         if (dropdown) dropdown.blur();
     };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    const handleKeyDown = (event)=>{
+        if (event.key === "Escape") closeDropdown();
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
         className: "navbar bg-base-100 shadow-sm",
+        role: "navigation",
+        "aria-label": "Main navigation",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "navbar-start",
@@ -23017,192 +23083,217 @@ const Navbar = (props)=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "dropdown",
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 tabIndex: 0,
-                                role: "button",
                                 className: "btn btn-ghost lg:hidden",
                                 onClick: ()=>setIsDropdownOpen(!isDropdownOpen),
+                                onKeyDown: handleKeyDown,
+                                "aria-expanded": isDropdownOpen,
+                                "aria-haspopup": "true",
+                                "aria-label": "Toggle navigation menu",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.Bars3Icon), {
-                                    className: "h-5 w-5"
+                                    className: "h-5 w-5",
+                                    "aria-hidden": "true"
                                 }, void 0, false, {
                                     fileName: "src/components/Navbar.tsx",
-                                    lineNumber: 28,
+                                    lineNumber: 42,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 22,
+                                lineNumber: 33,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                                 tabIndex: 0,
                                 className: "menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow",
+                                role: "menu",
+                                "aria-label": "Mobile navigation menu",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        role: "none",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                             to: "/",
                                             className: ({ isActive })=>isActive ? "text-primary font-semibold" : "",
                                             onClick: closeDropdown,
+                                            role: "menuitem",
                                             children: "Home"
                                         }, void 0, false, {
                                             fileName: "src/components/Navbar.tsx",
-                                            lineNumber: 35,
+                                            lineNumber: 51,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Navbar.tsx",
-                                        lineNumber: 34,
+                                        lineNumber: 50,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        role: "none",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                             to: "/services",
                                             className: ({ isActive })=>isActive ? "text-primary font-semibold" : "",
                                             onClick: closeDropdown,
+                                            role: "menuitem",
                                             children: "Services"
                                         }, void 0, false, {
                                             fileName: "src/components/Navbar.tsx",
-                                            lineNumber: 46,
+                                            lineNumber: 63,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Navbar.tsx",
-                                        lineNumber: 45,
+                                        lineNumber: 62,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        role: "none",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                             to: "/about",
                                             className: ({ isActive })=>isActive ? "text-primary font-semibold" : "",
                                             onClick: closeDropdown,
+                                            role: "menuitem",
                                             children: "About"
                                         }, void 0, false, {
                                             fileName: "src/components/Navbar.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 75,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Navbar.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 74,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        role: "none",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                             to: "/contact",
                                             className: ({ isActive })=>isActive ? "text-primary font-semibold" : "",
                                             onClick: closeDropdown,
+                                            role: "menuitem",
                                             children: "Contact"
                                         }, void 0, false, {
                                             fileName: "src/components/Navbar.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 87,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Navbar.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 86,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 30,
+                                lineNumber: 44,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Navbar.tsx",
-                        lineNumber: 21,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                         to: "/",
                         className: "btn btn-ghost text-xl font-bold",
+                        "aria-label": "McKell Logistics - Go to homepage",
                         children: "McKell Logistics"
                     }, void 0, false, {
                         fileName: "src/components/Navbar.tsx",
-                        lineNumber: 80,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Navbar.tsx",
-                lineNumber: 20,
+                lineNumber: 31,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "navbar-center hidden lg:flex",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                     className: "menu menu-horizontal px-1",
+                    role: "menubar",
+                    "aria-label": "Desktop navigation menu",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            role: "none",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                 to: "/",
                                 className: ({ isActive })=>isActive ? "text-primary font-semibold" : "",
+                                role: "menuitem",
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 87,
+                                lineNumber: 115,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 86,
+                            lineNumber: 114,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            role: "none",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                 to: "/services",
                                 className: ({ isActive })=>isActive ? "text-primary font-semibold" : "",
+                                role: "menuitem",
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 97,
+                                lineNumber: 126,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 96,
+                            lineNumber: 125,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            role: "none",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                 to: "/about",
                                 className: ({ isActive })=>isActive ? "text-primary font-semibold" : "",
+                                role: "menuitem",
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 107,
+                                lineNumber: 137,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 106,
+                            lineNumber: 136,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            role: "none",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                 to: "/contact",
                                 className: ({ isActive })=>isActive ? "text-primary font-semibold" : "",
+                                role: "menuitem",
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 117,
+                                lineNumber: 148,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 116,
+                            lineNumber: 147,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Navbar.tsx",
-                    lineNumber: 85,
+                    lineNumber: 109,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Navbar.tsx",
-                lineNumber: 84,
+                lineNumber: 108,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -23210,12 +23301,14 @@ const Navbar = (props)=>{
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                     href: "tel:+18016094144",
                     className: "btn btn-primary",
+                    "aria-label": "Call McKell Logistics at 801-609-4144",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.PhoneIcon), {
-                            className: "w-4 h-4 mr-2"
+                            className: "w-4 h-4 mr-2",
+                            "aria-hidden": "true"
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 130,
+                            lineNumber: 166,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -23223,24 +23316,24 @@ const Navbar = (props)=>{
                             children: "Call Now"
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 131,
+                            lineNumber: 167,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Navbar.tsx",
-                    lineNumber: 129,
+                    lineNumber: 161,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Navbar.tsx",
-                lineNumber: 128,
+                lineNumber: 160,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Navbar.tsx",
-        lineNumber: 19,
+        lineNumber: 26,
         columnNumber: 5
     }, undefined);
 };

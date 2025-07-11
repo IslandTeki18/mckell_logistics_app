@@ -3108,10 +3108,6 @@
     height: auto;
   }
 
-  .h-full {
-    height: 100%;
-  }
-
   .min-h-screen {
     min-height: 100vh;
   }
@@ -3158,10 +3154,6 @@
 
   .w-full {
     width: 100%;
-  }
-
-  .w-md {
-    width: var(--container-md);
   }
 
   .w-sm {
