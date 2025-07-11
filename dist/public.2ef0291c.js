@@ -20279,7 +20279,18 @@ const HeroSection = (props)=>{
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                     src: (0, _truckTrailerJpgDefault.default),
                                     alt: "Construction hauling truck with side dump trailer",
-                                    className: "rounded-2xl shadow-2xl w-full border-4 border-base-300"
+                                    className: "rounded-2xl shadow-2xl w-full border-4 border-base-300 relative",
+                                    loading: "eager",
+                                    fetchPriority: "high",
+                                    decoding: "async",
+                                    width: "600",
+                                    height: "400",
+                                    onLoad: (e)=>{
+                                        // Hide skeleton once image loads
+                                        const img = e.target;
+                                        const skeleton = img.parentElement?.querySelector(".animate-pulse");
+                                        if (skeleton) skeleton.style.display = "none";
+                                    }
                                 }, void 0, false, {
                                     fileName: "src/features/home/components/HeroSection.tsx",
                                     lineNumber: 35,
@@ -20299,7 +20310,7 @@ const HeroSection = (props)=>{
                                                             className: "w-5 h-5 mx-auto mb-1"
                                                         }, void 0, false, {
                                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                                            lineNumber: 46,
+                                                            lineNumber: 61,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -20307,18 +20318,18 @@ const HeroSection = (props)=>{
                                                             children: "Licensed"
                                                         }, void 0, false, {
                                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                                            lineNumber: 47,
+                                                            lineNumber: 62,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                                    lineNumber: 45,
+                                                    lineNumber: 60,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/home/components/HeroSection.tsx",
-                                                lineNumber: 44,
+                                                lineNumber: 59,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20330,7 +20341,7 @@ const HeroSection = (props)=>{
                                                             className: "w-5 h-5 mx-auto mb-1"
                                                         }, void 0, false, {
                                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                                            lineNumber: 52,
+                                                            lineNumber: 67,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -20338,18 +20349,18 @@ const HeroSection = (props)=>{
                                                             children: "Insured"
                                                         }, void 0, false, {
                                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                                            lineNumber: 53,
+                                                            lineNumber: 68,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                                    lineNumber: 51,
+                                                    lineNumber: 66,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/home/components/HeroSection.tsx",
-                                                lineNumber: 50,
+                                                lineNumber: 65,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20361,7 +20372,7 @@ const HeroSection = (props)=>{
                                                             className: "w-5 h-5 mx-auto mb-1"
                                                         }, void 0, false, {
                                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                                            lineNumber: 58,
+                                                            lineNumber: 73,
                                                             columnNumber: 21
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -20369,29 +20380,29 @@ const HeroSection = (props)=>{
                                                             children: "On-Time"
                                                         }, void 0, false, {
                                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                                            lineNumber: 59,
+                                                            lineNumber: 74,
                                                             columnNumber: 21
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                                    lineNumber: 57,
+                                                    lineNumber: 72,
                                                     columnNumber: 19
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/features/home/components/HeroSection.tsx",
-                                                lineNumber: 56,
+                                                lineNumber: 71,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/features/home/components/HeroSection.tsx",
-                                        lineNumber: 43,
+                                        lineNumber: 58,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                    lineNumber: 42,
+                                    lineNumber: 57,
                                     columnNumber: 13
                                 }, undefined)
                             ]
@@ -20408,7 +20419,7 @@ const HeroSection = (props)=>{
                                     children: "\uD83D\uDE9B Same Day Service Available"
                                 }, void 0, false, {
                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                    lineNumber: 69,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -20417,17 +20428,17 @@ const HeroSection = (props)=>{
                                         "Reliable Construction Hauling in",
                                         " ",
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "text-primary",
+                                            className: "text-secondary",
                                             children: "Utah County"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 90,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 88,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -20440,13 +20451,13 @@ const HeroSection = (props)=>{
                                             children: "Fast, safe, dependable!"
                                         }, void 0, false, {
                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 95,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                    lineNumber: 78,
+                                    lineNumber: 93,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20459,7 +20470,7 @@ const HeroSection = (props)=>{
                                                     className: "w-5 h-5 text-success mr-3"
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                                    lineNumber: 88,
+                                                    lineNumber: 103,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -20467,13 +20478,13 @@ const HeroSection = (props)=>{
                                                     children: "Free estimates on all projects"
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                                    lineNumber: 89,
+                                                    lineNumber: 104,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                            lineNumber: 87,
+                                            lineNumber: 102,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20483,7 +20494,7 @@ const HeroSection = (props)=>{
                                                     className: "w-5 h-5 text-success mr-3"
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                                    lineNumber: 94,
+                                                    lineNumber: 109,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -20491,13 +20502,13 @@ const HeroSection = (props)=>{
                                                     children: "Response within 2 hours"
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                                    lineNumber: 95,
+                                                    lineNumber: 110,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                            lineNumber: 93,
+                                            lineNumber: 108,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20507,7 +20518,7 @@ const HeroSection = (props)=>{
                                                     className: "w-5 h-5 text-success mr-3"
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                                    lineNumber: 100,
+                                                    lineNumber: 115,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -20515,19 +20526,19 @@ const HeroSection = (props)=>{
                                                     children: "Local Utah County expertise"
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                                    lineNumber: 101,
+                                                    lineNumber: 116,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                            lineNumber: 99,
+                                            lineNumber: 114,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                    lineNumber: 86,
+                                    lineNumber: 101,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -20541,14 +20552,14 @@ const HeroSection = (props)=>{
                                                     className: "mr-2 h-5 w-5"
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                                    lineNumber: 113,
+                                                    lineNumber: 128,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 "Call Now"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                            lineNumber: 109,
+                                            lineNumber: 124,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -20559,26 +20570,26 @@ const HeroSection = (props)=>{
                                                     className: "mr-2 h-5 w-5"
                                                 }, void 0, false, {
                                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                                    lineNumber: 120,
+                                                    lineNumber: 135,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 "Quick Text"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/features/home/components/HeroSection.tsx",
-                                            lineNumber: 116,
+                                            lineNumber: 131,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/home/components/HeroSection.tsx",
-                                    lineNumber: 108,
+                                    lineNumber: 123,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/features/home/components/HeroSection.tsx",
-                            lineNumber: 67,
+                            lineNumber: 82,
                             columnNumber: 11
                         }, undefined)
                     ]
@@ -20601,17 +20612,17 @@ const HeroSection = (props)=>{
                         className: "w-6 h-6"
                     }, void 0, false, {
                         fileName: "src/features/home/components/HeroSection.tsx",
-                        lineNumber: 134,
+                        lineNumber: 149,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/features/home/components/HeroSection.tsx",
-                    lineNumber: 130,
+                    lineNumber: 145,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/features/home/components/HeroSection.tsx",
-                lineNumber: 129,
+                lineNumber: 144,
                 columnNumber: 7
             }, undefined)
         ]

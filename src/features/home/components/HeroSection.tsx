@@ -35,7 +35,22 @@ export const HeroSection = (props: HeroSectionProps) => {
             <img
               src={truck}
               alt="Construction hauling truck with side dump trailer"
-              className="rounded-2xl shadow-2xl w-full border-4 border-base-300"
+              className="rounded-2xl shadow-2xl w-full border-4 border-base-300 relative"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              width="600"
+              height="400"
+              onLoad={(e) => {
+                // Hide skeleton once image loads
+                const img = e.target as HTMLImageElement;
+                const skeleton = img.parentElement?.querySelector(
+                  ".animate-pulse"
+                ) as HTMLElement;
+                if (skeleton) {
+                  skeleton.style.display = "none";
+                }
+              }}
             />
 
             {/* Quick Features */}
@@ -72,7 +87,7 @@ export const HeroSection = (props: HeroSectionProps) => {
 
             <h1 className="text-4xl lg:text-6xl font-bold text-base-content leading-tight">
               Reliable Construction Hauling in{" "}
-              <span className="text-primary">Utah County</span>
+              <span className="text-secondary">Utah County</span>
             </h1>
 
             <p className="py-6 text-xl text-base-content/80 leading-relaxed">
