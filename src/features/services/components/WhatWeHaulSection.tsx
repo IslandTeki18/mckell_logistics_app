@@ -62,6 +62,19 @@ export const WhatWeHaulSection = (props: WhatWeHaulSectionProps) => {
                     src={material.image}
                     alt={material.title}
                     className="rounded-lg w-full h-48 object-cover"
+                    loading="lazy"
+                    decoding="async"
+                    width="400"
+                    height="192"
+                    onLoad={(e) => {
+                      const img = e.target as HTMLImageElement;
+                      const skeleton = img.parentElement?.querySelector(
+                        ".animate-pulse"
+                      ) as HTMLElement;
+                      if (skeleton) {
+                        skeleton.style.display = "none";
+                      }
+                    }}
                   />
                 </figure>
                 <div className="card-body text-center">

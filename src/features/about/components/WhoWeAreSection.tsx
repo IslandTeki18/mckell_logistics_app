@@ -12,7 +12,10 @@ type WhoWeAreSectionProps = {};
 
 export const WhoWeAreSection = (props: WhoWeAreSectionProps) => {
   return (
-    <section className="py-16 bg-base-100">
+    <section
+      className="py-16 bg-base-100"
+      aria-label="About McKell Logistics - Who we are"
+    >
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-base-content mb-4">
@@ -32,6 +35,20 @@ export const WhoWeAreSection = (props: WhoWeAreSectionProps) => {
                   src={portrait}
                   alt="McKell Logistics owner with truck"
                   className="rounded-lg w-full h-auto object-cover object-center"
+                  loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="400"
+                  onLoad={(e) => {
+                    // Hide skeleton once image loads
+                    const img = e.target as HTMLImageElement;
+                    const skeleton = img.parentElement?.querySelector(
+                      ".animate-pulse"
+                    ) as HTMLElement;
+                    if (skeleton) {
+                      skeleton.style.display = "none";
+                    }
+                  }}
                 />
               </figure>
             </div>
@@ -56,11 +73,15 @@ export const WhoWeAreSection = (props: WhoWeAreSectionProps) => {
               </div>
 
               {/* Key Values */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div
+                className="grid grid-cols-1 sm:grid-cols-3 gap-4"
+                role="group"
+                aria-label="Company values"
+              >
                 <div className="card bg-primary text-primary-content shadow-lg border border-primary/20">
                   <div className="card-body text-center p-4">
                     <div className="flex justify-center mb-2">
-                      <HomeIcon className="w-8 h-8" />
+                      <HomeIcon className="w-8 h-8" aria-hidden="true" />
                     </div>
                     <h4 className="font-bold text-sm">Local Roots</h4>
                     <p className="text-xs text-primary-content/80">
@@ -72,7 +93,7 @@ export const WhoWeAreSection = (props: WhoWeAreSectionProps) => {
                 <div className="card bg-secondary text-secondary-content shadow-lg border border-secondary/20">
                   <div className="card-body text-center p-4">
                     <div className="flex justify-center mb-2">
-                      <BoltIcon className="w-8 h-8" />
+                      <BoltIcon className="w-8 h-8" aria-hidden="true" />
                     </div>
                     <h4 className="font-bold text-sm">Reliability</h4>
                     <p className="text-xs text-secondary-content/80">
@@ -84,7 +105,7 @@ export const WhoWeAreSection = (props: WhoWeAreSectionProps) => {
                 <div className="card bg-accent text-accent-content shadow-lg border border-accent/20">
                   <div className="card-body text-center p-4">
                     <div className="flex justify-center mb-2">
-                      <HandRaisedIcon className="w-8 h-8" />
+                      <HandRaisedIcon className="w-8 h-8" aria-hidden="true" />
                     </div>
                     <h4 className="font-bold text-sm">Hands-On</h4>
                     <p className="text-xs text-accent-content/80">
@@ -95,7 +116,11 @@ export const WhoWeAreSection = (props: WhoWeAreSectionProps) => {
               </div>
 
               {/* Mission Statement */}
-              <div className="card bg-base-200 shadow-lg border border-base-300">
+              <div
+                className="card bg-base-200 shadow-lg border border-base-300"
+                role="complementary"
+                aria-label="Company mission statement"
+              >
                 <div className="card-body">
                   <h4 className="font-bold text-primary mb-2">Our Mission</h4>
                   <p className="text-base-content/70 text-sm">
@@ -105,7 +130,6 @@ export const WhoWeAreSection = (props: WhoWeAreSectionProps) => {
                   </p>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>

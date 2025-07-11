@@ -14,9 +14,9 @@ type HeroSectionProps = {};
 
 export const HeroSection = (props: HeroSectionProps) => {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden" aria-label="Hero section - McKell Logistics construction hauling services">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-base-200">
+      <div className="absolute inset-0 bg-base-200" aria-hidden="true">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5"></div>
       </div>
 
@@ -26,8 +26,8 @@ export const HeroSection = (props: HeroSectionProps) => {
           <div className="max-w-md lg:max-w-xl relative">
             {/* Trust Badge */}
             <div className="absolute -top-4 -right-4 z-10">
-              <div className="badge badge-primary badge-lg p-4 shadow-lg">
-                <StarIcon className="w-4 h-4 mr-1" />
+              <div className="badge badge-primary badge-lg p-4 shadow-lg" role="img" aria-label="Utah County Trusted Badge">
+                <StarIcon className="w-4 h-4 mr-1" aria-hidden="true" />
                 Utah County Trusted
               </div>
             </div>
@@ -54,23 +54,23 @@ export const HeroSection = (props: HeroSectionProps) => {
             />
 
             {/* Quick Features */}
-            <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-full max-w-sm">
+            <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-full max-w-sm" role="group" aria-label="Company credentials">
               <div className="grid grid-cols-3 gap-2">
                 <div className="card bg-success text-success-content shadow-lg p-2">
                   <div className="text-center">
-                    <CheckCircleIcon className="w-5 h-5 mx-auto mb-1" />
+                    <CheckCircleIcon className="w-5 h-5 mx-auto mb-1" aria-hidden="true" />
                     <span className="text-xs font-bold">Licensed</span>
                   </div>
                 </div>
                 <div className="card bg-warning text-warning-content shadow-lg p-2">
                   <div className="text-center">
-                    <TruckIcon className="w-5 h-5 mx-auto mb-1" />
+                    <TruckIcon className="w-5 h-5 mx-auto mb-1" aria-hidden="true" />
                     <span className="text-xs font-bold">Insured</span>
                   </div>
                 </div>
                 <div className="card bg-info text-info-content shadow-lg p-2">
                   <div className="text-center">
-                    <ClockIcon className="w-5 h-5 mx-auto mb-1" />
+                    <ClockIcon className="w-5 h-5 mx-auto mb-1" aria-hidden="true" />
                     <span className="text-xs font-bold">On-Time</span>
                   </div>
                 </div>
@@ -98,21 +98,21 @@ export const HeroSection = (props: HeroSectionProps) => {
             </p>
 
             {/* Value Props */}
-            <div className="mb-8 space-y-3">
-              <div className="flex items-center justify-center lg:justify-start">
-                <CheckCircleIcon className="w-5 h-5 text-success mr-3" />
+            <div className="mb-8 space-y-3" role="list" aria-label="Service benefits">
+              <div className="flex items-center justify-center lg:justify-start" role="listitem">
+                <CheckCircleIcon className="w-5 h-5 text-success mr-3" aria-hidden="true" />
                 <span className="text-base-content">
                   Free estimates on all projects
                 </span>
               </div>
-              <div className="flex items-center justify-center lg:justify-start">
-                <CheckCircleIcon className="w-5 h-5 text-success mr-3" />
+              <div className="flex items-center justify-center lg:justify-start" role="listitem">
+                <CheckCircleIcon className="w-5 h-5 text-success mr-3" aria-hidden="true" />
                 <span className="text-base-content">
                   Response within 2 hours
                 </span>
               </div>
-              <div className="flex items-center justify-center lg:justify-start">
-                <CheckCircleIcon className="w-5 h-5 text-success mr-3" />
+              <div className="flex items-center justify-center lg:justify-start" role="listitem">
+                <CheckCircleIcon className="w-5 h-5 text-success mr-3" aria-hidden="true" />
                 <span className="text-base-content">
                   Local Utah County expertise
                 </span>
@@ -124,15 +124,17 @@ export const HeroSection = (props: HeroSectionProps) => {
               <a
                 href="tel:+18016094144"
                 className="btn btn-secondary btn-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                aria-label="Call McKell Logistics at 801-609-4144"
               >
-                <PhoneIcon className="mr-2 h-5 w-5" />
+                <PhoneIcon className="mr-2 h-5 w-5" aria-hidden="true" />
                 Call Now
               </a>
               <a
                 href="sms:+18016094144"
                 className="btn btn-outline btn-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                aria-label="Send text message to McKell Logistics at 801-609-4144"
               >
-                <ChatBubbleLeftRightIcon className="mr-2 h-5 w-5" />
+                <ChatBubbleLeftRightIcon className="mr-2 h-5 w-5" aria-hidden="true" />
                 Quick Text
               </a>
             </div>
@@ -145,8 +147,9 @@ export const HeroSection = (props: HeroSectionProps) => {
         <a
           href="tel:+18016094144"
           className="btn btn-secondary btn-circle btn-lg shadow-2xl animate-bounce"
+          aria-label="Call McKell Logistics at 801-609-4144"
         >
-          <PhoneIcon className="w-6 h-6" />
+          <PhoneIcon className="w-6 h-6" aria-hidden="true" />
         </a>
       </div>
     </section>

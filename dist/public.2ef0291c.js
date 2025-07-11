@@ -21419,7 +21419,16 @@ const WhatWeHaulSection = (props)=>{
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                         src: material.image,
                                         alt: material.title,
-                                        className: "rounded-lg w-full h-48 object-cover"
+                                        className: "rounded-lg w-full h-48 object-cover",
+                                        loading: "lazy",
+                                        decoding: "async",
+                                        width: "400",
+                                        height: "192",
+                                        onLoad: (e)=>{
+                                            const img = e.target;
+                                            const skeleton = img.parentElement?.querySelector(".animate-pulse");
+                                            if (skeleton) skeleton.style.display = "none";
+                                        }
                                     }, void 0, false, {
                                         fileName: "src/features/services/components/WhatWeHaulSection.tsx",
                                         lineNumber: 61,
@@ -21437,7 +21446,7 @@ const WhatWeHaulSection = (props)=>{
                                             className: "w-12 h-12 mx-auto mb-2 text-secondary"
                                         }, void 0, false, {
                                             fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 81,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -21445,7 +21454,7 @@ const WhatWeHaulSection = (props)=>{
                                             children: material.title
                                         }, void 0, false, {
                                             fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                                            lineNumber: 69,
+                                            lineNumber: 82,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -21453,13 +21462,13 @@ const WhatWeHaulSection = (props)=>{
                                             children: material.description
                                         }, void 0, false, {
                                             fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 85,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/features/services/components/WhatWeHaulSection.tsx",
-                                    lineNumber: 67,
+                                    lineNumber: 80,
                                     columnNumber: 17
                                 }, undefined)
                             ]
@@ -22974,7 +22983,7 @@ $RefreshReg$(_c, "Layout");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"fKeYf","../components/Navbar":"9czgh","../components/Footer":"h30z4","../components/ScrollToTop":"cJptW","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"9czgh":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react-router-dom":"fKeYf","../components/Navbar":"9czgh","../components/Footer":"h30z4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U","../components/ScrollToTop":"cJptW"}],"9czgh":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$74c8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$74c8.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -22996,7 +23005,6 @@ const Navbar = (props)=>{
     const [isDropdownOpen, setIsDropdownOpen] = (0, _react.useState)(false);
     const closeDropdown = ()=>{
         setIsDropdownOpen(false);
-        // Remove focus from the dropdown button to close it
         const dropdown = document.activeElement;
         if (dropdown) dropdown.blur();
     };
@@ -23018,12 +23026,12 @@ const Navbar = (props)=>{
                                     className: "h-5 w-5"
                                 }, void 0, false, {
                                     fileName: "src/components/Navbar.tsx",
-                                    lineNumber: 29,
+                                    lineNumber: 28,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 23,
+                                lineNumber: 22,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -23038,12 +23046,12 @@ const Navbar = (props)=>{
                                             children: "Home"
                                         }, void 0, false, {
                                             fileName: "src/components/Navbar.tsx",
-                                            lineNumber: 36,
+                                            lineNumber: 35,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Navbar.tsx",
-                                        lineNumber: 35,
+                                        lineNumber: 34,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -23054,12 +23062,12 @@ const Navbar = (props)=>{
                                             children: "Services"
                                         }, void 0, false, {
                                             fileName: "src/components/Navbar.tsx",
-                                            lineNumber: 47,
+                                            lineNumber: 46,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Navbar.tsx",
-                                        lineNumber: 46,
+                                        lineNumber: 45,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -23070,12 +23078,12 @@ const Navbar = (props)=>{
                                             children: "About"
                                         }, void 0, false, {
                                             fileName: "src/components/Navbar.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 57,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Navbar.tsx",
-                                        lineNumber: 57,
+                                        lineNumber: 56,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -23086,24 +23094,24 @@ const Navbar = (props)=>{
                                             children: "Contact"
                                         }, void 0, false, {
                                             fileName: "src/components/Navbar.tsx",
-                                            lineNumber: 69,
+                                            lineNumber: 68,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Navbar.tsx",
-                                        lineNumber: 68,
+                                        lineNumber: 67,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 31,
+                                lineNumber: 30,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Navbar.tsx",
-                        lineNumber: 22,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
@@ -23112,13 +23120,13 @@ const Navbar = (props)=>{
                         children: "McKell Logistics"
                     }, void 0, false, {
                         fileName: "src/components/Navbar.tsx",
-                        lineNumber: 81,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Navbar.tsx",
-                lineNumber: 21,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -23133,12 +23141,12 @@ const Navbar = (props)=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 88,
+                                lineNumber: 87,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 87,
+                            lineNumber: 86,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -23148,12 +23156,12 @@ const Navbar = (props)=>{
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 98,
+                                lineNumber: 97,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 97,
+                            lineNumber: 96,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -23163,12 +23171,12 @@ const Navbar = (props)=>{
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 108,
+                                lineNumber: 107,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 107,
+                            lineNumber: 106,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -23178,23 +23186,23 @@ const Navbar = (props)=>{
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "src/components/Navbar.tsx",
-                                lineNumber: 118,
+                                lineNumber: 117,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 117,
+                            lineNumber: 116,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Navbar.tsx",
-                    lineNumber: 86,
+                    lineNumber: 85,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Navbar.tsx",
-                lineNumber: 85,
+                lineNumber: 84,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -23207,7 +23215,7 @@ const Navbar = (props)=>{
                             className: "w-4 h-4 mr-2"
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 131,
+                            lineNumber: 130,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -23215,24 +23223,24 @@ const Navbar = (props)=>{
                             children: "Call Now"
                         }, void 0, false, {
                             fileName: "src/components/Navbar.tsx",
-                            lineNumber: 132,
+                            lineNumber: 131,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Navbar.tsx",
-                    lineNumber: 130,
+                    lineNumber: 129,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Navbar.tsx",
-                lineNumber: 129,
+                lineNumber: 128,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Navbar.tsx",
-        lineNumber: 20,
+        lineNumber: 19,
         columnNumber: 5
     }, undefined);
 };

@@ -11,7 +11,10 @@ type ServiceSummarySectionProps = {};
 
 export const ServiceSummarySection = (props: ServiceSummarySectionProps) => {
   return (
-    <section className="py-24 bg-base-100">
+    <section
+      className="py-24 bg-base-100"
+      aria-label="Service summary - What McKell Logistics does"
+    >
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-base-content mb-4">
@@ -22,12 +25,19 @@ export const ServiceSummarySection = (props: ServiceSummarySectionProps) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+          role="list"
+          aria-label="McKell Logistics services"
+        >
           {/* Material Hauling */}
-          <div className="flex items-start space-x-4">
-            <div className="flex-shrink-0">
+          <div className="flex items-start space-x-4" role="listitem">
+            <div className="flex-shrink-0" aria-hidden="true">
               <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
-                <CubeIcon className="w-6 h-6 text-secondary" />
+                <CubeIcon
+                  className="w-6 h-6 text-secondary"
+                  aria-hidden="true"
+                />
               </div>
             </div>
             <div>
@@ -41,10 +51,13 @@ export const ServiceSummarySection = (props: ServiceSummarySectionProps) => {
           </div>
 
           {/* Side Dump Trailer Service */}
-          <div className="flex items-start space-x-4">
-            <div className="flex-shrink-0">
+          <div className="flex items-start space-x-4" role="listitem">
+            <div className="flex-shrink-0" aria-hidden="true">
               <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
-                <ArrowsRightLeftIcon className="w-6 h-6 text-secondary" />
+                <ArrowsRightLeftIcon
+                  className="w-6 h-6 text-secondary"
+                  aria-hidden="true"
+                />
               </div>
             </div>
             <div>
@@ -58,10 +71,13 @@ export const ServiceSummarySection = (props: ServiceSummarySectionProps) => {
           </div>
 
           {/* Local Construction Site Delivery */}
-          <div className="flex items-start space-x-4">
-            <div className="flex-shrink-0">
+          <div className="flex items-start space-x-4" role="listitem">
+            <div className="flex-shrink-0" aria-hidden="true">
               <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
-                <MapPinIcon className="w-6 h-6 text-secondary" />
+                <MapPinIcon
+                  className="w-6 h-6 text-secondary"
+                  aria-hidden="true"
+                />
               </div>
             </div>
             <div>
@@ -75,10 +91,13 @@ export const ServiceSummarySection = (props: ServiceSummarySectionProps) => {
           </div>
 
           {/* Short-Notice Availability */}
-          <div className="flex items-start space-x-4">
-            <div className="flex-shrink-0">
+          <div className="flex items-start space-x-4" role="listitem">
+            <div className="flex-shrink-0" aria-hidden="true">
               <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
-                <ClockIcon className="w-6 h-6 text-secondary" />
+                <ClockIcon
+                  className="w-6 h-6 text-secondary"
+                  aria-hidden="true"
+                />
               </div>
             </div>
             <div>
@@ -92,10 +111,16 @@ export const ServiceSummarySection = (props: ServiceSummarySectionProps) => {
           </div>
 
           {/* Hourly or Contract Based Jobs */}
-          <div className="flex items-start space-x-4 md:col-span-2 lg:col-span-1">
-            <div className="flex-shrink-0">
+          <div
+            className="flex items-start space-x-4 md:col-span-2 lg:col-span-1"
+            role="listitem"
+          >
+            <div className="flex-shrink-0" aria-hidden="true">
               <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
-                <DocumentTextIcon className="w-6 h-6 text-secondary" />
+                <DocumentTextIcon
+                  className="w-6 h-6 text-secondary"
+                  aria-hidden="true"
+                />
               </div>
             </div>
             <div>
