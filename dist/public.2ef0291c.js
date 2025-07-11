@@ -21916,7 +21916,7 @@ const PricingPolicySection = (props)=>{
         {
             icon: (0, _outline.CurrencyDollarIcon),
             title: "Hourly Rate",
-            description: "$125/hour, 3-hour minimum",
+            description: "$100/hour, 3-hour minimum",
             highlight: true
         },
         {
